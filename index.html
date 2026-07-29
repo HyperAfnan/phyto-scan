@@ -1,0 +1,1397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Botanical Companion — Nerium oleander</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --ink: #1b2a20;
+        --charcoal: #26302a;
+        --paper: #edeee2;
+        --card: #fbfaf4;
+        --moss: #4b6355;
+        --moss-dark: #334539;
+        --fern: #8aa37e;
+        --fern-pale: #dce6d4;
+        --oleander: #d6607c;
+        --oleander-pale: #f6dee3;
+        --caution: #b65a1f;
+        --caution-pale: #f3e2cf;
+        --line: rgba(27, 42, 32, 0.14);
+        --shadow: 0 12px 30px rgba(27, 42, 32, 0.14);
+      }
+
+      * {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        background:
+          radial-gradient(
+            1200px 700px at 15% -10%,
+            #2e4536 0%,
+            transparent 55%
+          ),
+          radial-gradient(
+            1000px 700px at 100% 110%,
+            #35492f 0%,
+            transparent 50%
+          ),
+          #1b2a20;
+        font-family: "Inter", sans-serif;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 48px 16px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+
+      /* ---------- staging / caption ---------- */
+      .stage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+      }
+      .stage-cap {
+        color: var(--fern-pale);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 11.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        opacity: 0.75;
+        text-align: center;
+      }
+      .stage-cap b {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      /* ---------- phone frame ---------- */
+      .phone {
+        width: 390px;
+        max-width: 92vw;
+        height: 844px;
+        max-height: 88vh;
+        background: var(--paper);
+        border-radius: 46px;
+        padding: 14px;
+        box-shadow:
+          0 40px 90px rgba(0, 0, 0, 0.55),
+          0 0 0 2px rgba(255, 255, 255, 0.04) inset;
+        position: relative;
+      }
+      .notch {
+        position: absolute;
+        top: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 26px;
+        background: #0d150f;
+        border-radius: 0 0 18px 18px;
+        z-index: 30;
+      }
+      .screen {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: var(--paper);
+        border-radius: 32px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .statusbar {
+        height: 40px;
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 22px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 12px;
+        color: var(--ink);
+        font-weight: 500;
+        background: var(--paper);
+        position: relative;
+        z-index: 20;
+      }
+
+      .scroll {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: none;
+        padding-bottom: 86px;
+      }
+      .scroll::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* paper grain */
+      .scroll {
+        background-image: repeating-linear-gradient(
+          0deg,
+          rgba(27, 42, 32, 0.02) 0px,
+          transparent 1px,
+          transparent 3px
+        );
+      }
+
+      /* ---------- top bar over hero ---------- */
+      .topbar {
+        position: absolute;
+        top: 14px;
+        left: 16px;
+        right: 16px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+      }
+      .pill-btn {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(251, 250, 244, 0.92);
+        backdrop-filter: blur(6px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+        border: none;
+        cursor: pointer;
+        color: var(--ink);
+        transition: transform 0.15s ease;
+      }
+      .pill-btn:active {
+        transform: scale(0.9);
+      }
+      .pill-btn.active {
+        background: var(--oleander);
+        color: #fff;
+      }
+      .qr-chip {
+        position: absolute;
+        top: 60px;
+        left: 16px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(27, 42, 32, 0.82);
+        color: #edeee2;
+        padding: 6px 10px 6px 8px;
+        border-radius: 20px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10.5px;
+        letter-spacing: 0.05em;
+      }
+
+      /* ---------- HERO ---------- */
+      .hero {
+        position: relative;
+        height: 322px;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(27, 42, 32, 0) 45%,
+            rgba(27, 42, 32, 0.88) 100%
+          ),
+          linear-gradient(160deg, #f6e1e6 0%, #e9efdf 45%, #cfdcc4 100%);
+        overflow: hidden;
+      }
+      .hero svg.illustration,
+      .hero img.illustration {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hero-content {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 16px;
+        color: #fff;
+        z-index: 5;
+      }
+      .fam-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10.5px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        padding: 4px 9px;
+        border: 1px dashed rgba(255, 255, 255, 0.65);
+        border-radius: 3px;
+        transform: rotate(-1.5deg);
+        background: rgba(27, 42, 32, 0.28);
+        margin-bottom: 10px;
+      }
+      .common-name {
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1.05;
+        margin: 0 0 4px;
+        letter-spacing: -0.01em;
+      }
+      .sci-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .sci-name {
+        font-family: "Fraunces", serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 16px;
+        opacity: 0.95;
+      }
+      .say-btn {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: rgba(255, 255, 255, 0.16);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        color: #fff;
+        padding: 4px 9px 4px 7px;
+        border-radius: 20px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+      }
+      .say-btn:active {
+        transform: scale(0.94);
+      }
+      .say-btn svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      /* ---------- section shell ---------- */
+      section {
+        padding: 22px 20px 4px;
+      }
+      .eyebrow {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10.5px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--moss);
+        font-weight: 600;
+        margin: 0 0 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .eyebrow::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--line);
+      }
+      h2.title {
+        font-family: "Fraunces", serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: var(--ink);
+        margin: 0 0 12px;
+      }
+
+      /* ---------- badges row ---------- */
+      .badge-scroll {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding-bottom: 2px;
+        scrollbar-width: none;
+      }
+      .badge-scroll::-webkit-scrollbar {
+        display: none;
+      }
+      .badge {
+        flex: 0 0 auto;
+        width: 112px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 12px 12px 11px;
+      }
+      .badge .ic {
+        width: 26px;
+        height: 26px;
+        color: var(--moss);
+        margin-bottom: 8px;
+      }
+      .badge .lab {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 9.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #6b7a70;
+        margin-bottom: 3px;
+      }
+      .badge .val {
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 12.5px;
+        color: var(--charcoal);
+        line-height: 1.25;
+      }
+
+      /* ---------- safety warning ---------- */
+      .warn-card {
+        background: linear-gradient(180deg, var(--caution-pale), #f8eedf);
+        border: 1px solid #e0b98a;
+        border-radius: 16px;
+        padding: 14px 16px 16px;
+        position: relative;
+        overflow: hidden;
+      }
+      .warn-head {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 10px;
+        margin-left: 6px;
+      }
+      .warn-head svg {
+        width: 22px;
+        height: 22px;
+        color: var(--caution);
+        flex: 0 0 auto;
+      }
+      .warn-head span {
+        font-family: "Fraunces", serif;
+        font-weight: 600;
+        font-size: 15.5px;
+        color: #7a3c10;
+      }
+      .warn-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-left: 6px;
+      }
+      .warn-chip {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        background: #fff;
+        border: 1px solid #e0b98a;
+        color: #7a3c10;
+        font-size: 11.5px;
+        font-weight: 600;
+        padding: 6px 10px;
+        border-radius: 20px;
+      }
+      .warn-chip svg {
+        width: 13px;
+        height: 13px;
+      }
+
+      /* ---------- care & habitat ---------- */
+      .care-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      .care-item {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 12px 13px;
+      }
+      .care-item .top {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 9px;
+      }
+      .care-item svg {
+        width: 18px;
+        height: 18px;
+        color: var(--moss);
+      }
+      .care-item .lab {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #6b7a70;
+      }
+      .meter {
+        display: flex;
+        gap: 4px;
+        margin-bottom: 6px;
+      }
+      .meter i {
+        flex: 1;
+        height: 6px;
+        border-radius: 3px;
+        background: var(--fern-pale);
+      }
+      .meter i.on {
+        background: var(--moss);
+      }
+      .care-item .val {
+        font-size: 12px;
+        color: var(--charcoal);
+        font-weight: 600;
+      }
+
+      /* ---------- about ---------- */
+      .about-text {
+        font-size: 14.5px;
+        line-height: 1.68;
+        color: var(--charcoal);
+        margin: 0;
+      }
+      .about-text b {
+        color: var(--moss-dark);
+        font-weight: 600;
+      }
+
+      /* ---------- uses ---------- */
+      .use-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+      }
+      .use-list li {
+        display: flex;
+        gap: 11px;
+        align-items: flex-start;
+        font-size: 13.5px;
+        color: var(--charcoal);
+        line-height: 1.5;
+      }
+      .use-list svg {
+        width: 19px;
+        height: 19px;
+        flex: 0 0 auto;
+        margin-top: 1px;
+        color: var(--oleander);
+      }
+      .use-list b {
+        display: block;
+        font-weight: 600;
+        color: var(--ink);
+        font-size: 13.5px;
+      }
+
+      /* ---------- fun facts accordion ---------- */
+      .facts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .fact {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--card);
+        overflow: hidden;
+      }
+      .fact-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 14px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 13px;
+        color: var(--ink);
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        font-family: "Inter";
+      }
+      .fact-q .chev {
+        width: 16px;
+        height: 16px;
+        color: var(--moss);
+        transition: transform 0.25s ease;
+        flex: 0 0 auto;
+      }
+      .fact.open .chev {
+        transform: rotate(180deg);
+      }
+      .fact-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #4a564d;
+      }
+      .fact-a-in {
+        padding: 0 14px 14px;
+      }
+      .fact.open .fact-a {
+        max-height: 200px;
+      }
+
+      /* ---------- Flora chat ---------- */
+      .flora-card {
+        background: linear-gradient(180deg, var(--moss-dark), #24352a);
+        border-radius: 18px;
+        padding: 16px 16px 14px;
+        color: #edeee2;
+      }
+      .flora-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 12px;
+      }
+      .flora-avatar {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: var(--oleander);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+      }
+      .flora-avatar svg {
+        width: 18px;
+        height: 18px;
+        color: #fff;
+      }
+      .flora-head .n {
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .flora-head .s {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        color: #9db39a;
+        letter-spacing: 0.04em;
+      }
+      .dot-live {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #8ce29b;
+        display: inline-block;
+        margin-right: 5px;
+        box-shadow: 0 0 0 3px rgba(140, 226, 155, 0.18);
+      }
+
+      .chat-log {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        margin-bottom: 12px;
+      }
+      .msg {
+        max-width: 82%;
+        font-size: 12.5px;
+        line-height: 1.5;
+        padding: 9px 12px;
+        border-radius: 14px;
+      }
+      .msg.user {
+        align-self: flex-end;
+        background: var(--oleander);
+        color: #fff;
+        border-bottom-right-radius: 4px;
+      }
+      .msg.bot {
+        align-self: flex-start;
+        background: rgba(255, 255, 255, 0.09);
+        color: #edeee2;
+        border-bottom-left-radius: 4px;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+        margin-bottom: 12px;
+      }
+      .chip-q {
+        font-size: 11.5px;
+        padding: 7px 11px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #dce6d4;
+        cursor: pointer;
+      }
+      .chip-q:active {
+        background: rgba(255, 255, 255, 0.18);
+      }
+      .flora-input {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 22px;
+        padding: 6px 6px 6px 14px;
+      }
+      .flora-input input {
+        flex: 1;
+        background: none;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 12.5px;
+        font-family: "Inter";
+      }
+      .flora-input input::placeholder {
+        color: #9db39a;
+      }
+      .flora-send {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--oleander);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        cursor: pointer;
+        flex: 0 0 auto;
+      }
+      .flora-send svg {
+        width: 14px;
+        height: 14px;
+      }
+
+      /* ---------- similar plants ---------- */
+      .sim-scroll {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+      }
+      .sim-scroll::-webkit-scrollbar {
+        display: none;
+      }
+      .sim-card {
+        flex: 0 0 auto;
+        width: 118px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .sim-thumb {
+        height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .sim-thumb svg {
+        width: 56px;
+        height: 56px;
+      }
+      .sim-info {
+        padding: 9px 10px 11px;
+      }
+      .sim-info .n {
+        font-weight: 600;
+        font-size: 12px;
+        color: var(--ink);
+        line-height: 1.25;
+      }
+      .sim-info .s {
+        font-family: "Fraunces";
+        font-style: italic;
+        font-size: 10.5px;
+        color: #6b7a70;
+      }
+      .sim-info .tag {
+        display: inline-block;
+        margin-top: 6px;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 8.5px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--moss);
+        background: var(--fern-pale);
+        padding: 2px 6px;
+        border-radius: 8px;
+      }
+
+      /* ---------- footer note ---------- */
+      .end-note {
+        margin: 26px 20px 0;
+        padding: 14px 16px;
+        border-top: 1px dashed var(--line);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 10px;
+        color: #7a8a7e;
+        letter-spacing: 0.03em;
+        line-height: 1.6;
+      }
+
+      /* ---------- bottom nav ---------- */
+      .navbar {
+        position: absolute;
+        left: 14px;
+        right: 14px;
+        bottom: 14px;
+        height: 64px;
+        background: rgba(251, 250, 244, 0.94);
+        backdrop-filter: blur(10px);
+        border-radius: 24px;
+        border: 1px solid var(--line);
+        box-shadow: 0 10px 30px rgba(27, 42, 32, 0.18);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 25;
+      }
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        color: #8a978c;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 8.5px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      .nav-item svg {
+        width: 20px;
+        height: 20px;
+      }
+      .nav-item.active {
+        color: var(--moss-dark);
+      }
+      .nav-item.active svg {
+        color: var(--oleander);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="phone">
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="topbar">
+            <button class="pill-btn" aria-label="Back">
+              <svg viewBox="0 0 24 24" fill="none" width="17" height="17">
+                <path
+                  d="M15 18l-6-6 6-6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="scroll">
+            <!-- ================= HERO ================= -->
+            <div class="hero">
+              <img class="illustration" src="assets/oleander.jpg" alt="Oleander" />
+              <div class="hero-content">
+                <span class="fam-tag">Fam. Apocynaceae · Specimen 014</span>
+                <h1 class="common-name">Oleander</h1>
+                <div class="sci-row">
+                  <span class="sci-name">Nerium oleander</span>
+                  <button class="say-btn" id="sayBtn">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path d="M4 9v6h4l5 5V4L8 9H4Z" fill="currentColor" />
+                      <path
+                        d="M16 8a5 5 0 0 1 0 8M18.5 5.5a9 9 0 0 1 0 13"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <span id="sayLabel">oh-LEE-an-der</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <section>
+              <p class="eyebrow">At a glance</p>
+              <div class="badge-scroll">
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="4"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    />
+                  </svg>
+                  <div class="lab">Conservation</div>
+                  <div class="val">Least Concern</div>
+                </div>
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    />
+                    <circle
+                      cx="12"
+                      cy="9.5"
+                      r="2.3"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    />
+                  </svg>
+                  <div class="lab">Native region</div>
+                  <div class="val">Mediterranean &amp; N. Africa</div>
+                </div>
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 3c2 3-2 3 0 6"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M12 21c-4 0-7-3-7-6.5C5 10 9 8 12 5c3 3 7 5 7 9.5 0 3.5-3 6.5-7 6.5Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="lab">Flowering</div>
+                  <div class="val">May – Sept</div>
+                </div>
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="9"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                    />
+                    <path
+                      d="M12 7v5l3 2"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <div class="lab">Lifespan</div>
+                  <div class="val">50+ years</div>
+                </div>
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 21V9M12 9C9 9 7 7 7 4c3 0 5 2 5 5Zm0 0c0-3 2-5 5-5 0 3-2 5-5 5Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="lab">Plant type</div>
+                  <div class="val">Evergreen shrub</div>
+                </div>
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 3v18M8 21h8M9 3h6"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <div class="lab">Mature height</div>
+                  <div class="val">2 – 6 m</div>
+                </div>
+                <div class="badge">
+                  <svg class="ic" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 20 20 4M14 4h6v6M4 14v6h6"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="lab">Growth rate</div>
+                  <div class="val">Fast</div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <p class="eyebrow">Safety &amp; warnings</p>
+              <div class="warn-card">
+                <div class="warn-head">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 2 1 21h22L12 2Z"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 9v5"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="12" cy="17" r="1" fill="currentColor" />
+                  </svg>
+                  <span>Every part of this plant is toxic</span>
+                </div>
+                <div class="warn-list">
+                  <span class="warn-chip"
+                    ><svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 2a5 5 0 0 0-5 5v2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2h-2V7a5 5 0 0 0-5-5Zm-3 7V7a3 3 0 1 1 6 0v2Z"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                      /></svg
+                    >Toxic to humans</span
+                  >
+                  <span class="warn-chip"
+                    ><svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M4.5 9.5c1-2 2-3 2-3M19.5 9.5c-1-2-2-3-2-3M8 4c.5 1.5 0 3-1 3M16 4c-.5 1.5 0 3 1 3"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M12 21c-4 0-7-2.5-7-6 0-4 3-5 3-8 1 1 2 1.5 4 1.5s3-.5 4-1.5c0 3 3 4 3 8 0 3.5-3 6-7 6Z"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                      /></svg
+                    >Toxic to pets</span
+                  >
+                  <span class="warn-chip"
+                    ><svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 2s6 6.5 6 11a6 6 0 1 1-12 0c0-4.5 6-11 6-11Z"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                      /></svg
+                    >Allergenic sap</span
+                  >
+                  <span class="warn-chip"
+                    ><svg viewBox="0 0 24 24" fill="none">
+                      <circle
+                        cx="11"
+                        cy="11"
+                        r="7"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                      />
+                      <path
+                        d="M21 21 16 16"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M7 7l8 8"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      /></svg
+                    >Do not consume</span
+                  >
+                </div>
+              </div>
+            </section>
+
+            <!-- ================= CARE & HABITAT ================= -->
+            <section>
+              <p class="eyebrow">Care &amp; habitat</p>
+              <div class="care-grid">
+                <div class="care-item">
+                  <div class="top">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="4.5"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      />
+                      <path
+                        d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                      /></svg
+                    ><span class="lab">Sunlight</span>
+                  </div>
+                  <div class="meter">
+                    <i class="on"></i><i class="on"></i><i class="on"></i
+                    ><i></i>
+                  </div>
+                  <div class="val">Full sun</div>
+                </div>
+                <div class="care-item">
+                  <div class="top">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 3c3 4.5 6 8 6 11.5A6 6 0 1 1 6 14.5C6 11 9 7.5 12 3Z"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      /></svg
+                    ><span class="lab">Water</span>
+                  </div>
+                  <div class="meter">
+                    <i class="on"></i><i class="on"></i><i></i><i></i>
+                  </div>
+                  <div class="val">Low – moderate</div>
+                </div>
+                <div class="care-item">
+                  <div class="top">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M3 17h18M4 17c0-4 2-6 3-9 1 2 2 3 3 2 1-2 2-4 3-4 1 2 1 5 3 5 1 0 2-2 3-2 1 2 2 4 2 8"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                    ><span class="lab">Soil</span>
+                  </div>
+                  <div class="val" style="margin-top: 2px">
+                    Well-drained, sandy&nbsp;/&nbsp;loamy
+                  </div>
+                </div>
+                <div class="care-item">
+                  <div class="top">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <rect
+                        x="10"
+                        y="3"
+                        width="4"
+                        height="12"
+                        rx="2"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      />
+                      <circle
+                        cx="12"
+                        cy="18"
+                        r="3"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      /></svg
+                    ><span class="lab">Temperature</span>
+                  </div>
+                  <div class="val">15° – 35°C</div>
+                </div>
+                <div class="care-item" style="grid-column: 1 / -1">
+                  <div class="top">
+                    <svg viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M12 3c3 3 6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 3-7 6-10Z"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      />
+                      <path
+                        d="M9.5 13.5a2.5 2.5 0 0 0 2.5 2.5"
+                        stroke="currentColor"
+                        stroke-width="1.4"
+                        stroke-linecap="round"
+                      /></svg
+                    ><span class="lab">Humidity preference</span>
+                  </div>
+                  <div class="meter" style="max-width: 180px">
+                    <i class="on"></i><i></i><i></i><i></i>
+                  </div>
+                  <div class="val">Tolerates dry air</div>
+                </div>
+              </div>
+            </section>
+
+            <!-- ================= ABOUT ================= -->
+            <section>
+              <p class="eyebrow">About the plant</p>
+              <p class="about-text">
+                An <b>evergreen shrub</b> with slender, lance-shaped leaves
+                arranged in whorls of three, oleander produces clusters of
+                five-petalled flowers in white, pink, or deep rose through the
+                warm months. In the wild it lines dry riverbeds and rocky
+                coastal ground across the Mediterranean basin, where its deep
+                roots and waxy leaves help it withstand long stretches without
+                rain. Nearly every tissue in the plant carries potent
+                <b>cardiac glycosides</b>, a defence so effective that livestock
+                and most insects leave it untouched — one reason it survives so
+                readily along roadsides and neglected slopes.
+              </p>
+            </section>
+
+            <!-- ================= EVERYDAY USES ================= -->
+            <section>
+              <p class="eyebrow">Everyday uses</p>
+              <ul class="use-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M12 21V9M12 9C9 9 7 7 7 4c3 0 5 2 5 5Zm0 0c0-3 2-5 5-5 0 3-2 5-5 5Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span
+                    ><b>Ornamental</b>Widely planted along medians and boundary
+                    hedges for its fast growth and long bloom.</span
+                  >
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M9 3h6l-1 4h-4L9 3Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 7h8l1 13H7L8 7Z"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span
+                    ><b>Historical medicine</b>Extracts were once studied for
+                    heart conditions, but the margin between dose and poison is
+                    razor-thin — modern use is strictly pharmaceutical.</span
+                  >
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 20h16M6 20V10l6-6 6 6v10"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span
+                    ><b>Cultural importance</b>A fixture of Mediterranean
+                    courtyard gardens for centuries, and a recurring motif in
+                    regional art and poetry.</span
+                  >
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M3 17c3-8 6-12 9-12s6 4 9 12"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M3 17h18"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <span
+                    ><b>Erosion control</b>Deep, spreading roots stabilise dry
+                    slopes and highway embankments.</span
+                  >
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M4 14c3-6 6-9 8-9s5 3 8 9M6 14a6 6 0 0 0 12 0"
+                      stroke="currentColor"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span
+                    ><b>Wildlife interactions</b>Toxicity keeps grazing animals
+                    away, while moths and bees still visit the flowers for
+                    nectar.</span
+                  >
+                </li>
+              </ul>
+            </section>
+
+            <!-- ================= FUN FACTS ================= -->
+            <section>
+              <p class="eyebrow">Fun facts</p>
+              <div class="facts" id="facts">
+                <div class="fact">
+                  <button class="fact-q">
+                    A few leaves is all it takes
+                    <svg class="chev" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div class="fact-a">
+                    <div class="fact-a-in">
+                      Its toxins are so concentrated that a handful of leaves is
+                      considered enough to seriously harm a child or a small
+                      animal.
+                    </div>
+                  </div>
+                </div>
+                <div class="fact">
+                  <button class="fact-q">
+                    A Roman garden favourite
+                    <svg class="chev" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div class="fact-a">
+                    <div class="fact-a-in">
+                      Oleander appears in wall paintings from Pompeii,
+                      suggesting it was already a prized ornamental nearly two
+                      thousand years ago.
+                    </div>
+                  </div>
+                </div>
+                <div class="fact">
+                  <button class="fact-q">
+                    Thrives where little else will
+                    <svg class="chev" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div class="fact-a">
+                    <div class="fact-a-in">
+                      Its drought tolerance and disregard from grazing animals
+                      make it a favourite for highway medians and neglected
+                      public plantings worldwide.
+                    </div>
+                  </div>
+                </div>
+                <div class="fact">
+                  <button class="fact-q">
+                    Even the smoke carries risk
+                    <svg class="chev" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M6 9l6 6 6-6"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                  <div class="fact-a">
+                    <div class="fact-a-in">
+                      Burning any part of the plant can release irritant
+                      compounds, which is why gardeners are advised never to add
+                      clippings to a bonfire.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+    <script>
+      const bookmarkBtn = document.getElementById("bookmarkBtn");
+      const bookmarkIcon = document.getElementById("bookmarkIcon");
+      let saved = false;
+      if (bookmarkBtn && bookmarkIcon) {
+        bookmarkBtn.addEventListener("click", () => {
+          saved = !saved;
+          bookmarkBtn.classList.toggle("active", saved);
+          bookmarkIcon
+            .querySelector("path")
+            .setAttribute("fill", saved ? "#fff" : "none");
+        });
+      }
+
+      const sayBtn = document.getElementById("sayBtn");
+      const sayLabel = document.getElementById("sayLabel");
+      if (sayBtn && sayLabel) {
+        sayBtn.addEventListener("click", () => {
+          const original = sayLabel.textContent;
+          sayLabel.textContent = "playing…";
+          sayBtn.style.transform = "scale(0.95)";
+          setTimeout(() => {
+            sayBtn.style.transform = "scale(1)";
+            sayLabel.textContent = original;
+          }, 900);
+        });
+      }
+
+      document.querySelectorAll(".fact-q").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          const wasOpen = item.classList.contains("open");
+          document
+            .querySelectorAll(".fact.open")
+            .forEach((f) => f.classList.remove("open"));
+          if (!wasOpen) item.classList.add("open");
+        });
+      });
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+package botany.garden.ui.theme
+
+import androidx.compose.ui.graphics.Color
+
+val Ink = Color(0xFF1B2A20)
+val Charcoal = Color(0xFF26302A)
+val Paper = Color(0xFFEDEEE2)
+val CardBg = Color(0xFFFBFAF4)
+val Moss = Color(0xFF4B6355)
+val MossDark = Color(0xFF334539)
+val Fern = Color(0xFF8AA37E)
+val FernPale = Color(0xFFDCE6D4)
+val Oleander = Color(0xFFD6607C)
+val OleanderPale = Color(0xFFF6DEE3)
+val Caution = Color(0xFFB65A1F)
+val CautionPale = Color(0xFFF3E2CF)
+val WarnBorder = Color(0xFFE0B98A)
+val WarnText = Color(0xFF7A3C10)
+val Line = Color(0x241B2A20)
+val SubText = Color(0xFF6B7A70)
+val SubText2 = Color(0xFF7A8A7E)
+val NavInactive = Color(0xFF8A978C)
+val ChatSubText = Color(0xFF9DB39A)
+val LiveDot = Color(0xFF8CE29B)
+val Paper94Alpha = Color(0xF0FBFAF4)
+val Paper92Alpha = Color(0xEBFBFAF4)
+val DarkOverlay82 = Color(0xD11B2A20)
+val HeroOverlay28 = Color(0x471B2A20)
