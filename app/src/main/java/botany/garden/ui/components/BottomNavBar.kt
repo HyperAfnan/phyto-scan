@@ -26,17 +26,19 @@ import botany.garden.ui.theme.Oleander
 import botany.garden.ui.theme.Paper94Alpha
 
 @Composable
-fun BottomNavBar(modifier: Modifier = Modifier) {
-    val selectedIndex = 1
-
+fun BottomNavBar(
+    selectedIndex: Int,
+    onTabSelected: (Int) -> Unit,
+    modifier: Modifier = Modifier,
+) {
     NavigationBar(
         modifier = modifier.clip(RoundedCornerShape(24.dp)),
         containerColor = Paper94Alpha,
         contentColor = Color.Transparent,
     ) {
-        NavItem(selectedIndex == 2, {}, Icons.Outlined.QrCodeScanner, "Scan")
-        NavItem(selectedIndex == 1, {}, Icons.Outlined.LocalFlorist, "Garden")
-        NavItem(selectedIndex == 0, {}, Icons.Outlined.Explore, "Explore")
+        NavItem(selectedIndex == 2, { onTabSelected(2) }, Icons.Outlined.QrCodeScanner, "Scan")
+        NavItem(selectedIndex == 1, { onTabSelected(1) }, Icons.Outlined.LocalFlorist, "Garden")
+        NavItem(selectedIndex == 0, { onTabSelected(0) }, Icons.Outlined.Explore, "Explore")
     }
 }
 

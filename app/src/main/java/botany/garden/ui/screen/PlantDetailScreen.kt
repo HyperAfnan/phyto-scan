@@ -23,7 +23,6 @@ import androidx.compose.ui.unit.dp
 import botany.garden.ui.components.AboutText
 import botany.garden.ui.components.BadgeData
 import botany.garden.ui.components.BadgeRow
-import botany.garden.ui.components.BottomNavBar
 import botany.garden.ui.components.CareGrid
 import botany.garden.ui.components.FactsAccordion
 import botany.garden.ui.components.HeroSection
@@ -92,11 +91,5 @@ fun PlantDetailScreen() {
         }
 
         TopBar(Modifier.padding(top = 40.dp))
-
-        BottomNavBar(
-            Modifier
-                .align(androidx.compose.ui.Alignment.BottomCenter)
-                .padding(horizontal = 14.dp, vertical = 14.dp),
-        )
     }
 }

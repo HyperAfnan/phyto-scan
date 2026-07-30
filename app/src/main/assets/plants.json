@@ -1,0 +1,1137 @@
+[
+  {
+    "id": "vitex-negundo",
+    "botanicalName": "Vitex negundo L.",
+    "commonNames": [
+      "Sambhalu",
+      "Nirgundi",
+      "Five-leaved Chaste Tree"
+    ],
+    "family": "Lamiaceae",
+    "morphology": {
+      "height": "2–5 m",
+      "description": [
+        "A large aromatic shrub or small tree",
+        "Stem is woody, branched, and greyish-brown",
+        "Leaves are opposite, compound, usually 5-foliolate with lance-shaped leaflets",
+        "Leaflets are green above and greyish beneath due to fine hairs",
+        "Flowers are small, bluish-purple, arranged in terminal panicles",
+        "Fruits are small, round, blackish drupes containing a single seed"
+      ]
+    },
+    "microscopy": [
+      "Leaf epidermis is covered with a thin cuticle",
+      "Presence of unicellular and glandular trichomes",
+      "Stomata are mainly diacytic",
+      "Mesophyll consists of palisade and spongy parenchyma",
+      "Oil glands and secretory cells are present",
+      "Calcium oxalate crystals and vascular bundles are observed"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis with cuticle and trichomes",
+        "Palisade tissue present below the upper epidermis",
+        "Spongy parenchyma with intercellular spaces",
+        "Midrib contains a collateral vascular bundle",
+        "Xylem towards upper side and phloem towards lower side",
+        "Lower epidermis contains stomata and glandular hairs"
+      ]
+    },
+    "chemicalConstituents": [
+      "Flavonoids (Vitexin, Casticin, Luteolin)",
+      "Iridoid glycosides (Agnuside)",
+      "Essential oils",
+      "Terpenoids",
+      "Alkaloids",
+      "Tannins",
+      "Steroids",
+      "Phenolic compounds"
+    ],
+    "pharmacologicalActivities": [
+      "Anti-inflammatory activity",
+      "Analgesic (pain-relieving) activity",
+      "Antioxidant activity",
+      "Antimicrobial activity",
+      "Anti-arthritic activity",
+      "Insecticidal activity",
+      "Hepatoprotective activity",
+      "Antipyretic activity",
+      "Wound-healing activity"
+    ],
+    "traditionalUses": [
+      "Used for joint pain, arthritis, and inflammation",
+      "Leaves used in traditional remedies for fever and swelling",
+      "Used as an insect repellent",
+      "Applied externally for wounds and skin disorders",
+      "Used in Ayurvedic medicine for respiratory problems"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves",
+        "Roots",
+        "Bark",
+        "Fruits"
+      ],
+      "majorActiveCompounds": [
+        "Flavonoids",
+        "Iridoid glycosides",
+        "Essential oils",
+        "Terpenoids"
+      ],
+      "specialFeature": "Leaves have a strong aromatic smell due to the presence of essential oils."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "murraya-koenigii",
+    "botanicalName": "Murraya koenigii (L.) Spreng.",
+    "commonNames": [
+      "Curry Tree",
+      "Curry Leaf",
+      "Kadi Patta",
+      "Sweet Neem"
+    ],
+    "family": "Rutaceae",
+    "morphology": {
+      "height": "4–6 m",
+      "description": [
+        "Small aromatic evergreen tree",
+        "Bark is greyish-brown and rough",
+        "Leaves are alternate, pinnate, aromatic, and consist of 11–21 pairs of leaflets",
+        "Leaflets are ovate-lanceolate, smooth, dark green, and have a characteristic curry aroma",
+        "Flowers are small, white, fragrant, and arranged in clusters",
+        "Fruits are small, round, shiny black berries containing seeds"
+      ]
+    },
+    "microscopy": [
+      "Leaf shows a single-layered epidermis with a cuticle",
+      "Stomata are mainly anomocytic",
+      "Mesophyll is differentiated into palisade and spongy tissues",
+      "Presence of oil glands containing essential oils",
+      "Calcium oxalate crystals may be present",
+      "Vascular bundles are collateral with lignified xylem vessels"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis covered with cuticle",
+        "Palisade tissue present below upper epidermis",
+        "Spongy parenchyma with intercellular spaces",
+        "Oil glands present in mesophyll region",
+        "Midrib contains a collateral vascular bundle",
+        "Xylem located towards upper side and phloem towards lower side",
+        "Lower epidermis contains stomata"
+      ]
+    },
+    "chemicalConstituents": [
+      "Carbazole alkaloids (Mahanimbine, Girinimbine, Koenimbine)",
+      "Essential oils",
+      "Flavonoids",
+      "Phenolic compounds",
+      "Tannins",
+      "Terpenoids",
+      "Vitamin A and Vitamin C",
+      "Minerals (Calcium, Iron, Phosphorus)"
+    ],
+    "pharmacologicalActivities": [
+      "Antioxidant activity",
+      "Antidiabetic activity",
+      "Antimicrobial activity",
+      "Anti-inflammatory activity",
+      "Hepatoprotective activity",
+      "Anticancer activity (reported in studies)",
+      "Digestive stimulant activity",
+      "Antihyperlipidemic activity (helps regulate cholesterol)"
+    ],
+    "traditionalUses": [
+      "Used as a spice and flavoring agent in food",
+      "Helps improve digestion",
+      "Traditionally used for diabetes management",
+      "Used in hair care preparations to support healthy hair",
+      "Used in herbal remedies for stomach disorders"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves",
+        "Bark",
+        "Roots",
+        "Fruits"
+      ],
+      "majorActiveCompounds": [
+        "Carbazole alkaloids",
+        "Essential oils",
+        "Flavonoids",
+        "Phenolic compounds"
+      ],
+      "specialFeature": "Leaves contain aromatic oils responsible for the characteristic curry fragrance."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "andrographis-paniculata",
+    "botanicalName": "Andrographis paniculata (Burm.f.) Nees",
+    "commonNames": [
+      "Kalmegh",
+      "Green Chiretta",
+      "King of Bitters"
+    ],
+    "family": "Acanthaceae",
+    "morphology": {
+      "height": "30–90 cm",
+      "description": [
+        "Annual herb",
+        "Stem is erect, branched, green, and quadrangular",
+        "Leaves are simple, opposite, lanceolate, smooth, and bitter in taste",
+        "Flowers are small, white with purple markings, arranged in axillary and terminal clusters",
+        "Fruits are narrow, elongated capsules containing numerous small seeds"
+      ]
+    },
+    "microscopy": [
+      "Leaf shows a single-layered epidermis with cuticle",
+      "Stomata are mainly diacytic",
+      "Mesophyll consists of palisade and spongy parenchyma",
+      "Cystoliths are absent",
+      "Presence of calcium oxalate crystals and secretory cells",
+      "Vascular bundles are collateral with lignified xylem vessels"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis covered with cuticle",
+        "Single layer of palisade cells beneath epidermis",
+        "Spongy parenchyma with intercellular spaces",
+        "Midrib contains a collateral vascular bundle",
+        "Xylem lies towards upper side and phloem towards lower side",
+        "Lower epidermis contains stomata and glandular structures"
+      ]
+    },
+    "chemicalConstituents": [
+      "Andrographolide (major active constituent)",
+      "Neoandrographolide",
+      "Deoxyandrographolide",
+      "Flavonoids",
+      "Diterpenoids",
+      "Alkaloids",
+      "Tannins",
+      "Phenolic compounds"
+    ],
+    "pharmacologicalActivities": [
+      "Hepatoprotective (liver-protective)",
+      "Anti-inflammatory",
+      "Antioxidant",
+      "Antimicrobial",
+      "Antiviral",
+      "Antipyretic (fever reducing)",
+      "Immunomodulatory",
+      "Antidiabetic activity",
+      "Digestive stimulant activity"
+    ],
+    "traditionalUses": [
+      "Used in Ayurveda for fever and infections",
+      "Supports liver health and detoxification",
+      "Used for cough, cold, and respiratory disorders",
+      "Helps improve digestion and appetite"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Whole plant (especially leaves and aerial parts)"
+      ],
+      "majorActiveCompounds": [
+        "Andrographolide"
+      ],
+      "specialFeature": "Extremely bitter-tasting medicinal herb known as the King of Bitters."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "kalanchoe-pinnata",
+    "botanicalName": "Kalanchoe pinnata (Lam.) Pers.",
+    "commonNames": [
+      "Patharchatta",
+      "Bryophyllum",
+      "Life Plant",
+      "Miracle Leaf",
+      "Cathedral Bells"
+    ],
+    "family": "Crassulaceae",
+    "morphology": {
+      "height": "30–120 cm",
+      "description": [
+        "Perennial succulent herb",
+        "Stem is erect, hollow, and fleshy",
+        "Leaves are thick, fleshy, simple to compound, opposite, and ovate with scalloped margins",
+        "Leaf margins produce small plantlets (vegetative propagation)",
+        "Flowers are pendulous, tubular, reddish-purple or pink, arranged in terminal clusters",
+        "Fruits are small capsules containing numerous seeds"
+      ]
+    },
+    "microscopy": [
+      "Epidermis is single-layered with a thick cuticle",
+      "Stomata are mainly anomocytic",
+      "Mesophyll contains large water-storage parenchyma cells",
+      "Presence of mucilage cells and calcium oxalate crystals",
+      "Vascular bundles are collateral and embedded in parenchymatous tissue",
+      "Chloroplast-containing cells are present in leaf tissue"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Thick cuticle covering the upper epidermis",
+        "Single layer of upper and lower epidermis",
+        "Mesophyll differentiated into chlorenchyma and water-storage parenchyma",
+        "Large mucilage-filled cells present",
+        "Collateral vascular bundles scattered in the mesophyll",
+        "Lower epidermis contains stomata"
+      ]
+    },
+    "chemicalConstituents": [
+      "Flavonoids",
+      "Phenolic compounds",
+      "Bufadienolides (Bryophyllin A, B)",
+      "Tannins",
+      "Alkaloids",
+      "Saponins",
+      "Steroids",
+      "Organic acids",
+      "Polysaccharides"
+    ],
+    "pharmacologicalActivities": [
+      "Wound-healing activity",
+      "Anti-inflammatory activity",
+      "Antioxidant activity",
+      "Antimicrobial activity",
+      "Antidiabetic activity",
+      "Analgesic activity",
+      "Antiurolithiatic activity (traditionally used for kidney stones)",
+      "Hepatoprotective activity",
+      "Immunomodulatory activity"
+    ],
+    "traditionalUses": [
+      "Leaf juice traditionally used for kidney stone problems",
+      "Applied on wounds, burns, and insect bites",
+      "Used for inflammation and pain relief",
+      "Used in folk medicine for cough and fever"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves",
+        "Whole plant"
+      ],
+      "majorActiveCompounds": [
+        "Bufadienolides",
+        "Flavonoids",
+        "Phenolics",
+        "Tannins"
+      ],
+      "specialFeature": "Leaf margins produce small plantlets that drop and root — a phenomenon called vegetative vivipary."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "bacopa-monnieri",
+    "botanicalName": "Bacopa monnieri (L.) Wettst.",
+    "commonNames": [
+      "Brahmi",
+      "Water Hyssop",
+      "Jalabrahmi"
+    ],
+    "family": "Plantaginaceae",
+    "morphology": {
+      "height": "Prostrate (creeping)",
+      "description": [
+        "Small, creeping, succulent perennial herb",
+        "Stem is soft, branched, and prostrate with roots at nodes",
+        "Leaves are opposite, simple, fleshy, oval-shaped, and sessile",
+        "Flowers are small, solitary, white to pale blue with purple veins",
+        "Fruits are small capsules containing numerous tiny seeds"
+      ]
+    },
+    "microscopy": [
+      "Epidermis is single-layered with a thin cuticle",
+      "Stomata are mainly anomocytic",
+      "Mesophyll consists of chlorenchymatous tissue with large air spaces",
+      "Presence of oil glands and mucilage cells",
+      "Vascular bundles are collateral and surrounded by parenchymatous cells",
+      "Calcium oxalate crystals may be present"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis covered with thin cuticle",
+        "Mesophyll composed of chlorenchyma and spongy parenchyma",
+        "Large intercellular air spaces present",
+        "Midrib contains a collateral vascular bundle",
+        "Xylem towards upper side and phloem towards lower side",
+        "Lower epidermis with stomata"
+      ]
+    },
+    "chemicalConstituents": [
+      "Bacosides (Bacoside A and B)",
+      "Alkaloids (Brahmine, Herpestine)",
+      "Flavonoids",
+      "Saponins",
+      "Triterpenoids",
+      "Sterols",
+      "Polyphenols"
+    ],
+    "pharmacologicalActivities": [
+      "Memory-enhancing (nootropic) activity",
+      "Neuroprotective activity",
+      "Antioxidant activity",
+      "Anti-inflammatory activity",
+      "Antistress and anxiolytic activity",
+      "Antiepileptic activity (reported in studies)",
+      "Antimicrobial activity",
+      "Hepatoprotective activity",
+      "Cardioprotective activity"
+    ],
+    "traditionalUses": [
+      "Used as a brain tonic in Ayurveda",
+      "Helps improve memory, learning, and concentration",
+      "Used for stress management and mental fatigue",
+      "Used in herbal preparations for nervous system support",
+      "Used for skin disorders and inflammation"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Whole plant"
+      ],
+      "majorActiveCompounds": [
+        "Bacosides",
+        "Alkaloids",
+        "Flavonoids",
+        "Saponins"
+      ],
+      "specialFeature": "Named after Lord Brahma; revered in Ayurveda as a premier intellect-enhancing and memory-boosting herb."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "centella-asiatica",
+    "botanicalName": "Centella asiatica (L.) Urb.",
+    "commonNames": [
+      "Indian Pennywort",
+      "Gotu Kola",
+      "Mandukaparni"
+    ],
+    "family": "Apiaceae",
+    "morphology": {
+      "height": "10–15 cm",
+      "description": [
+        "Small, creeping perennial herb",
+        "Stem is slender, green, and prostrate with nodes that produce roots",
+        "Leaves are simple, round to kidney-shaped (peltate), with long petioles and crenate margins",
+        "Flowers are small, pinkish-white, arranged in small umbels",
+        "Fruits are small, flattened, and schizocarpic"
+      ]
+    },
+    "microscopy": [
+      "Leaf shows a single-layered epidermis covered with cuticle",
+      "Anomocytic stomata present on both surfaces",
+      "Mesophyll differentiated into palisade and spongy tissues",
+      "Presence of oil ducts and secretory canals",
+      "Vascular bundles are collateral and surrounded by parenchymatous cells",
+      "Calcium oxalate crystals may be present"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis with cuticle",
+        "Palisade mesophyll below the upper epidermis",
+        "Spongy parenchyma with intercellular spaces",
+        "Midrib contains collateral vascular bundle",
+        "Xylem located towards upper side and phloem towards lower side",
+        "Lower epidermis with stomata"
+      ]
+    },
+    "chemicalConstituents": [
+      "Asiaticoside",
+      "Madecassoside",
+      "Asiatic acid",
+      "Madecassic acid",
+      "Flavonoids",
+      "Triterpenoids",
+      "Alkaloids",
+      "Tannins",
+      "Volatile oils",
+      "Polyphenols"
+    ],
+    "pharmacologicalActivities": [
+      "Neuroprotective activity",
+      "Memory-enhancing activity",
+      "Antioxidant activity",
+      "Anti-inflammatory activity",
+      "Wound-healing activity",
+      "Antimicrobial activity",
+      "Antidiabetic activity",
+      "Anxiolytic (anti-stress) activity",
+      "Skin-protective activity"
+    ],
+    "traditionalUses": [
+      "Used in Ayurvedic medicine as a brain tonic",
+      "Helps improve memory and concentration",
+      "Used for wound healing and skin disorders",
+      "Used in herbal preparations for stress and anxiety",
+      "Used in cosmetic products for skin health"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves",
+        "Whole plant"
+      ],
+      "majorActiveCompounds": [
+        "Asiaticoside",
+        "Madecassoside",
+        "Asiatic acid",
+        "Madecassic acid"
+      ],
+      "specialFeature": "Round peltate leaves channel rainwater to roots — an adaptation for thriving in humid environments."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "chlorophytum-borivilianum",
+    "botanicalName": "Chlorophytum borivilianum Santapau & R.R. Fern.",
+    "commonNames": [
+      "Safed Musli",
+      "White Musli",
+      "Indian Musli"
+    ],
+    "family": "Asparagaceae",
+    "morphology": {
+      "height": "30–60 cm",
+      "description": [
+        "Perennial herb with underground tuberous roots",
+        "Roots are fleshy, cylindrical, white, and spindle-shaped",
+        "Leaves are simple, narrow, lanceolate, and arranged in a rosette",
+        "Flowers are small, white, star-shaped, and arranged on slender stalks",
+        "Fruits are small capsules containing black seeds"
+      ]
+    },
+    "microscopy": [
+      "Root shows a cork layer made of compact cells",
+      "Cortex consists of parenchymatous cells containing starch grains",
+      "Presence of mucilage cells and calcium oxalate crystals",
+      "Vascular bundles are radial with xylem and phloem arranged alternately",
+      "Starch grains are abundant in parenchyma"
+    ],
+    "transverseSection": {
+      "organ": "Root",
+      "description": [
+        "Outer cork layer with protective function",
+        "Cortex composed of thin-walled parenchyma containing starch grains",
+        "Endodermis surrounds the vascular region",
+        "Pericycle present",
+        "Radial vascular bundles with alternating xylem and phloem",
+        "Central pith composed of parenchymatous cells"
+      ]
+    },
+    "chemicalConstituents": [
+      "Saponins (major active constituents)",
+      "Steroidal glycosides",
+      "Alkaloids",
+      "Flavonoids",
+      "Polysaccharides",
+      "Proteins",
+      "Carbohydrates",
+      "Mucilage",
+      "Minerals (Calcium, Potassium, Magnesium)"
+    ],
+    "pharmacologicalActivities": [
+      "Adaptogenic activity",
+      "Aphrodisiac activity",
+      "Immunomodulatory effect",
+      "Antioxidant activity",
+      "Anti-inflammatory activity",
+      "Antidiabetic activity",
+      "Antimicrobial activity",
+      "Neuroprotective activity",
+      "Helps improve strength and stamina"
+    ],
+    "traditionalUses": [
+      "Used as a general tonic and rejuvenating herb",
+      "Traditionally used to improve vitality and energy",
+      "Used in Ayurvedic preparations for weakness and fatigue",
+      "Used for promoting muscle strength and immunity"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Tuberous roots"
+      ],
+      "majorActiveCompounds": [
+        "Saponins",
+        "Steroidal glycosides",
+        "Flavonoids",
+        "Alkaloids"
+      ],
+      "specialFeature": "Roots contain up to 14% saponins — among the highest of any Indian medicinal plant."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "phyllanthus-emblica",
+    "botanicalName": "Phyllanthus emblica L.",
+    "commonNames": [
+      "Amla",
+      "Indian Gooseberry"
+    ],
+    "family": "Euphorbiaceae",
+    "morphology": {
+      "height": "8–18 m",
+      "description": [
+        "Medium-sized deciduous tree",
+        "Bark is light grey to brown, rough, and exfoliating",
+        "Leaves are small, simple, light green, closely arranged on branchlets",
+        "Flowers are small, greenish-yellow, unisexual, and borne in clusters",
+        "Fruits are round, smooth, pale greenish-yellow, fleshy, and six-lobed, containing six seeds"
+      ]
+    },
+    "microscopy": [
+      "Upper epidermis covered with a thick cuticle",
+      "Lower epidermis contains anomocytic stomata",
+      "Mesophyll differentiated into palisade and spongy parenchyma",
+      "Calcium oxalate crystals and stone cells (sclereids) present",
+      "Collateral vascular bundles with lignified xylem vessels"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis with thick cuticle",
+        "Single layer of palisade cells",
+        "Spongy parenchyma with intercellular spaces",
+        "Midrib containing collateral vascular bundle (xylem above, phloem below)",
+        "Lower epidermis with numerous stomata"
+      ]
+    },
+    "chemicalConstituents": [
+      "Vitamin C (Ascorbic acid)",
+      "Emblicanin A & B",
+      "Gallic acid",
+      "Ellagic acid",
+      "Tannins",
+      "Flavonoids",
+      "Pectin",
+      "Polyphenols"
+    ],
+    "pharmacologicalActivities": [
+      "Antioxidant",
+      "Antidiabetic",
+      "Anti-inflammatory",
+      "Antimicrobial",
+      "Hepatoprotective",
+      "Immunomodulatory",
+      "Cardioprotective",
+      "Gastroprotective",
+      "Anticancer (reported in studies)"
+    ],
+    "traditionalUses": [
+      "Boosts immunity",
+      "Improves digestion",
+      "Supports liver and heart health",
+      "Promotes healthy skin and hair",
+      "Widely used in Ayurvedic medicine as a rejuvenating tonic (rasayana)"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Fruits",
+        "Leaves",
+        "Bark",
+        "Seeds"
+      ],
+      "majorActiveCompounds": [
+        "Vitamin C",
+        "Emblicanin A & B",
+        "Gallic acid",
+        "Ellagic acid",
+        "Tannins"
+      ],
+      "specialFeature": "One of the richest natural sources of vitamin C — 20–30 times more than oranges — stabilised by tannins so it survives drying and cooking."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "syzygium-cumini",
+    "botanicalName": "Syzygium cumini (L.) Skeels",
+    "commonNames": [
+      "Jamun",
+      "Java Plum",
+      "Black Plum",
+      "Indian Blackberry"
+    ],
+    "family": "Myrtaceae",
+    "morphology": {
+      "height": "15–30 m",
+      "description": [
+        "Large evergreen tree",
+        "Bark is grey to dark brown, rough, and flaky",
+        "Leaves are opposite, leathery, glossy, oval to lance-shaped, with aromatic oil glands",
+        "Flowers are small, greenish-white, fragrant, and borne in clusters",
+        "Fruits are oval, fleshy berries that turn from green to deep purple or black when ripe, containing a single seed"
+      ]
+    },
+    "microscopy": [
+      "Upper epidermis covered with a thick cuticle",
+      "Lower epidermis bears anomocytic stomata",
+      "Mesophyll differentiated into palisade and spongy parenchyma",
+      "Numerous oil glands and calcium oxalate crystals present",
+      "Collateral vascular bundles with well-developed xylem vessels"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Thick cuticular upper epidermis",
+        "Single layer of palisade cells",
+        "Spongy parenchyma with intercellular spaces",
+        "Collateral vascular bundle with xylem above and phloem below",
+        "Lower epidermis containing numerous stomata and oil glands"
+      ]
+    },
+    "chemicalConstituents": [
+      "Jamboline (Jambosine)",
+      "Ellagic acid",
+      "Gallic acid",
+      "Anthocyanins",
+      "Flavonoids",
+      "Tannins",
+      "Quercetin",
+      "Essential oils",
+      "Vitamin C"
+    ],
+    "pharmacologicalActivities": [
+      "Antidiabetic",
+      "Antioxidant",
+      "Antibacterial",
+      "Anti-inflammatory",
+      "Antifungal",
+      "Antidiarrheal",
+      "Hepatoprotective",
+      "Cardioprotective"
+    ],
+    "traditionalUses": [
+      "Helps manage diabetes",
+      "Improves digestion",
+      "Supports liver health",
+      "Provides antioxidant protection"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Fruits",
+        "Seeds",
+        "Leaves",
+        "Bark"
+      ],
+      "majorActiveCompounds": [
+        "Jamboline",
+        "Anthocyanins",
+        "Ellagic acid",
+        "Quercetin"
+      ],
+      "specialFeature": "Deep purple juice stains the tongue for hours — anthocyanins responsible for this are also potent antioxidants."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "aloe-vera",
+    "botanicalName": "Aloe vera (L.) Burm.f.",
+    "commonNames": [
+      "Indian Aloe Vera",
+      "Ghritkumari",
+      "Aloe"
+    ],
+    "family": "Asphodelaceae",
+    "morphology": {
+      "height": "30–60 cm",
+      "description": [
+        "Perennial succulent herb",
+        "Leaves thick, fleshy, green, lance-shaped with serrated margins and pointed tips",
+        "Stem very short or absent",
+        "Yellow tubular flowers borne on long spikes",
+        "Fruit is a capsule containing many seeds"
+      ]
+    },
+    "microscopy": [
+      "Thick cuticular upper and lower epidermis",
+      "Sunken stomata present",
+      "Mesophyll consists of chlorenchyma and mucilage-containing parenchyma",
+      "Large mucilage cells filled with transparent gel",
+      "Collateral vascular bundles scattered in the leaf"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Thick cuticle covering the epidermis",
+        "Chlorenchymatous layer beneath the epidermis",
+        "Large mucilage-rich parenchyma in the central region",
+        "Scattered collateral vascular bundles (xylem and phloem)",
+        "Central transparent gel (mucilage) enclosed by parenchymatous cells"
+      ]
+    },
+    "chemicalConstituents": [
+      "Aloin (Barbaloin)",
+      "Aloe-emodin",
+      "Acemannan",
+      "Anthraquinones",
+      "Aloesin",
+      "Polysaccharides",
+      "Saponins",
+      "Vitamins (A, C, E, B-complex)",
+      "Amino acids",
+      "Minerals (Calcium, Magnesium, Zinc)"
+    ],
+    "pharmacologicalActivities": [
+      "Wound-healing",
+      "Anti-inflammatory",
+      "Antioxidant",
+      "Antibacterial",
+      "Antifungal",
+      "Antiviral",
+      "Moisturizing and skin-protective",
+      "Immunomodulatory",
+      "Laxative (latex)",
+      "Antidiabetic (reported in studies)"
+    ],
+    "traditionalUses": [
+      "Skin care",
+      "Wound healing and burns",
+      "Cosmetics",
+      "Digestive health",
+      "Herbal medicine"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves (gel and latex)"
+      ],
+      "majorActiveCompounds": [
+        "Aloin",
+        "Acemannan",
+        "Aloe-emodin",
+        "Polysaccharides"
+      ],
+      "specialFeature": "Two medicines in one leaf — the clear inner gel for wound healing and the yellow latex from the rind as a potent natural laxative."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "sapindus-mukorossi",
+    "botanicalName": "Sapindus mukorossi Gaertn.",
+    "commonNames": [
+      "Reetha",
+      "Soapnut",
+      "Soapberry"
+    ],
+    "family": "Sapindaceae",
+    "morphology": {
+      "height": "12–20 m",
+      "description": [
+        "Medium to large deciduous tree",
+        "Bark is grey to dark brown, rough, and vertically fissured",
+        "Leaves are alternate, pinnate, with 5–10 pairs of lance-shaped leaflets",
+        "Flowers are small, greenish-white, arranged in terminal panicles",
+        "Fruits are round, yellowish-brown, fleshy drupes with a hard black seed",
+        "Fruit pericarp is sticky and rich in natural saponins"
+      ]
+    },
+    "microscopy": [
+      "Fruit pericarp consists of an epidermis covered with a cuticle",
+      "Mesocarp contains thin-walled parenchymatous cells",
+      "Numerous saponin-containing cells are present",
+      "Vascular bundles are scattered throughout the mesocarp",
+      "Calcium oxalate crystals and stone cells (sclereids) may be observed"
+    ],
+    "transverseSection": {
+      "organ": "Fruit",
+      "description": [
+        "Outer epidermis with cuticle",
+        "Thick parenchymatous mesocarp containing saponins",
+        "Scattered vascular bundles",
+        "Endocarp is hard and lignified, enclosing a single black seed",
+        "Presence of sclereids and calcium oxalate crystals"
+      ]
+    },
+    "chemicalConstituents": [
+      "Triterpenoid saponins (main active constituents)",
+      "Sapindosides",
+      "Sugars",
+      "Flavonoids",
+      "Tannins",
+      "Fatty acids",
+      "Mucilage",
+      "Fixed oils (in seeds)"
+    ],
+    "pharmacologicalActivities": [
+      "Natural cleansing and detergent action",
+      "Antimicrobial",
+      "Antifungal",
+      "Antioxidant",
+      "Anti-inflammatory",
+      "Insecticidal",
+      "Expectorant",
+      "Hair-conditioning and anti-dandruff properties"
+    ],
+    "traditionalUses": [
+      "Natural shampoo and hair cleanser",
+      "Treatment of dandruff and scalp infections",
+      "Washing delicate fabrics and jewelry",
+      "Used in skin care preparations",
+      "Traditional remedy for eczema and other skin disorders",
+      "Eco-friendly household cleaner"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Fruits (pericarp)",
+        "Seeds"
+      ],
+      "majorActiveCompounds": [
+        "Triterpenoid saponins",
+        "Sapindosides"
+      ],
+      "specialFeature": "Fruit pericarp contains abundant natural saponins that produce a soap-like lather when mixed with water — a zero-waste natural detergent."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "azadirachta-indica",
+    "botanicalName": "Azadirachta indica A. Juss.",
+    "commonNames": [
+      "Neem",
+      "Indian Lilac",
+      "Margosa"
+    ],
+    "family": "Meliaceae",
+    "morphology": {
+      "height": "15–30 m",
+      "description": [
+        "Large evergreen tree",
+        "Bark is grey to dark brown, rough, fissured, bitter in taste",
+        "Leaves are alternate, imparipinnate, compound with 8–19 serrated leaflets",
+        "Flowers are small, white, fragrant, arranged in axillary panicles",
+        "Fruits are smooth, oval drupe; green when unripe and yellow on ripening",
+        "Seeds usually one per fruit, containing neem oil"
+      ]
+    },
+    "microscopy": [
+      "Upper epidermis covered with thick cuticle",
+      "Lower epidermis contains numerous anomocytic stomata",
+      "Mesophyll differentiated into single layer of palisade cells and spongy parenchyma beneath",
+      "Vascular bundle collateral and surrounded by bundle sheath",
+      "Calcium oxalate crystals present",
+      "Oil glands and lignified xylem vessels visible"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis with cuticle",
+        "One layer of elongated palisade cells",
+        "Spongy parenchyma with intercellular spaces",
+        "Midrib containing collateral vascular bundle",
+        "Xylem towards upper side and phloem towards lower side",
+        "Lower epidermis bearing numerous stomata and trichomes",
+        "Presence of calcium oxalate crystals and secretory cells"
+      ]
+    },
+    "chemicalConstituents": [
+      "Azadirachtin (major limonoid)",
+      "Nimbin",
+      "Nimbidin",
+      "Nimbolide",
+      "Salannin",
+      "Gedunin",
+      "Quercetin",
+      "Tannins",
+      "Flavonoids",
+      "Steroids",
+      "Fixed oil (rich in oleic, stearic, palmitic, and linoleic acids)"
+    ],
+    "pharmacologicalActivities": [
+      "Antibacterial",
+      "Antifungal",
+      "Antiviral",
+      "Antimalarial",
+      "Anti-inflammatory",
+      "Antioxidant",
+      "Antidiabetic",
+      "Immunomodulatory",
+      "Hepatoprotective",
+      "Insecticidal and mosquito repellent",
+      "Wound healing",
+      "Antipyretic",
+      "Anthelmintic"
+    ],
+    "traditionalUses": [
+      "Treatment of skin diseases",
+      "Dental hygiene (chewing sticks, toothpaste)",
+      "Wound dressing",
+      "Insect and mosquito control",
+      "Management of diabetes (traditional use)",
+      "Hair care preparations",
+      "Agricultural biopesticides"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves",
+        "Bark",
+        "Seeds",
+        "Oil",
+        "Twigs"
+      ],
+      "majorActiveCompounds": [
+        "Azadirachtin",
+        "Nimbin",
+        "Nimbidin",
+        "Nimbolide"
+      ],
+      "specialFeature": "Called the Village Pharmacy — every part of the tree serves a medicinal or practical purpose, and it has been used in Ayurveda for over 4,000 years."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  },
+  {
+    "id": "jacaranda-mimosifolia",
+    "botanicalName": "Jacaranda mimosifolia D. Don",
+    "commonNames": [
+      "Neel Gulmohar",
+      "Blue Jacaranda",
+      "Fern Tree"
+    ],
+    "family": "Bignoniaceae",
+    "morphology": {
+      "height": "10–15 m",
+      "description": [
+        "Medium-sized deciduous to semi-evergreen tree",
+        "Bark is thin, grey to grey-brown, rough and slightly fissured",
+        "Leaves are opposite, bipinnate, fern-like, light to dark green, with numerous small leaflets",
+        "Flowers are large, trumpet-shaped, fragrant, violet-blue to lavender, arranged in terminal panicles",
+        "Fruits are flat, woody, dark brown capsules containing numerous winged seeds",
+        "Seeds are thin, light brown, and dispersed by wind"
+      ]
+    },
+    "microscopy": [
+      "Upper epidermis consists of a single layer of compact cells covered with a cuticle",
+      "Lower epidermis bears numerous anomocytic stomata",
+      "Mesophyll is differentiated into palisade and spongy parenchyma",
+      "Midrib contains a collateral vascular bundle with xylem and phloem",
+      "Xylem vessels are lignified and well developed",
+      "Calcium oxalate crystals and parenchymatous cells may be present"
+    ],
+    "transverseSection": {
+      "organ": "Leaf",
+      "description": [
+        "Upper epidermis with thick cuticle",
+        "Single layer of palisade cells beneath the upper epidermis",
+        "Spongy parenchyma with intercellular spaces",
+        "Midrib containing a collateral vascular bundle",
+        "Xylem towards the upper side and phloem towards the lower side",
+        "Lower epidermis with numerous stomata and a thin cuticle"
+      ]
+    },
+    "chemicalConstituents": [
+      "Flavonoids (Quercetin, Kaempferol)",
+      "Phenolic compounds",
+      "Tannins",
+      "Terpenoids",
+      "Saponins",
+      "Alkaloids",
+      "Glycosides",
+      "Essential oils",
+      "Sterols"
+    ],
+    "pharmacologicalActivities": [
+      "Antioxidant",
+      "Anti-inflammatory",
+      "Antibacterial",
+      "Antifungal",
+      "Antimicrobial",
+      "Wound-healing",
+      "Analgesic (pain-relieving)",
+      "Antipyretic (fever-reducing)",
+      "Hepatoprotective (reported in experimental studies)"
+    ],
+    "traditionalUses": [
+      "Ornamental avenue and garden tree",
+      "Leaves and bark used in traditional medicine for treating wounds and skin infections",
+      "Flower extracts have antioxidant properties",
+      "Used in folk medicine for reducing inflammation and fever",
+      "Provides shade and improves landscape aesthetics"
+    ],
+    "quickFacts": {
+      "medicinalParts": [
+        "Leaves",
+        "Bark",
+        "Flowers"
+      ],
+      "majorActiveCompounds": [
+        "Flavonoids",
+        "Phenolic compounds",
+        "Tannins",
+        "Terpenoids"
+      ],
+      "specialFeature": "Primarily an ornamental tree — when in bloom, the entire canopy turns violet-blue before new leaves appear, creating the illusion of a purple cloud."
+    },
+    "images": {
+      "hero": "",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    }
+  }
+]
