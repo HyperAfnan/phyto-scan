@@ -31,7 +31,7 @@ import botany.garden.ui.theme.Paper
 import botany.garden.ui.theme.SubText
 
 @Composable
-fun ExploreScreen() {
+fun ExploreScreen(onPlantSelected: (Plant) -> Unit) {
     val context = LocalContext.current
     val repository = remember { PlantRepository(context) }
 
@@ -85,7 +85,7 @@ fun ExploreScreen() {
                     ),
                 ) {
                     items(filteredPlants, key = { it.id }) { plant ->
-                        PlantCard(plant = plant)
+                        PlantCard(plant = plant, onClick = { onPlantSelected(plant) })
                     }
                 }
             }

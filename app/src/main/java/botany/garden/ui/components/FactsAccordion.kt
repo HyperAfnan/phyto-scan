@@ -34,6 +34,7 @@ import botany.garden.ui.theme.CardBg
 import botany.garden.ui.theme.Ink
 import botany.garden.ui.theme.Line
 import botany.garden.ui.theme.Moss
+import botany.garden.data.model.PlantFact
 
 @Composable
 fun FactItem(
@@ -94,21 +95,14 @@ fun FactItem(
 }
 
 @Composable
-fun FactsAccordion(modifier: Modifier = Modifier) {
+fun FactsAccordion(facts: List<PlantFact>, modifier: Modifier = Modifier) {
     var expandedIndex by remember { mutableStateOf(-1) }
 
-    val facts = listOf(
-        "A few leaves is all it takes" to "Its toxins are so concentrated that a handful of leaves is considered enough to seriously harm a child or a small animal.",
-        "A Roman garden favourite" to "Oleander appears in wall paintings from Pompeii, suggesting it was already a prized ornamental nearly two thousand years ago.",
-        "Thrives where little else will" to "Its drought tolerance and disregard from grazing animals make it a favourite for highway medians and neglected public plantings worldwide.",
-        "Even the smoke carries risk" to "Burning any part of the plant can release irritant compounds, which is why gardeners are advised never to add clippings to a bonfire.",
-    )
-
     Column(modifier = modifier.padding(horizontal = 20.dp)) {
-        facts.forEachIndexed { index, (question, answer) ->
+        facts.forEachIndexed { index, fact ->
             FactItem(
-                question = question,
-                answer = answer,
+                question = fact.question,
+                answer = fact.answer,
                 expanded = expandedIndex == index,
                 onToggle = {
                     expandedIndex = if (expandedIndex == index) -1 else index

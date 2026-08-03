@@ -36,7 +36,7 @@ import botany.garden.ui.theme.WarnText
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-fun WarningCard(modifier: Modifier = Modifier) {
+fun WarningCard(headline: String, chips: List<String>, modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
             .clip(RoundedCornerShape(16.dp))
@@ -60,7 +60,7 @@ fun WarningCard(modifier: Modifier = Modifier) {
             )
             Spacer(Modifier.width(9.dp))
             Text(
-                text = "Every part of this plant is toxic",
+                text = headline,
                 fontFamily = FontFamily.SansSerif,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 15.5.sp,
@@ -71,13 +71,18 @@ fun WarningCard(modifier: Modifier = Modifier) {
         FlowRow(
             modifier = Modifier.padding(start = 6.dp),
         ) {
-            WarningChip(icon = Icons.Outlined.Lock, label = "Toxic to humans")
-            Spacer(Modifier.width(8.dp))
-            WarningChip(icon = Icons.Outlined.Pets, label = "Toxic to pets")
-            Spacer(Modifier.width(8.dp))
-            WarningChip(icon = Icons.Outlined.WaterDrop, label = "Allergenic sap")
-            Spacer(Modifier.width(8.dp))
-            WarningChip(icon = Icons.Outlined.Close, label = "Do not consume")
+            chips.forEachIndexed { index, chip ->
+                WarningChip(
+                    icon = when (index) {
+                        0 -> Icons.Outlined.Lock
+                        1 -> Icons.Outlined.Pets
+                        2 -> Icons.Outlined.WaterDrop
+                        else -> Icons.Outlined.Close
+                    },
+                    label = chip,
+                )
+                if (index < chips.lastIndex) Spacer(Modifier.width(8.dp))
+            }
         }
     }
 }

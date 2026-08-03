@@ -2,1136 +2,484 @@
   {
     "id": "vitex-negundo",
     "botanicalName": "Vitex negundo L.",
-    "commonNames": [
-      "Sambhalu",
-      "Nirgundi",
-      "Five-leaved Chaste Tree"
-    ],
+    "commonNames": ["Sambhalu", "Nirgundi", "Five-leaved Chaste Tree"],
     "family": "Lamiaceae",
-    "morphology": {
-      "height": "2–5 m",
-      "description": [
-        "A large aromatic shrub or small tree",
-        "Stem is woody, branched, and greyish-brown",
-        "Leaves are opposite, compound, usually 5-foliolate with lance-shaped leaflets",
-        "Leaflets are green above and greyish beneath due to fine hairs",
-        "Flowers are small, bluish-purple, arranged in terminal panicles",
-        "Fruits are small, round, blackish drupes containing a single seed"
-      ]
+    "pronunciation": "VY-teks neh-GOON-doh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "South & Southeast Asia",
+      "flowering": "Mar – Sept",
+      "lifespan": "30+ years",
+      "plantType": "Shrub / Small Tree",
+      "matureHeight": "2 – 5 m",
+      "growthRate": "Fast"
     },
-    "microscopy": [
-      "Leaf epidermis is covered with a thin cuticle",
-      "Presence of unicellular and glandular trichomes",
-      "Stomata are mainly diacytic",
-      "Mesophyll consists of palisade and spongy parenchyma",
-      "Oil glands and secretory cells are present",
-      "Calcium oxalate crystals and vascular bundles are observed"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis with cuticle and trichomes",
-        "Palisade tissue present below the upper epidermis",
-        "Spongy parenchyma with intercellular spaces",
-        "Midrib contains a collateral vascular bundle",
-        "Xylem towards upper side and phloem towards lower side",
-        "Lower epidermis contains stomata and glandular hairs"
-      ]
+    "warnings": null,
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun to partial shade", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Low – moderate", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, sandy / loamy" },
+      "temperature": { "label": "Temperature", "value": "10° – 40°C" },
+      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Flavonoids (Vitexin, Casticin, Luteolin)",
-      "Iridoid glycosides (Agnuside)",
-      "Essential oils",
-      "Terpenoids",
-      "Alkaloids",
-      "Tannins",
-      "Steroids",
-      "Phenolic compounds"
+    "about": "A large aromatic shrub or small tree widely found across South and Southeast Asia. It has woody, branched stems with greyish-brown bark. The leaves are opposite and compound, typically with five lance-shaped leaflets — green above and greyish beneath from fine hairs. Small bluish-purple flowers appear in terminal panicles, followed by small round blackish drupes. Every part of the plant carries a distinctive herbal fragrance from its essential oils.",
+    "uses": [
+      { "label": "Anti-inflammatory", "description": "Leaves and bark are used in traditional remedies to reduce joint pain, arthritis, and swelling." },
+      { "label": "Insect repellent", "description": "Dried leaves are placed in stored grain and cupboards to keep insects away." },
+      { "label": "Wound healing", "description": "Leaf paste is applied externally on wounds, boils, and skin disorders." },
+      { "label": "Respiratory support", "description": "Used in Ayurvedic medicine for coughs, colds, and respiratory congestion." },
+      { "label": "Fever management", "description": "Decoctions of the leaves are traditionally employed as an antipyretic." }
     ],
-    "pharmacologicalActivities": [
-      "Anti-inflammatory activity",
-      "Analgesic (pain-relieving) activity",
-      "Antioxidant activity",
-      "Antimicrobial activity",
-      "Anti-arthritic activity",
-      "Insecticidal activity",
-      "Hepatoprotective activity",
-      "Antipyretic activity",
-      "Wound-healing activity"
-    ],
-    "traditionalUses": [
-      "Used for joint pain, arthritis, and inflammation",
-      "Leaves used in traditional remedies for fever and swelling",
-      "Used as an insect repellent",
-      "Applied externally for wounds and skin disorders",
-      "Used in Ayurvedic medicine for respiratory problems"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves",
-        "Roots",
-        "Bark",
-        "Fruits"
-      ],
-      "majorActiveCompounds": [
-        "Flavonoids",
-        "Iridoid glycosides",
-        "Essential oils",
-        "Terpenoids"
-      ],
-      "specialFeature": "Leaves have a strong aromatic smell due to the presence of essential oils."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "Why is it called five-leaved?", "answer": "The species name 'negundo' refers to its typically five-foliolate leaf arrangement, though some varieties may have three leaflets." },
+      { "question": "A natural pharmacy", "answer": "Nirgundi is one of the most versatile plants in Ayurveda — it appears in formulations for over 50 different conditions." },
+      { "question": "Leaves that smell", "answer": "The strong aromatic smell of crushed leaves comes from volatile essential oils rich in terpenoids, which also give it insect-repelling properties." }
+    ]
   },
   {
     "id": "murraya-koenigii",
     "botanicalName": "Murraya koenigii (L.) Spreng.",
-    "commonNames": [
-      "Curry Tree",
-      "Curry Leaf",
-      "Kadi Patta",
-      "Sweet Neem"
-    ],
+    "commonNames": ["Curry Tree", "Curry Leaf", "Kadi Patta", "Sweet Neem"],
     "family": "Rutaceae",
-    "morphology": {
-      "height": "4–6 m",
-      "description": [
-        "Small aromatic evergreen tree",
-        "Bark is greyish-brown and rough",
-        "Leaves are alternate, pinnate, aromatic, and consist of 11–21 pairs of leaflets",
-        "Leaflets are ovate-lanceolate, smooth, dark green, and have a characteristic curry aroma",
-        "Flowers are small, white, fragrant, and arranged in clusters",
-        "Fruits are small, round, shiny black berries containing seeds"
-      ]
+    "pronunciation": "muh-RAY-uh koh-NIG-ee-eye",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Indian Subcontinent",
+      "flowering": "Feb – May",
+      "lifespan": "25+ years",
+      "plantType": "Evergreen Tree",
+      "matureHeight": "4 – 6 m",
+      "growthRate": "Moderate"
     },
-    "microscopy": [
-      "Leaf shows a single-layered epidermis with a cuticle",
-      "Stomata are mainly anomocytic",
-      "Mesophyll is differentiated into palisade and spongy tissues",
-      "Presence of oil glands containing essential oils",
-      "Calcium oxalate crystals may be present",
-      "Vascular bundles are collateral with lignified xylem vessels"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis covered with cuticle",
-        "Palisade tissue present below upper epidermis",
-        "Spongy parenchyma with intercellular spaces",
-        "Oil glands present in mesophyll region",
-        "Midrib contains a collateral vascular bundle",
-        "Xylem located towards upper side and phloem towards lower side",
-        "Lower epidermis contains stomata"
-      ]
+    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Safe for consumption", "Consult physician if pregnant"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, fertile loam" },
+      "temperature": { "label": "Temperature", "value": "15° – 38°C" },
+      "humidity": { "label": "Humidity preference", "value": "Moderate to high", "meterFilled": 3, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Carbazole alkaloids (Mahanimbine, Girinimbine, Koenimbine)",
-      "Essential oils",
-      "Flavonoids",
-      "Phenolic compounds",
-      "Tannins",
-      "Terpenoids",
-      "Vitamin A and Vitamin C",
-      "Minerals (Calcium, Iron, Phosphorus)"
+    "about": "A small aromatic evergreen tree native to the Indian subcontinent, the curry tree is best known for its highly fragrant pinnate leaves, each bearing 11 to 21 pairs of ovate-lanceolate leaflets. The bark is greyish-brown and rough. Small, white, fragrant flowers appear in clusters, maturing into shiny black berries. The leaves release their characteristic curry aroma when crushed, making them one of the most beloved culinary herbs in South Asian cooking.",
+    "uses": [
+      { "label": "Culinary spice", "description": "Fresh or dried leaves are tempered in hot oil to release flavour — a cornerstone of South Indian, Sri Lankan, and Southeast Asian cuisines." },
+      { "label": "Digestive health", "description": "Traditionally chewed raw or brewed as tea to improve digestion and relieve stomach disorders." },
+      { "label": "Diabetes management", "description": "Used in traditional herbal preparations to help regulate blood sugar levels." },
+      { "label": "Hair care", "description": "Leaf extracts are a popular ingredient in hair oils and tonics to support healthy hair growth." },
+      { "label": "Antimicrobial", "description": "The carbazole alkaloids in the leaves show strong antimicrobial activity in laboratory studies." }
     ],
-    "pharmacologicalActivities": [
-      "Antioxidant activity",
-      "Antidiabetic activity",
-      "Antimicrobial activity",
-      "Anti-inflammatory activity",
-      "Hepatoprotective activity",
-      "Anticancer activity (reported in studies)",
-      "Digestive stimulant activity",
-      "Antihyperlipidemic activity (helps regulate cholesterol)"
-    ],
-    "traditionalUses": [
-      "Used as a spice and flavoring agent in food",
-      "Helps improve digestion",
-      "Traditionally used for diabetes management",
-      "Used in hair care preparations to support healthy hair",
-      "Used in herbal remedies for stomach disorders"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves",
-        "Bark",
-        "Roots",
-        "Fruits"
-      ],
-      "majorActiveCompounds": [
-        "Carbazole alkaloids",
-        "Essential oils",
-        "Flavonoids",
-        "Phenolic compounds"
-      ],
-      "specialFeature": "Leaves contain aromatic oils responsible for the characteristic curry fragrance."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "Not the same as curry powder", "answer": "Despite the name, curry leaves are not an ingredient in curry powder — that spice blend is a British invention. Fresh curry leaves are used for tempering, a completely different technique." },
+      { "question": "A nutritional powerhouse", "answer": "Curry leaves are rich in vitamin A, vitamin C, calcium, iron, and phosphorus — far more than most culinary herbs." },
+      { "question": "Named after a botanist", "answer": "The genus Murraya honours Johan Andreas Murray, an 18th-century Swedish botanist and student of Linnaeus." }
+    ]
   },
   {
     "id": "andrographis-paniculata",
     "botanicalName": "Andrographis paniculata (Burm.f.) Nees",
-    "commonNames": [
-      "Kalmegh",
-      "Green Chiretta",
-      "King of Bitters"
-    ],
+    "commonNames": ["Kalmegh", "Green Chiretta", "King of Bitters"],
     "family": "Acanthaceae",
-    "morphology": {
-      "height": "30–90 cm",
-      "description": [
-        "Annual herb",
-        "Stem is erect, branched, green, and quadrangular",
-        "Leaves are simple, opposite, lanceolate, smooth, and bitter in taste",
-        "Flowers are small, white with purple markings, arranged in axillary and terminal clusters",
-        "Fruits are narrow, elongated capsules containing numerous small seeds"
-      ]
+    "pronunciation": "an-droh-GRAF-iss puh-NIK-yoo-lah-tuh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "India & Sri Lanka",
+      "flowering": "Sept – Dec",
+      "lifespan": "Annual",
+      "plantType": "Herb",
+      "matureHeight": "30 – 90 cm",
+      "growthRate": "Fast"
     },
-    "microscopy": [
-      "Leaf shows a single-layered epidermis with cuticle",
-      "Stomata are mainly diacytic",
-      "Mesophyll consists of palisade and spongy parenchyma",
-      "Cystoliths are absent",
-      "Presence of calcium oxalate crystals and secretory cells",
-      "Vascular bundles are collateral with lignified xylem vessels"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis covered with cuticle",
-        "Single layer of palisade cells beneath epidermis",
-        "Spongy parenchyma with intercellular spaces",
-        "Midrib contains a collateral vascular bundle",
-        "Xylem lies towards upper side and phloem towards lower side",
-        "Lower epidermis contains stomata and glandular structures"
-      ]
+    "warnings": { "headline": "Extremely bitter — not for casual use", "chips": ["Consult physician", "Avoid during pregnancy"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun to partial shade", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, loamy / sandy" },
+      "temperature": { "label": "Temperature", "value": "20° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "Moderate", "meterFilled": 2, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Andrographolide (major active constituent)",
-      "Neoandrographolide",
-      "Deoxyandrographolide",
-      "Flavonoids",
-      "Diterpenoids",
-      "Alkaloids",
-      "Tannins",
-      "Phenolic compounds"
+    "about": "An annual herb with erect, branched, quadrangular stems reaching up to 90 cm. Its simple, opposite, lanceolate leaves are intensely bitter — hence the name King of Bitters. Small white flowers with purple markings bloom in axillary and terminal clusters, producing narrow elongated capsules filled with numerous tiny seeds. Kalmegh is one of the most important medicinal plants in Ayurveda and Traditional Chinese Medicine, valued primarily for its hepatoprotective and immunomodulatory properties.",
+    "uses": [
+      { "label": "Liver protection", "description": "The primary Ayurvedic use — andrographolide has well-documented hepatoprotective effects and is a key ingredient in liver tonics." },
+      { "label": "Fever & infections", "description": "Traditionally used for viral and bacterial infections, colds, coughs, and respiratory tract disorders." },
+      { "label": "Immunity booster", "description": "Its immunomodulatory properties make it a popular remedy during seasonal illness." },
+      { "label": "Digestive aid", "description": "Stimulates appetite and improves digestion despite (or because of) its intense bitterness." }
     ],
-    "pharmacologicalActivities": [
-      "Hepatoprotective (liver-protective)",
-      "Anti-inflammatory",
-      "Antioxidant",
-      "Antimicrobial",
-      "Antiviral",
-      "Antipyretic (fever reducing)",
-      "Immunomodulatory",
-      "Antidiabetic activity",
-      "Digestive stimulant activity"
-    ],
-    "traditionalUses": [
-      "Used in Ayurveda for fever and infections",
-      "Supports liver health and detoxification",
-      "Used for cough, cold, and respiratory disorders",
-      "Helps improve digestion and appetite"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Whole plant (especially leaves and aerial parts)"
-      ],
-      "majorActiveCompounds": [
-        "Andrographolide"
-      ],
-      "specialFeature": "Extremely bitter-tasting medicinal herb known as the King of Bitters."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "How bitter is it really?", "answer": "It's called the King of Bitters for good reason — andrographolide is one of the most bitter naturally occurring compounds known, and the whole plant tastes extraordinarily sharp." },
+      { "question": "A pandemic-era star", "answer": "Kalmegh saw a huge surge in global interest during the COVID-19 pandemic as researchers investigated its antiviral and immunomodulatory properties." },
+      { "question": "Used in two great traditions", "answer": "It's one of the few plants extensively used in both Ayurveda and Traditional Chinese Medicine, known as Chuan Xin Lian in TCM." }
+    ]
   },
   {
     "id": "kalanchoe-pinnata",
     "botanicalName": "Kalanchoe pinnata (Lam.) Pers.",
-    "commonNames": [
-      "Patharchatta",
-      "Bryophyllum",
-      "Life Plant",
-      "Miracle Leaf",
-      "Cathedral Bells"
-    ],
+    "commonNames": ["Patharchatta", "Bryophyllum", "Life Plant", "Miracle Leaf", "Cathedral Bells"],
     "family": "Crassulaceae",
-    "morphology": {
-      "height": "30–120 cm",
-      "description": [
-        "Perennial succulent herb",
-        "Stem is erect, hollow, and fleshy",
-        "Leaves are thick, fleshy, simple to compound, opposite, and ovate with scalloped margins",
-        "Leaf margins produce small plantlets (vegetative propagation)",
-        "Flowers are pendulous, tubular, reddish-purple or pink, arranged in terminal clusters",
-        "Fruits are small capsules containing numerous seeds"
-      ]
+    "pronunciation": "kal-AN-ko-ee pin-NAY-tuh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Madagascar (now pantropical)",
+      "flowering": "Dec – Mar",
+      "lifespan": "Perennial",
+      "plantType": "Succulent Herb",
+      "matureHeight": "30 – 120 cm",
+      "growthRate": "Fast"
     },
-    "microscopy": [
-      "Epidermis is single-layered with a thick cuticle",
-      "Stomata are mainly anomocytic",
-      "Mesophyll contains large water-storage parenchyma cells",
-      "Presence of mucilage cells and calcium oxalate crystals",
-      "Vascular bundles are collateral and embedded in parenchymatous tissue",
-      "Chloroplast-containing cells are present in leaf tissue"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Thick cuticle covering the upper epidermis",
-        "Single layer of upper and lower epidermis",
-        "Mesophyll differentiated into chlorenchyma and water-storage parenchyma",
-        "Large mucilage-filled cells present",
-        "Collateral vascular bundles scattered in the mesophyll",
-        "Lower epidermis contains stomata"
-      ]
+    "warnings": { "headline": "Generally safe externally; internal use requires caution", "chips": ["Consult physician"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Bright indirect light to partial sun", "meterFilled": 2 },
+      "water": { "label": "Water", "value": "Low — let soil dry between watering", "meterFilled": 1 },
+      "soil": { "label": "Soil", "value": "Well-drained, sandy / cactus mix" },
+      "temperature": { "label": "Temperature", "value": "15° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Flavonoids",
-      "Phenolic compounds",
-      "Bufadienolides (Bryophyllin A, B)",
-      "Tannins",
-      "Alkaloids",
-      "Saponins",
-      "Steroids",
-      "Organic acids",
-      "Polysaccharides"
+    "about": "A perennial succulent herb known for its extraordinary ability to propagate vegetatively — tiny plantlets grow along the scalloped leaf margins, drop off, and root wherever they land, earning it the name Life Plant or Miracle Leaf. Its thick, fleshy leaves are ovate and opposite. Pendulous, tubular reddish-purple flowers hang in terminal clusters like cathedral bells. Native to Madagascar, it has naturalised throughout the tropics and is widely used in folk medicine, particularly for kidney stones and wound healing.",
+    "uses": [
+      { "label": "Kidney stone support", "description": "Leaf juice is a well-known folk remedy for kidney stones — the name Patharchatta literally means 'stone-breaker' in Hindi." },
+      { "label": "Wound healing", "description": "Crushed leaves are applied topically on wounds, burns, cuts, and insect bites to speed healing." },
+      { "label": "Anti-inflammatory", "description": "Used externally and internally in traditional medicine to reduce swelling and inflammation." },
+      { "label": "Cough & fever", "description": "Leaf extracts are used in folk preparations for respiratory ailments and fever reduction." }
     ],
-    "pharmacologicalActivities": [
-      "Wound-healing activity",
-      "Anti-inflammatory activity",
-      "Antioxidant activity",
-      "Antimicrobial activity",
-      "Antidiabetic activity",
-      "Analgesic activity",
-      "Antiurolithiatic activity (traditionally used for kidney stones)",
-      "Hepatoprotective activity",
-      "Immunomodulatory activity"
-    ],
-    "traditionalUses": [
-      "Leaf juice traditionally used for kidney stone problems",
-      "Applied on wounds, burns, and insect bites",
-      "Used for inflammation and pain relief",
-      "Used in folk medicine for cough and fever"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves",
-        "Whole plant"
-      ],
-      "majorActiveCompounds": [
-        "Bufadienolides",
-        "Flavonoids",
-        "Phenolics",
-        "Tannins"
-      ],
-      "specialFeature": "Leaf margins produce small plantlets that drop and root — a phenomenon called vegetative vivipary."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "How does it make babies on its leaves?", "answer": "This phenomenon is called vegetative vivipary — meristematic tissue along the leaf margin develops into complete miniature plantlets complete with roots, which detach and grow independently." },
+      { "question": "A survivor's strategy", "answer": "Its succulent leaves store water, allowing it to survive long dry spells — and the plantlets ensure it colonises new ground without needing seeds." },
+      { "question": "Also called Goethe Plant", "answer": "The German poet Goethe was fascinated by this plant's reproductive strategy and wrote about it in his scientific essays." }
+    ]
   },
   {
     "id": "bacopa-monnieri",
     "botanicalName": "Bacopa monnieri (L.) Wettst.",
-    "commonNames": [
-      "Brahmi",
-      "Water Hyssop",
-      "Jalabrahmi"
-    ],
+    "commonNames": ["Brahmi", "Water Hyssop", "Jalabrahmi"],
     "family": "Plantaginaceae",
-    "morphology": {
-      "height": "Prostrate (creeping)",
-      "description": [
-        "Small, creeping, succulent perennial herb",
-        "Stem is soft, branched, and prostrate with roots at nodes",
-        "Leaves are opposite, simple, fleshy, oval-shaped, and sessile",
-        "Flowers are small, solitary, white to pale blue with purple veins",
-        "Fruits are small capsules containing numerous tiny seeds"
-      ]
+    "pronunciation": "buh-KOH-puh mon-ee-AIR-eye",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Indian Subcontinent & Southeast Asia",
+      "flowering": "Year-round in warm climates",
+      "lifespan": "Perennial",
+      "plantType": "Creeping Aquatic Herb",
+      "matureHeight": "Prostrate (creeping)",
+      "growthRate": "Moderate to fast"
     },
-    "microscopy": [
-      "Epidermis is single-layered with a thin cuticle",
-      "Stomata are mainly anomocytic",
-      "Mesophyll consists of chlorenchymatous tissue with large air spaces",
-      "Presence of oil glands and mucilage cells",
-      "Vascular bundles are collateral and surrounded by parenchymatous cells",
-      "Calcium oxalate crystals may be present"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis covered with thin cuticle",
-        "Mesophyll composed of chlorenchyma and spongy parenchyma",
-        "Large intercellular air spaces present",
-        "Midrib contains a collateral vascular bundle",
-        "Xylem towards upper side and phloem towards lower side",
-        "Lower epidermis with stomata"
-      ]
+    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Consult physician", "May cause mild stomach upset"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun to partial shade", "meterFilled": 2 },
+      "water": { "label": "Water", "value": "High — thrives in wet / boggy soil", "meterFilled": 4 },
+      "soil": { "label": "Soil", "value": "Moist, rich, loamy / aquatic" },
+      "temperature": { "label": "Temperature", "value": "15° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "High humidity preferred", "meterFilled": 4, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Bacosides (Bacoside A and B)",
-      "Alkaloids (Brahmine, Herpestine)",
-      "Flavonoids",
-      "Saponins",
-      "Triterpenoids",
-      "Sterols",
-      "Polyphenols"
+    "about": "A small creeping perennial herb with soft, branched, prostrate stems that root at the nodes. Its opposite leaves are simple, fleshy, oval-shaped, and sessile. Small white to pale-blue flowers with purple veins appear solitarily, maturing into tiny capsules. Brahmi thrives in wet, marshy habitats across the Indian subcontinent and Southeast Asia. Revered in Ayurveda for over 3,000 years, it is the premier intellect-enhancing herb, named after Lord Brahma, the creator in Hindu mythology, symbolising its power to enhance consciousness.",
+    "uses": [
+      { "label": "Memory & cognition", "description": "The best-known Ayurvedic nootropic — used to enhance memory, learning, concentration, and mental clarity." },
+      { "label": "Stress & anxiety", "description": "Its adaptogenic and anxiolytic properties make it a cornerstone of stress-management herbal formulations." },
+      { "label": "Nervous system support", "description": "Used for neurological conditions including epilepsy support, with bacosides showing neuroprotective effects in studies." },
+      { "label": "Skin disorders", "description": "Paste of the fresh plant is applied to inflammatory skin conditions and wounds." }
     ],
-    "pharmacologicalActivities": [
-      "Memory-enhancing (nootropic) activity",
-      "Neuroprotective activity",
-      "Antioxidant activity",
-      "Anti-inflammatory activity",
-      "Antistress and anxiolytic activity",
-      "Antiepileptic activity (reported in studies)",
-      "Antimicrobial activity",
-      "Hepatoprotective activity",
-      "Cardioprotective activity"
-    ],
-    "traditionalUses": [
-      "Used as a brain tonic in Ayurveda",
-      "Helps improve memory, learning, and concentration",
-      "Used for stress management and mental fatigue",
-      "Used in herbal preparations for nervous system support",
-      "Used for skin disorders and inflammation"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Whole plant"
-      ],
-      "majorActiveCompounds": [
-        "Bacosides",
-        "Alkaloids",
-        "Flavonoids",
-        "Saponins"
-      ],
-      "specialFeature": "Named after Lord Brahma; revered in Ayurveda as a premier intellect-enhancing and memory-boosting herb."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "Named after a god", "answer": "The name Brahmi comes from Brahma, the Hindu god of creation — the plant is believed to enhance sattvic (pure, creative) qualities of the mind." },
+      { "question": "Fish love it too", "answer": "Brahmi is a popular aquarium and pond plant — it oxygenates water and provides shelter for small fish and amphibians." },
+      { "question": "3,000 years of use", "answer": "References to Brahmi appear in the Charaka Samhita, one of the foundational texts of Ayurveda written around 1000 BCE." }
+    ]
   },
   {
     "id": "centella-asiatica",
     "botanicalName": "Centella asiatica (L.) Urb.",
-    "commonNames": [
-      "Indian Pennywort",
-      "Gotu Kola",
-      "Mandukaparni"
-    ],
+    "commonNames": ["Indian Pennywort", "Gotu Kola", "Mandukaparni"],
     "family": "Apiaceae",
-    "morphology": {
-      "height": "10–15 cm",
-      "description": [
-        "Small, creeping perennial herb",
-        "Stem is slender, green, and prostrate with nodes that produce roots",
-        "Leaves are simple, round to kidney-shaped (peltate), with long petioles and crenate margins",
-        "Flowers are small, pinkish-white, arranged in small umbels",
-        "Fruits are small, flattened, and schizocarpic"
-      ]
+    "pronunciation": "sen-TEL-uh ay-shee-AT-ih-kuh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Asia, Africa & Australia",
+      "flowering": "Year-round in warm climates",
+      "lifespan": "Perennial",
+      "plantType": "Creeping Herb",
+      "matureHeight": "10 – 15 cm",
+      "growthRate": "Fast"
     },
-    "microscopy": [
-      "Leaf shows a single-layered epidermis covered with cuticle",
-      "Anomocytic stomata present on both surfaces",
-      "Mesophyll differentiated into palisade and spongy tissues",
-      "Presence of oil ducts and secretory canals",
-      "Vascular bundles are collateral and surrounded by parenchymatous cells",
-      "Calcium oxalate crystals may be present"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis with cuticle",
-        "Palisade mesophyll below the upper epidermis",
-        "Spongy parenchyma with intercellular spaces",
-        "Midrib contains collateral vascular bundle",
-        "Xylem located towards upper side and phloem towards lower side",
-        "Lower epidermis with stomata"
-      ]
+    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Consult physician if pregnant", "May cause skin sensitivity"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Partial shade to full sun", "meterFilled": 2 },
+      "water": { "label": "Water", "value": "High — keep soil consistently moist", "meterFilled": 4 },
+      "soil": { "label": "Soil", "value": "Moist, rich, loamy" },
+      "temperature": { "label": "Temperature", "value": "15° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "High humidity", "meterFilled": 4, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Asiaticoside",
-      "Madecassoside",
-      "Asiatic acid",
-      "Madecassic acid",
-      "Flavonoids",
-      "Triterpenoids",
-      "Alkaloids",
-      "Tannins",
-      "Volatile oils",
-      "Polyphenols"
+    "about": "A small creeping perennial herb with slender green stems that root at the nodes, forming dense mats in moist habitats. Its distinctive round to kidney-shaped peltate leaves on long petioles channel rainwater to the roots — a clever adaptation. Small pinkish-white flowers cluster in umbels, producing flattened schizocarpic fruits. Found across tropical Asia, Africa, and Australia, Gotu Kola has been a cornerstone of Ayurvedic, Traditional Chinese, and Southeast Asian medicine for centuries, prized as a brain tonic and wound healer.",
+    "uses": [
+      { "label": "Brain tonic", "description": "Used in Ayurveda and TCM to enhance memory, concentration, and cognitive function — often paired with Brahmi." },
+      { "label": "Wound healing", "description": "Asiaticoside and madecassoside promote collagen synthesis, making Gotu Kola extracts popular in wound-healing creams and scar treatments." },
+      { "label": "Skin health", "description": "Widely used in cosmetic products for its skin-protective, soothing, and anti-ageing properties." },
+      { "label": "Stress & anxiety", "description": "Traditional herbal preparations use it to calm the mind and reduce mental fatigue." }
     ],
-    "pharmacologicalActivities": [
-      "Neuroprotective activity",
-      "Memory-enhancing activity",
-      "Antioxidant activity",
-      "Anti-inflammatory activity",
-      "Wound-healing activity",
-      "Antimicrobial activity",
-      "Antidiabetic activity",
-      "Anxiolytic (anti-stress) activity",
-      "Skin-protective activity"
-    ],
-    "traditionalUses": [
-      "Used in Ayurvedic medicine as a brain tonic",
-      "Helps improve memory and concentration",
-      "Used for wound healing and skin disorders",
-      "Used in herbal preparations for stress and anxiety",
-      "Used in cosmetic products for skin health"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves",
-        "Whole plant"
-      ],
-      "majorActiveCompounds": [
-        "Asiaticoside",
-        "Madecassoside",
-        "Asiatic acid",
-        "Madecassic acid"
-      ],
-      "specialFeature": "Round peltate leaves channel rainwater to roots — an adaptation for thriving in humid environments."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "Elephant wisdom", "answer": "Gotu Kola is popularly associated with elephants in folklore — the belief is that elephants, known for their long memory, eat it to stay sharp. There's even a saying: 'A leaf a day keeps old age away.'" },
+      { "question": "Nature's umbrella", "answer": "The round peltate leaves are shaped like tiny umbrellas — the long petiole attaches at the centre of the leaf blade, channelling rainwater directly to the roots." },
+      { "question": "A tale of two tonics", "answer": "Gotu Kola (Centella asiatica) and Brahmi (Bacopa monnieri) are often confused — both are called brain tonics, but they're completely different plants from different families." }
+    ]
   },
   {
     "id": "chlorophytum-borivilianum",
     "botanicalName": "Chlorophytum borivilianum Santapau & R.R. Fern.",
-    "commonNames": [
-      "Safed Musli",
-      "White Musli",
-      "Indian Musli"
-    ],
+    "commonNames": ["Safed Musli", "White Musli", "Indian Musli"],
     "family": "Asparagaceae",
-    "morphology": {
-      "height": "30–60 cm",
-      "description": [
-        "Perennial herb with underground tuberous roots",
-        "Roots are fleshy, cylindrical, white, and spindle-shaped",
-        "Leaves are simple, narrow, lanceolate, and arranged in a rosette",
-        "Flowers are small, white, star-shaped, and arranged on slender stalks",
-        "Fruits are small capsules containing black seeds"
-      ]
+    "pronunciation": "klor-oh-FY-tum boh-rih-vil-ee-AH-num",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Near Threatened",
+      "nativeRegion": "Central & Western India",
+      "flowering": "Jul – Sept",
+      "lifespan": "Perennial",
+      "plantType": "Herb (tuberous)",
+      "matureHeight": "30 – 60 cm",
+      "growthRate": "Moderate"
     },
-    "microscopy": [
-      "Root shows a cork layer made of compact cells",
-      "Cortex consists of parenchymatous cells containing starch grains",
-      "Presence of mucilage cells and calcium oxalate crystals",
-      "Vascular bundles are radial with xylem and phloem arranged alternately",
-      "Starch grains are abundant in parenchyma"
-    ],
-    "transverseSection": {
-      "organ": "Root",
-      "description": [
-        "Outer cork layer with protective function",
-        "Cortex composed of thin-walled parenchyma containing starch grains",
-        "Endodermis surrounds the vascular region",
-        "Pericycle present",
-        "Radial vascular bundles with alternating xylem and phloem",
-        "Central pith composed of parenchymatous cells"
-      ]
+    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Consult physician"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Low — drought tolerant once established", "meterFilled": 1 },
+      "soil": { "label": "Soil", "value": "Well-drained, sandy loam" },
+      "temperature": { "label": "Temperature", "value": "20° – 40°C" },
+      "humidity": { "label": "Humidity preference", "value": "Low to moderate", "meterFilled": 1, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Saponins (major active constituents)",
-      "Steroidal glycosides",
-      "Alkaloids",
-      "Flavonoids",
-      "Polysaccharides",
-      "Proteins",
-      "Carbohydrates",
-      "Mucilage",
-      "Minerals (Calcium, Potassium, Magnesium)"
+    "about": "A perennial herb prized for its fleshy, spindle-shaped, white tuberous roots — the most valuable part of the plant. Its narrow, lanceolate leaves form a basal rosette, while small white star-shaped flowers bloom on slender stalks. The roots are rich in saponins (up to 14%), among the highest of any Indian medicinal plant. Native to central and western India, Safed Musli is one of the most commercially important medicinal plants in Ayurveda, valued primarily as a rejuvenating tonic and adaptogen. Due to high demand, it is classified as Near Threatened.",
+    "uses": [
+      { "label": "Rejuvenating tonic", "description": "Used as a general health tonic and rasayana in Ayurveda to build strength, stamina, and vitality." },
+      { "label": "Adaptogen", "description": "Helps the body cope with physical and mental stress — widely used in herbal formulations for fatigue and weakness." },
+      { "label": "Immune support", "description": "The saponins and polysaccharides in the roots have immunomodulatory properties." },
+      { "label": "Muscle strength", "description": "Traditionally used by athletes and bodybuilders in herbal preparations to support muscle development and recovery." }
     ],
-    "pharmacologicalActivities": [
-      "Adaptogenic activity",
-      "Aphrodisiac activity",
-      "Immunomodulatory effect",
-      "Antioxidant activity",
-      "Anti-inflammatory activity",
-      "Antidiabetic activity",
-      "Antimicrobial activity",
-      "Neuroprotective activity",
-      "Helps improve strength and stamina"
-    ],
-    "traditionalUses": [
-      "Used as a general tonic and rejuvenating herb",
-      "Traditionally used to improve vitality and energy",
-      "Used in Ayurvedic preparations for weakness and fatigue",
-      "Used for promoting muscle strength and immunity"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Tuberous roots"
-      ],
-      "majorActiveCompounds": [
-        "Saponins",
-        "Steroidal glycosides",
-        "Flavonoids",
-        "Alkaloids"
-      ],
-      "specialFeature": "Roots contain up to 14% saponins — among the highest of any Indian medicinal plant."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "Why is it called white musli?", "answer": "The harvested roots are peeled to reveal a pure white interior — 'safed' means white in Hindi, and the roots resemble the colour of bleached muslin cloth." },
+      { "question": "A saponin champion", "answer": "The roots contain up to 14% saponins by dry weight — one of the highest concentrations found in any medicinal plant, which explains its potent bioactivity." },
+      { "question": "Cultivation is critical", "answer": "Wild populations have declined sharply due to overharvesting. Today, most commercial Safed Musli comes from organised cultivation to protect wild stocks." }
+    ]
   },
   {
     "id": "phyllanthus-emblica",
     "botanicalName": "Phyllanthus emblica L.",
-    "commonNames": [
-      "Amla",
-      "Indian Gooseberry"
-    ],
+    "commonNames": ["Amla", "Indian Gooseberry"],
     "family": "Euphorbiaceae",
-    "morphology": {
-      "height": "8–18 m",
-      "description": [
-        "Medium-sized deciduous tree",
-        "Bark is light grey to brown, rough, and exfoliating",
-        "Leaves are small, simple, light green, closely arranged on branchlets",
-        "Flowers are small, greenish-yellow, unisexual, and borne in clusters",
-        "Fruits are round, smooth, pale greenish-yellow, fleshy, and six-lobed, containing six seeds"
-      ]
+    "pronunciation": "fil-AN-thus EM-blih-kuh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Indian Subcontinent & Southeast Asia",
+      "flowering": "Feb – May",
+      "lifespan": "60+ years",
+      "plantType": "Deciduous Tree",
+      "matureHeight": "8 – 18 m",
+      "growthRate": "Moderate"
     },
-    "microscopy": [
-      "Upper epidermis covered with a thick cuticle",
-      "Lower epidermis contains anomocytic stomata",
-      "Mesophyll differentiated into palisade and spongy parenchyma",
-      "Calcium oxalate crystals and stone cells (sclereids) present",
-      "Collateral vascular bundles with lignified xylem vessels"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis with thick cuticle",
-        "Single layer of palisade cells",
-        "Spongy parenchyma with intercellular spaces",
-        "Midrib containing collateral vascular bundle (xylem above, phloem below)",
-        "Lower epidermis with numerous stomata"
-      ]
+    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Safe for consumption", "May interact with blood thinners"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Moderate — drought tolerant", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, sandy / loamy" },
+      "temperature": { "label": "Temperature", "value": "10° – 45°C" },
+      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Vitamin C (Ascorbic acid)",
-      "Emblicanin A & B",
-      "Gallic acid",
-      "Ellagic acid",
-      "Tannins",
-      "Flavonoids",
-      "Pectin",
-      "Polyphenols"
+    "about": "A medium-sized deciduous tree with light grey to brown exfoliating bark. Its small, light-green leaves are closely arranged along branchlets, giving the foliage a feathery appearance. Small greenish-yellow flowers appear in clusters, maturing into smooth, round, pale greenish-yellow fruits with six distinct lobes. Amla is one of the richest natural sources of vitamin C — with 20 to 30 times more than oranges — and its vitamin C is stabilised by tannins so it survives drying and cooking. Revered in Ayurveda as a premier rasayana (rejuvenating tonic), it is among the most important medicinal plants in the Indian subcontinent.",
+    "uses": [
+      { "label": "Immunity booster", "description": "The exceptionally high vitamin C content makes Amla a cornerstone of immune-support herbal formulations like Chyawanprash." },
+      { "label": "Digestive health", "description": "Fresh fruit, dried powder, or juice is used to improve digestion, relieve acidity, and support liver function." },
+      { "label": "Hair & skin care", "description": "Amla oil and powder are widely used in hair oils, shampoos, and face packs for their nourishing and antioxidant properties." },
+      { "label": "Cardiometabolic support", "description": "Studies suggest Amla helps regulate blood sugar, cholesterol, and blood pressure — supporting heart and metabolic health." }
     ],
-    "pharmacologicalActivities": [
-      "Antioxidant",
-      "Antidiabetic",
-      "Anti-inflammatory",
-      "Antimicrobial",
-      "Hepatoprotective",
-      "Immunomodulatory",
-      "Cardioprotective",
-      "Gastroprotective",
-      "Anticancer (reported in studies)"
-    ],
-    "traditionalUses": [
-      "Boosts immunity",
-      "Improves digestion",
-      "Supports liver and heart health",
-      "Promotes healthy skin and hair",
-      "Widely used in Ayurvedic medicine as a rejuvenating tonic (rasayana)"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Fruits",
-        "Leaves",
-        "Bark",
-        "Seeds"
-      ],
-      "majorActiveCompounds": [
-        "Vitamin C",
-        "Emblicanin A & B",
-        "Gallic acid",
-        "Ellagic acid",
-        "Tannins"
-      ],
-      "specialFeature": "One of the richest natural sources of vitamin C — 20–30 times more than oranges — stabilised by tannins so it survives drying and cooking."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "Vitamin C that doesn't fade", "answer": "Unlike most fruits, Amla's vitamin C is remarkably stable — the high tannin content protects it from oxidation, so even dried and powdered Amla retains its potency." },
+      { "question": "The sacred tree", "answer": "In Hindu tradition, the Amla tree is considered sacred — it's believed that Lord Vishnu resides in it, and worshipping the tree on Amla Navami brings prosperity." },
+      { "question": "Chyawanprash's star ingredient", "answer": "Amla is the primary ingredient in Chyawanprash, one of the oldest and most famous Ayurvedic formulations, traditionally made from over 40 herbs." }
+    ]
   },
   {
     "id": "syzygium-cumini",
     "botanicalName": "Syzygium cumini (L.) Skeels",
-    "commonNames": [
-      "Jamun",
-      "Java Plum",
-      "Black Plum",
-      "Indian Blackberry"
-    ],
+    "commonNames": ["Jamun", "Java Plum", "Black Plum", "Indian Blackberry"],
     "family": "Myrtaceae",
-    "morphology": {
-      "height": "15–30 m",
-      "description": [
-        "Large evergreen tree",
-        "Bark is grey to dark brown, rough, and flaky",
-        "Leaves are opposite, leathery, glossy, oval to lance-shaped, with aromatic oil glands",
-        "Flowers are small, greenish-white, fragrant, and borne in clusters",
-        "Fruits are oval, fleshy berries that turn from green to deep purple or black when ripe, containing a single seed"
-      ]
+    "pronunciation": "sih-ZIJ-ee-um koo-MEE-nye",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Indian Subcontinent & Southeast Asia",
+      "flowering": "Mar – Jun",
+      "lifespan": "100+ years",
+      "plantType": "Evergreen Tree",
+      "matureHeight": "15 – 30 m",
+      "growthRate": "Slow to moderate"
     },
-    "microscopy": [
-      "Upper epidermis covered with a thick cuticle",
-      "Lower epidermis bears anomocytic stomata",
-      "Mesophyll differentiated into palisade and spongy parenchyma",
-      "Numerous oil glands and calcium oxalate crystals present",
-      "Collateral vascular bundles with well-developed xylem vessels"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Thick cuticular upper epidermis",
-        "Single layer of palisade cells",
-        "Spongy parenchyma with intercellular spaces",
-        "Collateral vascular bundle with xylem above and phloem below",
-        "Lower epidermis containing numerous stomata and oil glands"
-      ]
+    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Safe for consumption", "May lower blood sugar"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Moderate — tolerates occasional drought", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, loamy / clayey" },
+      "temperature": { "label": "Temperature", "value": "15° – 40°C" },
+      "humidity": { "label": "Humidity preference", "value": "Moderate to high", "meterFilled": 3, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Jamboline (Jambosine)",
-      "Ellagic acid",
-      "Gallic acid",
-      "Anthocyanins",
-      "Flavonoids",
-      "Tannins",
-      "Quercetin",
-      "Essential oils",
-      "Vitamin C"
+    "about": "A large evergreen tree with rough, flaky grey to dark-brown bark. Its opposite leaves are leathery, glossy, and oval to lance-shaped, dotted with aromatic oil glands. Small, fragrant greenish-white flowers bloom in clusters, giving way to oval fleshy berries that ripen from green to deep purple-black. The fruit's deep-purple juice is rich in anthocyanins and stains the tongue for hours — a childhood memory for millions across South Asia. Jamun has been used for centuries in Ayurveda, particularly the seeds, which are valued for their antidiabetic properties.",
+    "uses": [
+      { "label": "Diabetes management", "description": "Jamun seed powder is one of the most well-known Ayurvedic remedies for managing blood sugar — the compound jamboline is believed to slow starch-to-sugar conversion." },
+      { "label": "Digestive health", "description": "The fruit, bark, and seeds are used in traditional remedies for diarrhoea, dysentery, and other digestive complaints." },
+      { "label": "Antioxidant", "description": "The deep-purple anthocyanins in the fruit are potent antioxidants that help combat oxidative stress." },
+      { "label": "Oral health", "description": "Bark decoctions are traditionally used as a mouthwash for gum health and oral ulcers." }
     ],
-    "pharmacologicalActivities": [
-      "Antidiabetic",
-      "Antioxidant",
-      "Antibacterial",
-      "Anti-inflammatory",
-      "Antifungal",
-      "Antidiarrheal",
-      "Hepatoprotective",
-      "Cardioprotective"
-    ],
-    "traditionalUses": [
-      "Helps manage diabetes",
-      "Improves digestion",
-      "Supports liver health",
-      "Provides antioxidant protection"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Fruits",
-        "Seeds",
-        "Leaves",
-        "Bark"
-      ],
-      "majorActiveCompounds": [
-        "Jamboline",
-        "Anthocyanins",
-        "Ellagic acid",
-        "Quercetin"
-      ],
-      "specialFeature": "Deep purple juice stains the tongue for hours — anthocyanins responsible for this are also potent antioxidants."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "The tongue-staining fruit", "answer": "The deep-purple juice stains the tongue for hours after eating — a familiar childhood experience for millions across the Indian subcontinent. Those same anthocyanins are powerful antioxidants." },
+      { "question": "A tree that lives a century", "answer": "Jamun trees can live over 100 years, and some specimens in India are estimated to be several centuries old, still producing fruit." },
+      { "question": "The seed is the medicine", "answer": "While the fruit is eaten fresh, it's the seed that holds the real medicinal value — dried and powdered Jamun seeds are a mainstay of Ayurvedic diabetes management." }
+    ]
   },
   {
     "id": "aloe-vera",
     "botanicalName": "Aloe vera (L.) Burm.f.",
-    "commonNames": [
-      "Indian Aloe Vera",
-      "Ghritkumari",
-      "Aloe"
-    ],
+    "commonNames": ["Indian Aloe Vera", "Ghritkumari", "Aloe"],
     "family": "Asphodelaceae",
-    "morphology": {
-      "height": "30–60 cm",
-      "description": [
-        "Perennial succulent herb",
-        "Leaves thick, fleshy, green, lance-shaped with serrated margins and pointed tips",
-        "Stem very short or absent",
-        "Yellow tubular flowers borne on long spikes",
-        "Fruit is a capsule containing many seeds"
-      ]
+    "pronunciation": "AL-oh VAY-ruh or AL-oh VEER-uh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Arabian Peninsula (now cosmopolitan)",
+      "flowering": "Year-round in warm climates",
+      "lifespan": "Perennial",
+      "plantType": "Succulent Herb",
+      "matureHeight": "30 – 60 cm",
+      "growthRate": "Moderate"
     },
-    "microscopy": [
-      "Thick cuticular upper and lower epidermis",
-      "Sunken stomata present",
-      "Mesophyll consists of chlorenchyma and mucilage-containing parenchyma",
-      "Large mucilage cells filled with transparent gel",
-      "Collateral vascular bundles scattered in the leaf"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Thick cuticle covering the epidermis",
-        "Chlorenchymatous layer beneath the epidermis",
-        "Large mucilage-rich parenchyma in the central region",
-        "Scattered collateral vascular bundles (xylem and phloem)",
-        "Central transparent gel (mucilage) enclosed by parenchymatous cells"
-      ]
+    "warnings": { "headline": "Two medicines in one leaf — use carefully", "chips": ["Gel is safe externally", "Latex is a potent laxative", "Consult physician"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Bright indirect to full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Low — let soil dry completely", "meterFilled": 1 },
+      "soil": { "label": "Soil", "value": "Well-drained, sandy / cactus mix" },
+      "temperature": { "label": "Temperature", "value": "10° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Aloin (Barbaloin)",
-      "Aloe-emodin",
-      "Acemannan",
-      "Anthraquinones",
-      "Aloesin",
-      "Polysaccharides",
-      "Saponins",
-      "Vitamins (A, C, E, B-complex)",
-      "Amino acids",
-      "Minerals (Calcium, Magnesium, Zinc)"
+    "about": "A perennial succulent herb with thick, fleshy, green, lance-shaped leaves arranged in a rosette, their serrated margins tapering to sharp points. Yellow tubular flowers rise on long spikes. The leaf contains two distinct medicinal products: the clear inner gel (rich in polysaccharides like acemannan, used for wound healing and skin care) and the yellow latex from the rind (containing anthraquinones like aloin, a potent natural laxative). One of the oldest documented medicinal plants, Aloe vera appears in Sumerian clay tablets from 2200 BCE and has been cultivated across warm regions worldwide for millennia.",
+    "uses": [
+      { "label": "Skin care & burns", "description": "The clear gel is applied directly to minor burns, cuts, sunburn, and skin irritations — its cooling, moisturising, and wound-healing properties are well-documented." },
+      { "label": "Cosmetics", "description": "Aloe gel is a ubiquitous ingredient in moisturisers, shampoos, lotions, and sunscreens for its hydrating and soothing effects." },
+      { "label": "Digestive health", "description": "The yellow latex (aloin) is a powerful natural laxative — but must be used cautiously due to its potency." },
+      { "label": "Oral health", "description": "Aloe vera gel is used in some natural toothpastes and mouthwashes for its antimicrobial and anti-inflammatory effects on gums." }
     ],
-    "pharmacologicalActivities": [
-      "Wound-healing",
-      "Anti-inflammatory",
-      "Antioxidant",
-      "Antibacterial",
-      "Antifungal",
-      "Antiviral",
-      "Moisturizing and skin-protective",
-      "Immunomodulatory",
-      "Laxative (latex)",
-      "Antidiabetic (reported in studies)"
-    ],
-    "traditionalUses": [
-      "Skin care",
-      "Wound healing and burns",
-      "Cosmetics",
-      "Digestive health",
-      "Herbal medicine"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves (gel and latex)"
-      ],
-      "majorActiveCompounds": [
-        "Aloin",
-        "Acemannan",
-        "Aloe-emodin",
-        "Polysaccharides"
-      ],
-      "specialFeature": "Two medicines in one leaf — the clear inner gel for wound healing and the yellow latex from the rind as a potent natural laxative."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "One leaf, two medicines", "answer": "The same leaf contains two completely different products: the soothing clear inner gel for burns and skin, and the potent yellow latex from the rind — a powerful laxative known since ancient times." },
+      { "question": "Used by Cleopatra", "answer": "Legend holds that Cleopatra used Aloe vera as part of her daily beauty regimen — and historical records confirm its use in ancient Egyptian cosmetics and embalming." },
+      { "question": "A Sumerian prescription", "answer": "Aloe vera is mentioned on Sumerian clay tablets dating back to 2200 BCE, making it one of the oldest documented medicinal plants in human history." }
+    ]
   },
   {
     "id": "sapindus-mukorossi",
     "botanicalName": "Sapindus mukorossi Gaertn.",
-    "commonNames": [
-      "Reetha",
-      "Soapnut",
-      "Soapberry"
-    ],
+    "commonNames": ["Reetha", "Soapnut", "Soapberry"],
     "family": "Sapindaceae",
-    "morphology": {
-      "height": "12–20 m",
-      "description": [
-        "Medium to large deciduous tree",
-        "Bark is grey to dark brown, rough, and vertically fissured",
-        "Leaves are alternate, pinnate, with 5–10 pairs of lance-shaped leaflets",
-        "Flowers are small, greenish-white, arranged in terminal panicles",
-        "Fruits are round, yellowish-brown, fleshy drupes with a hard black seed",
-        "Fruit pericarp is sticky and rich in natural saponins"
-      ]
+    "pronunciation": "sap-IN-dus moo-koh-ROSS-ee",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Himalayan foothills & East Asia",
+      "flowering": "Apr – Jun",
+      "lifespan": "40+ years",
+      "plantType": "Deciduous Tree",
+      "matureHeight": "12 – 20 m",
+      "growthRate": "Moderate"
     },
-    "microscopy": [
-      "Fruit pericarp consists of an epidermis covered with a cuticle",
-      "Mesocarp contains thin-walled parenchymatous cells",
-      "Numerous saponin-containing cells are present",
-      "Vascular bundles are scattered throughout the mesocarp",
-      "Calcium oxalate crystals and stone cells (sclereids) may be observed"
-    ],
-    "transverseSection": {
-      "organ": "Fruit",
-      "description": [
-        "Outer epidermis with cuticle",
-        "Thick parenchymatous mesocarp containing saponins",
-        "Scattered vascular bundles",
-        "Endocarp is hard and lignified, enclosing a single black seed",
-        "Presence of sclereids and calcium oxalate crystals"
-      ]
+    "warnings": { "headline": "Generally safe externally; avoid eye contact", "chips": ["External use only", "Avoid eye contact", "Consult physician"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, loamy" },
+      "temperature": { "label": "Temperature", "value": "5° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "Moderate to high", "meterFilled": 3, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Triterpenoid saponins (main active constituents)",
-      "Sapindosides",
-      "Sugars",
-      "Flavonoids",
-      "Tannins",
-      "Fatty acids",
-      "Mucilage",
-      "Fixed oils (in seeds)"
+    "about": "A medium to large deciduous tree with rough, grey to dark-brown vertically fissured bark. Its alternate pinnate leaves bear 5 to 10 pairs of lance-shaped leaflets. Small greenish-white flowers form terminal panicles, maturing into round yellowish-brown fleshy drupes — the famous soapnuts. The fruit pericarp is sticky and rich in triterpenoid saponins that produce a natural soap-like lather when mixed with water. Native to the Himalayan foothills and East Asia, Reetha has been used for centuries as a natural cleanser for hair, skin, and delicate fabrics — a zero-waste, biodegradable detergent long before sustainability became mainstream.",
+    "uses": [
+      { "label": "Natural shampoo", "description": "The most traditional use — soaked or boiled soapnuts produce a gentle, natural lather that cleanses hair without stripping natural oils." },
+      { "label": "Skin cleanser", "description": "Used in traditional skincare preparations for eczema, psoriasis, and general cleansing — its antimicrobial properties help with acne and dandruff." },
+      { "label": "Eco-friendly detergent", "description": "An increasingly popular zero-waste laundry and household cleaner — the saponins are fully biodegradable." },
+      { "label": "Jewellery cleaner", "description": "Traditionally used to clean delicate gold and silver jewellery without scratching." }
     ],
-    "pharmacologicalActivities": [
-      "Natural cleansing and detergent action",
-      "Antimicrobial",
-      "Antifungal",
-      "Antioxidant",
-      "Anti-inflammatory",
-      "Insecticidal",
-      "Expectorant",
-      "Hair-conditioning and anti-dandruff properties"
-    ],
-    "traditionalUses": [
-      "Natural shampoo and hair cleanser",
-      "Treatment of dandruff and scalp infections",
-      "Washing delicate fabrics and jewelry",
-      "Used in skin care preparations",
-      "Traditional remedy for eczema and other skin disorders",
-      "Eco-friendly household cleaner"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Fruits (pericarp)",
-        "Seeds"
-      ],
-      "majorActiveCompounds": [
-        "Triterpenoid saponins",
-        "Sapindosides"
-      ],
-      "specialFeature": "Fruit pericarp contains abundant natural saponins that produce a soap-like lather when mixed with water — a zero-waste natural detergent."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "How does a fruit become soap?", "answer": "The fruit pericarp contains triterpenoid saponins — natural surfactants that lower water surface tension and create a lather when agitated. No chemical processing needed." },
+      { "question": "Zero-waste before it was a movement", "answer": "Long before sustainability became a buzzword, Indian households used Reetha as a completely biodegradable shampoo, detergent, and cleaner — and the spent shells go right into compost." },
+      { "question": "The name says it all", "answer": "The genus name Sapindus comes from Latin 'sapo' (soap) and 'indicus' (Indian) — literally 'soap of India.'" }
+    ]
   },
   {
     "id": "azadirachta-indica",
     "botanicalName": "Azadirachta indica A. Juss.",
-    "commonNames": [
-      "Neem",
-      "Indian Lilac",
-      "Margosa"
-    ],
+    "commonNames": ["Neem", "Indian Lilac", "Margosa"],
     "family": "Meliaceae",
-    "morphology": {
-      "height": "15–30 m",
-      "description": [
-        "Large evergreen tree",
-        "Bark is grey to dark brown, rough, fissured, bitter in taste",
-        "Leaves are alternate, imparipinnate, compound with 8–19 serrated leaflets",
-        "Flowers are small, white, fragrant, arranged in axillary panicles",
-        "Fruits are smooth, oval drupe; green when unripe and yellow on ripening",
-        "Seeds usually one per fruit, containing neem oil"
-      ]
+    "pronunciation": "az-uh-DIR-ak-tuh IN-dih-kuh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Indian Subcontinent & Southeast Asia",
+      "flowering": "Feb – May",
+      "lifespan": "100+ years",
+      "plantType": "Evergreen Tree",
+      "matureHeight": "15 – 30 m",
+      "growthRate": "Fast"
     },
-    "microscopy": [
-      "Upper epidermis covered with thick cuticle",
-      "Lower epidermis contains numerous anomocytic stomata",
-      "Mesophyll differentiated into single layer of palisade cells and spongy parenchyma beneath",
-      "Vascular bundle collateral and surrounded by bundle sheath",
-      "Calcium oxalate crystals present",
-      "Oil glands and lignified xylem vessels visible"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis with cuticle",
-        "One layer of elongated palisade cells",
-        "Spongy parenchyma with intercellular spaces",
-        "Midrib containing collateral vascular bundle",
-        "Xylem towards upper side and phloem towards lower side",
-        "Lower epidermis bearing numerous stomata and trichomes",
-        "Presence of calcium oxalate crystals and secretory cells"
-      ]
+    "warnings": { "headline": "Generally safe externally; internal use requires caution", "chips": ["Consult physician", "Internal use only under guidance", "Neem oil is potent"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Low — highly drought tolerant", "meterFilled": 1 },
+      "soil": { "label": "Soil", "value": "Well-drained, tolerates poor soil" },
+      "temperature": { "label": "Temperature", "value": "10° – 45°C" },
+      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Azadirachtin (major limonoid)",
-      "Nimbin",
-      "Nimbidin",
-      "Nimbolide",
-      "Salannin",
-      "Gedunin",
-      "Quercetin",
-      "Tannins",
-      "Flavonoids",
-      "Steroids",
-      "Fixed oil (rich in oleic, stearic, palmitic, and linoleic acids)"
+    "about": "A large evergreen tree with rough, fissured grey to dark-brown bark that tastes distinctly bitter. Its leaves are alternate and imparipinnate, with 8 to 19 serrated leaflets. Small, white, fragrant flowers bloom in axillary panicles, giving way to smooth oval drupes that ripen from green to yellow — each containing a single seed rich in neem oil. Called the 'Village Pharmacy,' Neem has been a cornerstone of Ayurveda for over 4,000 years. Every part of the tree — leaves, bark, seeds, oil, and even twigs — has medicinal or practical use. The limonoid azadirachtin, unique to Neem, makes it one of the most potent natural insecticides known.",
+    "uses": [
+      { "label": "Skin care", "description": "Neem leaf paste and oil are used for acne, eczema, psoriasis, and fungal infections — its antibacterial and anti-inflammatory properties are among the strongest in the plant kingdom." },
+      { "label": "Dental hygiene", "description": "Neem twigs have been used as natural toothbrushes (datun) for millennia — neem extracts are now common in herbal toothpaste." },
+      { "label": "Natural pesticide", "description": "Azadirachtin, unique to Neem, disrupts insect feeding and reproduction — Neem-based biopesticides are used worldwide in organic farming." },
+      { "label": "Hair care", "description": "Neem oil and leaf extracts are used in hair oils and shampoos to combat dandruff and scalp infections." }
     ],
-    "pharmacologicalActivities": [
-      "Antibacterial",
-      "Antifungal",
-      "Antiviral",
-      "Antimalarial",
-      "Anti-inflammatory",
-      "Antioxidant",
-      "Antidiabetic",
-      "Immunomodulatory",
-      "Hepatoprotective",
-      "Insecticidal and mosquito repellent",
-      "Wound healing",
-      "Antipyretic",
-      "Anthelmintic"
-    ],
-    "traditionalUses": [
-      "Treatment of skin diseases",
-      "Dental hygiene (chewing sticks, toothpaste)",
-      "Wound dressing",
-      "Insect and mosquito control",
-      "Management of diabetes (traditional use)",
-      "Hair care preparations",
-      "Agricultural biopesticides"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves",
-        "Bark",
-        "Seeds",
-        "Oil",
-        "Twigs"
-      ],
-      "majorActiveCompounds": [
-        "Azadirachtin",
-        "Nimbin",
-        "Nimbidin",
-        "Nimbolide"
-      ],
-      "specialFeature": "Called the Village Pharmacy — every part of the tree serves a medicinal or practical purpose, and it has been used in Ayurveda for over 4,000 years."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "A pharmacy in every village", "answer": "Neem is called the Village Pharmacy because every part of the tree — leaves, bark, seeds, oil, flowers, and twigs — has medicinal value, and a single tree can serve an entire community." },
+      { "question": "4,000 years of documented use", "answer": "Neem appears in the earliest Ayurvedic texts and has been continuously used for over four millennia — few plants can claim such a long and well-documented medicinal history." },
+      { "question": "Nature's own insecticide", "answer": "Azadirachtin, the key limonoid in Neem, doesn't kill insects outright — it disrupts their hormonal systems so they stop feeding and can't reproduce, making it remarkably selective and biodegradable." }
+    ]
   },
   {
     "id": "jacaranda-mimosifolia",
     "botanicalName": "Jacaranda mimosifolia D. Don",
-    "commonNames": [
-      "Neel Gulmohar",
-      "Blue Jacaranda",
-      "Fern Tree"
-    ],
+    "commonNames": ["Neel Gulmohar", "Blue Jacaranda", "Fern Tree"],
     "family": "Bignoniaceae",
-    "morphology": {
-      "height": "10–15 m",
-      "description": [
-        "Medium-sized deciduous to semi-evergreen tree",
-        "Bark is thin, grey to grey-brown, rough and slightly fissured",
-        "Leaves are opposite, bipinnate, fern-like, light to dark green, with numerous small leaflets",
-        "Flowers are large, trumpet-shaped, fragrant, violet-blue to lavender, arranged in terminal panicles",
-        "Fruits are flat, woody, dark brown capsules containing numerous winged seeds",
-        "Seeds are thin, light brown, and dispersed by wind"
-      ]
+    "pronunciation": "jak-uh-RAN-duh mih-moh-sih-FOH-lee-uh",
+    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "South America (Argentina & Bolivia)",
+      "flowering": "Mar – Jun",
+      "lifespan": "50+ years",
+      "plantType": "Deciduous / Semi-evergreen Tree",
+      "matureHeight": "10 – 15 m",
+      "growthRate": "Fast"
     },
-    "microscopy": [
-      "Upper epidermis consists of a single layer of compact cells covered with a cuticle",
-      "Lower epidermis bears numerous anomocytic stomata",
-      "Mesophyll is differentiated into palisade and spongy parenchyma",
-      "Midrib contains a collateral vascular bundle with xylem and phloem",
-      "Xylem vessels are lignified and well developed",
-      "Calcium oxalate crystals and parenchymatous cells may be present"
-    ],
-    "transverseSection": {
-      "organ": "Leaf",
-      "description": [
-        "Upper epidermis with thick cuticle",
-        "Single layer of palisade cells beneath the upper epidermis",
-        "Spongy parenchyma with intercellular spaces",
-        "Midrib containing a collateral vascular bundle",
-        "Xylem towards the upper side and phloem towards the lower side",
-        "Lower epidermis with numerous stomata and a thin cuticle"
-      ]
+    "warnings": { "headline": "Generally safe — primarily ornamental", "chips": ["Generally non-toxic", "Consult physician"] },
+    "care": {
+      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
+      "soil": { "label": "Soil", "value": "Well-drained, sandy / loamy" },
+      "temperature": { "label": "Temperature", "value": "10° – 35°C" },
+      "humidity": { "label": "Humidity preference", "value": "Moderate", "meterFilled": 2, "fullWidth": true }
     },
-    "chemicalConstituents": [
-      "Flavonoids (Quercetin, Kaempferol)",
-      "Phenolic compounds",
-      "Tannins",
-      "Terpenoids",
-      "Saponins",
-      "Alkaloids",
-      "Glycosides",
-      "Essential oils",
-      "Sterols"
+    "about": "A medium-sized deciduous to semi-evergreen tree renowned for its spectacular display of violet-blue flowers. Its thin, grey to grey-brown bark is rough and slightly fissured. The leaves are opposite and bipinnate — delicate, fern-like, and composed of numerous tiny leaflets that give the canopy a soft, airy texture. Large, fragrant trumpet-shaped flowers in vivid violet-blue to lavender appear in terminal panicles, often blanketing the entire crown before new leaves emerge. Flat, woody, dark-brown capsules follow, releasing thin, winged seeds that scatter on the wind. Native to Argentina and Bolivia, Jacaranda has been planted as an ornamental tree across warm regions worldwide — its breathtaking spring bloom transforms entire streets into tunnels of purple.",
+    "uses": [
+      { "label": "Ornamental", "description": "One of the world's most beloved flowering trees — widely planted along streets, in parks, and in gardens for its spectacular seasonal purple display." },
+      { "label": "Folk medicine", "description": "Leaves and bark are used in traditional medicine in its native range for treating wounds, skin infections, and reducing fever." },
+      { "label": "Shade tree", "description": "Its broad, airy canopy provides dappled shade, making it a popular choice for avenues and public spaces in warm climates." },
+      { "label": "Woodworking", "description": "The timber, though not a primary use, is occasionally used for small carpentry and turned items." }
     ],
-    "pharmacologicalActivities": [
-      "Antioxidant",
-      "Anti-inflammatory",
-      "Antibacterial",
-      "Antifungal",
-      "Antimicrobial",
-      "Wound-healing",
-      "Analgesic (pain-relieving)",
-      "Antipyretic (fever-reducing)",
-      "Hepatoprotective (reported in experimental studies)"
-    ],
-    "traditionalUses": [
-      "Ornamental avenue and garden tree",
-      "Leaves and bark used in traditional medicine for treating wounds and skin infections",
-      "Flower extracts have antioxidant properties",
-      "Used in folk medicine for reducing inflammation and fever",
-      "Provides shade and improves landscape aesthetics"
-    ],
-    "quickFacts": {
-      "medicinalParts": [
-        "Leaves",
-        "Bark",
-        "Flowers"
-      ],
-      "majorActiveCompounds": [
-        "Flavonoids",
-        "Phenolic compounds",
-        "Tannins",
-        "Terpenoids"
-      ],
-      "specialFeature": "Primarily an ornamental tree — when in bloom, the entire canopy turns violet-blue before new leaves appear, creating the illusion of a purple cloud."
-    },
-    "images": {
-      "hero": "",
-      "leaf": "",
-      "flower": "",
-      "fruit": ""
-    }
+    "funFacts": [
+      { "question": "A purple phenomenon", "answer": "When Jacarandas bloom, the entire crown turns violet-blue before new leaves appear — the flowers fall to create a stunning purple carpet beneath the tree, a celebrated event in cities like Pretoria and Sydney." },
+      { "question": "Pretoria's purple blanket", "answer": "Pretoria, South Africa, is known as the Jacaranda City — over 70,000 trees line its streets, and each October the city transforms under a spectacular purple canopy." },
+      { "question": "A student's superstition", "answer": "At the University of Queensland, students say that if a Jacaranda blossom falls on you during exam season, you'll pass your exams — but if you haven't started studying by the time they bloom, it might already be too late." }
+    ]
   }
 ]

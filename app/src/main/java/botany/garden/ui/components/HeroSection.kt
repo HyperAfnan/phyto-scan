@@ -28,6 +28,7 @@ fun HeroSection(
     commonName: String,
     scientificName: String,
     familyTag: String,
+    pronunciation: String,
     modifier: Modifier = Modifier,
 ) {
     Box(
@@ -87,7 +88,7 @@ fun HeroSection(
                     color = Color.White.copy(alpha = 0.95f),
                 )
                 Spacer(Modifier.width(10.dp))
-                SayButton(label = "oh-LEE-an-der")
+                SayButton(label = pronunciation)
             }
         }
     }

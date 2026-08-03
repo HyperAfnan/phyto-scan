@@ -15,6 +15,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
+import botany.garden.data.model.PlantCare
 
 data class CareData(
     val icon: ImageVector,
@@ -25,13 +26,13 @@ data class CareData(
 )
 
 @Composable
-fun CareGrid(modifier: Modifier = Modifier) {
+fun CareGrid(care: PlantCare, modifier: Modifier = Modifier) {
     val items = listOf(
-        CareData(Icons.Outlined.WbSunny, "Sunlight", "Full sun", meterFilled = 3),
-        CareData(Icons.Outlined.WaterDrop, "Water", "Low \u2013 moderate", meterFilled = 2),
-        CareData(Icons.Outlined.Terrain, "Soil", "Well-drained, sandy / loamy"),
-        CareData(Icons.Outlined.AcUnit, "Temperature", "15\u00b0 \u2013 35\u00b0C"),
-        CareData(Icons.Outlined.Opacity, "Humidity preference", "Tolerates dry air", meterFilled = 1, fullWidth = true),
+        CareData(Icons.Outlined.WbSunny, care.sunlight.label, care.sunlight.value, care.sunlight.meterFilled),
+        CareData(Icons.Outlined.WaterDrop, care.water.label, care.water.value, care.water.meterFilled),
+        CareData(Icons.Outlined.Terrain, care.soil.label, care.soil.value, care.soil.meterFilled),
+        CareData(Icons.Outlined.AcUnit, care.temperature.label, care.temperature.value, care.temperature.meterFilled),
+        CareData(Icons.Outlined.Opacity, care.humidity.label, care.humidity.value, care.humidity.meterFilled, fullWidth = true),
     )
 
     Column(
