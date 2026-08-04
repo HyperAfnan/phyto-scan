@@ -13,6 +13,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
@@ -28,6 +29,7 @@ import botany.garden.ui.screen.PlantIntroScreen
 import botany.garden.ui.screen.ScanScreen
 import botany.garden.ui.theme.BotanyGardenTheme
 import botany.garden.ui.theme.Paper
+import botany.garden.data.model.Plant
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

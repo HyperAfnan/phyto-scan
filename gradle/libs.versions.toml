@@ -5,6 +5,8 @@ compose-bom = "2024.12.01"
 activity-compose = "1.9.3"
 core-ktx = "1.15.0"
 kotlinx-serialization = "1.7.3"
+camera = "1.4.1"
+tesseract = "4.7.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -19,6 +21,11 @@ compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended" }
 compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camera" }
+camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera" }
+camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera" }
+camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camera" }
+tesseract4android = { group = "com.github.adaptech-cz.Tesseract4Android", name = "tesseract4android", version.ref = "tesseract" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
