@@ -1,6 +1,7 @@
 package botany.garden.ui.screen
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -10,6 +11,14 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.FavoriteBorder
+import androidx.compose.material.icons.outlined.Grass
+import androidx.compose.material.icons.outlined.Height
+import androidx.compose.material.icons.outlined.LocationOn
+import androidx.compose.material.icons.outlined.Schedule
+import androidx.compose.material.icons.outlined.TrendingUp
+import androidx.compose.material.icons.outlined.WbSunny
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -22,6 +31,8 @@ import botany.garden.ui.components.FactsAccordion
 import botany.garden.ui.components.HeroSection
 import botany.garden.ui.components.SectionEyebrow
 import botany.garden.ui.components.TopBar
+import botany.garden.ui.components.UseList
+import botany.garden.ui.components.WarningCard
 import botany.garden.ui.theme.Charcoal
 import botany.garden.ui.theme.Paper
 

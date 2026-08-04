@@ -29,7 +29,6 @@ import botany.garden.ui.screen.PlantIntroScreen
 import botany.garden.ui.screen.ScanScreen
 import botany.garden.ui.theme.BotanyGardenTheme
 import botany.garden.ui.theme.Paper
-import botany.garden.data.model.Plant
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -83,7 +82,7 @@ fun MainScreen() {
                     PlantDetailScreen(plant)
                 }
             } ?: Text("Loading…")
-            2 -> ScanScreen()
+            2 -> ScanScreen(onPlantFound = ::openPlant)
         }
 
         if (!(selectedTab == 1 && showIntro)) {
