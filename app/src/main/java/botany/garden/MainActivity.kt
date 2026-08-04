@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
@@ -21,6 +22,7 @@ import botany.garden.ui.screen.PlantDetailScreen
 import botany.garden.ui.screen.ScanScreen
 import botany.garden.ui.theme.BotanyGardenTheme
 import botany.garden.ui.theme.Paper
+import botany.garden.data.model.Plant
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,12 +39,13 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen() {
     var selectedTab by remember { mutableIntStateOf(1) }
+    var selectedPlant by remember { mutableStateOf<Plant?>(null) }
 
     Box(modifier = Modifier.fillMaxSize().background(Paper)) {
         when (selectedTab) {
-            0 -> ExploreScreen()
-            1 -> PlantDetailScreen()
-            2 -> ScanScreen()
+            0 -> ExploreScreen(onPlantSelected = { selectedPlant = it; selectedTab = 1 })
+            1 -> PlantDetailScreen(selectedPlant)
+            2 -> ScanScreen(onPlantFound = { selectedPlant = it; selectedTab = 1 })
         }
 
         BottomNavBar(
