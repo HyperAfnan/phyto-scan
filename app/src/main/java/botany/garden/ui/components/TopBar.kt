@@ -18,13 +18,13 @@ import botany.garden.ui.theme.Ink
 import botany.garden.ui.theme.Paper92Alpha
 
 @Composable
-fun TopBar(modifier: Modifier = Modifier) {
+fun TopBar(onBack: () -> Unit = {}, modifier: Modifier = Modifier) {
     Row(
         modifier = modifier.padding(16.dp),
         verticalAlignment = Alignment.Top,
     ) {
         IconButton(
-            onClick = { },
+            onClick = onBack,
             modifier = Modifier
                 .size(38.dp)
                 .clip(CircleShape)

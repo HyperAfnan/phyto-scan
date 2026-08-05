@@ -44,26 +44,21 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MainScreen() {
-    var selectedTab by remember { mutableIntStateOf(1) }
+    var selectedTab by remember { mutableIntStateOf(2) }
     val context = LocalContext.current
     val repository = remember { PlantRepository(context) }
     var plants by remember { mutableStateOf<List<Plant>>(emptyList()) }
     var selectedPlantId by remember { mutableStateOf<String?>(null) }
     var showIntro by remember { mutableStateOf(false) }
+    var previousTab by remember { mutableIntStateOf(2) }
     val selectedPlant = plants.firstOrNull { it.id == selectedPlantId }
 
     LaunchedEffect(Unit) {
         plants = repository.loadPlants()
-        if (selectedPlantId == null) selectedPlantId = plants.firstOrNull()?.id
-    }
-
-    LaunchedEffect(selectedPlantId, plants) {
-        if (selectedPlantId != null && selectedPlantId == plants.firstOrNull()?.id) {
-            showIntro = !isIntroSeen(context, selectedPlantId!!)
-        }
     }
 
     fun openPlant(plant: Plant) {
+        previousTab = selectedTab
         selectedPlantId = plant.id
         selectedTab = 1
         showIntro = !isIntroSeen(context, plant.id)
@@ -79,7 +74,7 @@ fun MainScreen() {
                         showIntro = false
                     })
                 } else {
-                    PlantDetailScreen(plant)
+                    PlantDetailScreen(plant, onBack = { selectedTab = previousTab })
                 }
             } ?: Text("Loading…")
             2 -> ScanScreen(onPlantFound = ::openPlant)

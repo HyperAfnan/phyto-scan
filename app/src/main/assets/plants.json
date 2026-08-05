@@ -1,5 +1,94 @@
 [
   {
+    "id": "nerium-oleander",
+    "botanicalName": "Nerium oleander L.",
+    "commonNames": ["Kaner", "Oleander", "Rosebay", "Karavira"],
+    "family": "Apocynaceae",
+    "pronunciation": "NEER-ee-um oh-lee-AN-der",
+    "images": {
+      "hero": "images/kaner/hero.jpg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "Mediterranean & Southwest Asia",
+      "flowering": "Apr – Oct",
+      "lifespan": "50+ years",
+      "plantType": "Evergreen Shrub / Small Tree",
+      "matureHeight": "2 – 6 m",
+      "growthRate": "Moderate – Fast"
+    },
+    "warnings": {
+      "headline": "Highly Toxic",
+      "chips": ["Toxic cardiac glycosides", "Dangerous if ingested", "Wear gloves while pruning"]
+    },
+    "care": {
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Low – moderate",
+        "meterFilled": 2
+      },
+      "soil": {
+        "label": "Soil",
+        "value": "Well-drained, sandy or loamy"
+      },
+      "temperature": {
+        "label": "Temperature",
+        "value": "5° – 40°C"
+      },
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Tolerates dry to moderate humidity",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
+    },
+    "about": "Nerium oleander is a hardy evergreen ornamental shrub valued for its long-lasting, colorful flowers and ability to thrive in hot, dry climates. It has narrow, leathery dark-green leaves arranged in pairs or whorls along smooth grey stems. The funnel-shaped flowers bloom in shades of pink, white, red, yellow, or salmon throughout much of the year. Despite its beauty, every part of the plant contains potent toxic compounds and should never be ingested.",
+    "uses": [
+      {
+        "label": "Ornamental landscaping",
+        "description": "Widely planted in gardens, parks, highways, and medians due to its attractive flowers and drought tolerance."
+      },
+      {
+        "label": "Drought-resistant hedges",
+        "description": "Frequently used as a flowering hedge or privacy screen in warm climates because it requires little maintenance."
+      },
+      {
+        "label": "Air pollution tolerance",
+        "description": "Often planted in urban areas since it tolerates dust, pollution, and roadside conditions exceptionally well."
+      },
+      {
+        "label": "Traditional medicine",
+        "description": "Historically used in highly controlled traditional medicinal preparations, but it is not recommended for self-medication due to its extreme toxicity."
+      },
+      {
+        "label": "Soil stabilization",
+        "description": "Its extensive root system helps reduce soil erosion on slopes and embankments."
+      }
+    ],
+    "funFacts": [
+      {
+        "question": "Why is Kaner considered dangerous?",
+        "answer": "Every part of the plant—including leaves, flowers, stems, roots, seeds, and even the sap—contains cardiac glycosides that can affect the heart if ingested."
+      },
+      {
+        "question": "A survivor in harsh climates",
+        "answer": "Oleander can withstand drought, poor soils, heat, salty air, and urban pollution, making it one of the toughest ornamental shrubs."
+      },
+      {
+        "question": "Beautiful but poisonous",
+        "answer": "Despite being one of the world's most popular flowering shrubs, Nerium oleander is also one of the most toxic ornamental plants commonly grown in gardens."
+      }
+    ]
+  },
+  {
     "id": "vitex-negundo",
     "botanicalName": "Vitex negundo L.",
     "commonNames": ["Sambhalu", "Nirgundi", "Five-leaved Chaste Tree"],
@@ -17,24 +106,61 @@
     },
     "warnings": null,
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun to partial shade", "meterFilled": 3 },
-      "water": { "label": "Water", "value": "Low – moderate", "meterFilled": 2 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun to partial shade",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Low – moderate",
+        "meterFilled": 2
+      },
       "soil": { "label": "Soil", "value": "Well-drained, sandy / loamy" },
       "temperature": { "label": "Temperature", "value": "10° – 40°C" },
-      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Tolerates dry air",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
     },
     "about": "A large aromatic shrub or small tree widely found across South and Southeast Asia. It has woody, branched stems with greyish-brown bark. The leaves are opposite and compound, typically with five lance-shaped leaflets — green above and greyish beneath from fine hairs. Small bluish-purple flowers appear in terminal panicles, followed by small round blackish drupes. Every part of the plant carries a distinctive herbal fragrance from its essential oils.",
     "uses": [
-      { "label": "Anti-inflammatory", "description": "Leaves and bark are used in traditional remedies to reduce joint pain, arthritis, and swelling." },
-      { "label": "Insect repellent", "description": "Dried leaves are placed in stored grain and cupboards to keep insects away." },
-      { "label": "Wound healing", "description": "Leaf paste is applied externally on wounds, boils, and skin disorders." },
-      { "label": "Respiratory support", "description": "Used in Ayurvedic medicine for coughs, colds, and respiratory congestion." },
-      { "label": "Fever management", "description": "Decoctions of the leaves are traditionally employed as an antipyretic." }
+      {
+        "label": "Anti-inflammatory",
+        "description": "Leaves and bark are used in traditional remedies to reduce joint pain, arthritis, and swelling."
+      },
+      {
+        "label": "Insect repellent",
+        "description": "Dried leaves are placed in stored grain and cupboards to keep insects away."
+      },
+      {
+        "label": "Wound healing",
+        "description": "Leaf paste is applied externally on wounds, boils, and skin disorders."
+      },
+      {
+        "label": "Respiratory support",
+        "description": "Used in Ayurvedic medicine for coughs, colds, and respiratory congestion."
+      },
+      {
+        "label": "Fever management",
+        "description": "Decoctions of the leaves are traditionally employed as an antipyretic."
+      }
     ],
     "funFacts": [
-      { "question": "Why is it called five-leaved?", "answer": "The species name 'negundo' refers to its typically five-foliolate leaf arrangement, though some varieties may have three leaflets." },
-      { "question": "A natural pharmacy", "answer": "Nirgundi is one of the most versatile plants in Ayurveda — it appears in formulations for over 50 different conditions." },
-      { "question": "Leaves that smell", "answer": "The strong aromatic smell of crushed leaves comes from volatile essential oils rich in terpenoids, which also give it insect-repelling properties." }
+      {
+        "question": "Why is it called five-leaved?",
+        "answer": "The species name 'negundo' refers to its typically five-foliolate leaf arrangement, though some varieties may have three leaflets."
+      },
+      {
+        "question": "A natural pharmacy",
+        "answer": "Nirgundi is one of the most versatile plants in Ayurveda — it appears in formulations for over 50 different conditions."
+      },
+      {
+        "question": "Leaves that smell",
+        "answer": "The strong aromatic smell of crushed leaves comes from volatile essential oils rich in terpenoids, which also give it insect-repelling properties."
+      }
     ]
   },
   {
@@ -43,7 +169,12 @@
     "commonNames": ["Curry Tree", "Curry Leaf", "Kadi Patta", "Sweet Neem"],
     "family": "Rutaceae",
     "pronunciation": "muh-RAY-uh koh-NIG-ee-eye",
-    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "images": {
+      "hero": "images/curry-tree/hero.jpeg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
     "badges": {
       "conservation": "Least Concern",
       "nativeRegion": "Indian Subcontinent",
@@ -53,26 +184,62 @@
       "matureHeight": "4 – 6 m",
       "growthRate": "Moderate"
     },
-    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Safe for consumption", "Consult physician if pregnant"] },
+    "warnings": {
+      "headline": "Generally safe when used as directed",
+      "chips": ["Safe for consumption", "Consult physician if pregnant"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
       "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
       "soil": { "label": "Soil", "value": "Well-drained, fertile loam" },
       "temperature": { "label": "Temperature", "value": "15° – 38°C" },
-      "humidity": { "label": "Humidity preference", "value": "Moderate to high", "meterFilled": 3, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Moderate to high",
+        "meterFilled": 3,
+        "fullWidth": true
+      }
     },
     "about": "A small aromatic evergreen tree native to the Indian subcontinent, the curry tree is best known for its highly fragrant pinnate leaves, each bearing 11 to 21 pairs of ovate-lanceolate leaflets. The bark is greyish-brown and rough. Small, white, fragrant flowers appear in clusters, maturing into shiny black berries. The leaves release their characteristic curry aroma when crushed, making them one of the most beloved culinary herbs in South Asian cooking.",
     "uses": [
-      { "label": "Culinary spice", "description": "Fresh or dried leaves are tempered in hot oil to release flavour — a cornerstone of South Indian, Sri Lankan, and Southeast Asian cuisines." },
-      { "label": "Digestive health", "description": "Traditionally chewed raw or brewed as tea to improve digestion and relieve stomach disorders." },
-      { "label": "Diabetes management", "description": "Used in traditional herbal preparations to help regulate blood sugar levels." },
-      { "label": "Hair care", "description": "Leaf extracts are a popular ingredient in hair oils and tonics to support healthy hair growth." },
-      { "label": "Antimicrobial", "description": "The carbazole alkaloids in the leaves show strong antimicrobial activity in laboratory studies." }
+      {
+        "label": "Culinary spice",
+        "description": "Fresh or dried leaves are tempered in hot oil to release flavour — a cornerstone of South Indian, Sri Lankan, and Southeast Asian cuisines."
+      },
+      {
+        "label": "Digestive health",
+        "description": "Traditionally chewed raw or brewed as tea to improve digestion and relieve stomach disorders."
+      },
+      {
+        "label": "Diabetes management",
+        "description": "Used in traditional herbal preparations to help regulate blood sugar levels."
+      },
+      {
+        "label": "Hair care",
+        "description": "Leaf extracts are a popular ingredient in hair oils and tonics to support healthy hair growth."
+      },
+      {
+        "label": "Antimicrobial",
+        "description": "The carbazole alkaloids in the leaves show strong antimicrobial activity in laboratory studies."
+      }
     ],
     "funFacts": [
-      { "question": "Not the same as curry powder", "answer": "Despite the name, curry leaves are not an ingredient in curry powder — that spice blend is a British invention. Fresh curry leaves are used for tempering, a completely different technique." },
-      { "question": "A nutritional powerhouse", "answer": "Curry leaves are rich in vitamin A, vitamin C, calcium, iron, and phosphorus — far more than most culinary herbs." },
-      { "question": "Named after a botanist", "answer": "The genus Murraya honours Johan Andreas Murray, an 18th-century Swedish botanist and student of Linnaeus." }
+      {
+        "question": "Not the same as curry powder",
+        "answer": "Despite the name, curry leaves are not an ingredient in curry powder — that spice blend is a British invention. Fresh curry leaves are used for tempering, a completely different technique."
+      },
+      {
+        "question": "A nutritional powerhouse",
+        "answer": "Curry leaves are rich in vitamin A, vitamin C, calcium, iron, and phosphorus — far more than most culinary herbs."
+      },
+      {
+        "question": "Named after a botanist",
+        "answer": "The genus Murraya honours Johan Andreas Murray, an 18th-century Swedish botanist and student of Linnaeus."
+      }
     ]
   },
   {
@@ -81,7 +248,12 @@
     "commonNames": ["Kalmegh", "Green Chiretta", "King of Bitters"],
     "family": "Acanthaceae",
     "pronunciation": "an-droh-GRAF-iss puh-NIK-yoo-lah-tuh",
-    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "images": {
+      "hero": "images/kalmegh/hero.jpeg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
     "badges": {
       "conservation": "Least Concern",
       "nativeRegion": "India & Sri Lanka",
@@ -91,31 +263,70 @@
       "matureHeight": "30 – 90 cm",
       "growthRate": "Fast"
     },
-    "warnings": { "headline": "Extremely bitter — not for casual use", "chips": ["Consult physician", "Avoid during pregnancy"] },
+    "warnings": {
+      "headline": "Extremely bitter — not for casual use",
+      "chips": ["Consult physician", "Avoid during pregnancy"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun to partial shade", "meterFilled": 3 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun to partial shade",
+        "meterFilled": 3
+      },
       "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
       "soil": { "label": "Soil", "value": "Well-drained, loamy / sandy" },
       "temperature": { "label": "Temperature", "value": "20° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "Moderate", "meterFilled": 2, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Moderate",
+        "meterFilled": 2,
+        "fullWidth": true
+      }
     },
     "about": "An annual herb with erect, branched, quadrangular stems reaching up to 90 cm. Its simple, opposite, lanceolate leaves are intensely bitter — hence the name King of Bitters. Small white flowers with purple markings bloom in axillary and terminal clusters, producing narrow elongated capsules filled with numerous tiny seeds. Kalmegh is one of the most important medicinal plants in Ayurveda and Traditional Chinese Medicine, valued primarily for its hepatoprotective and immunomodulatory properties.",
     "uses": [
-      { "label": "Liver protection", "description": "The primary Ayurvedic use — andrographolide has well-documented hepatoprotective effects and is a key ingredient in liver tonics." },
-      { "label": "Fever & infections", "description": "Traditionally used for viral and bacterial infections, colds, coughs, and respiratory tract disorders." },
-      { "label": "Immunity booster", "description": "Its immunomodulatory properties make it a popular remedy during seasonal illness." },
-      { "label": "Digestive aid", "description": "Stimulates appetite and improves digestion despite (or because of) its intense bitterness." }
+      {
+        "label": "Liver protection",
+        "description": "The primary Ayurvedic use — andrographolide has well-documented hepatoprotective effects and is a key ingredient in liver tonics."
+      },
+      {
+        "label": "Fever & infections",
+        "description": "Traditionally used for viral and bacterial infections, colds, coughs, and respiratory tract disorders."
+      },
+      {
+        "label": "Immunity booster",
+        "description": "Its immunomodulatory properties make it a popular remedy during seasonal illness."
+      },
+      {
+        "label": "Digestive aid",
+        "description": "Stimulates appetite and improves digestion despite (or because of) its intense bitterness."
+      }
     ],
     "funFacts": [
-      { "question": "How bitter is it really?", "answer": "It's called the King of Bitters for good reason — andrographolide is one of the most bitter naturally occurring compounds known, and the whole plant tastes extraordinarily sharp." },
-      { "question": "A pandemic-era star", "answer": "Kalmegh saw a huge surge in global interest during the COVID-19 pandemic as researchers investigated its antiviral and immunomodulatory properties." },
-      { "question": "Used in two great traditions", "answer": "It's one of the few plants extensively used in both Ayurveda and Traditional Chinese Medicine, known as Chuan Xin Lian in TCM." }
+      {
+        "question": "How bitter is it really?",
+        "answer": "It's called the King of Bitters for good reason — andrographolide is one of the most bitter naturally occurring compounds known, and the whole plant tastes extraordinarily sharp."
+      },
+      {
+        "question": "A pandemic-era star",
+        "answer": "Kalmegh saw a huge surge in global interest during the COVID-19 pandemic as researchers investigated its antiviral and immunomodulatory properties."
+      },
+      {
+        "question": "Used in two great traditions",
+        "answer": "It's one of the few plants extensively used in both Ayurveda and Traditional Chinese Medicine, known as Chuan Xin Lian in TCM."
+      }
     ]
   },
   {
     "id": "kalanchoe-pinnata",
     "botanicalName": "Kalanchoe pinnata (Lam.) Pers.",
-    "commonNames": ["Patharchatta", "Bryophyllum", "Life Plant", "Miracle Leaf", "Cathedral Bells"],
+    "commonNames": [
+      "Patharchatta",
+      "Bryophyllum",
+      "Life Plant",
+      "Miracle Leaf",
+      "Cathedral Bells"
+    ],
     "family": "Crassulaceae",
     "pronunciation": "kal-AN-ko-ee pin-NAY-tuh",
     "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
@@ -128,25 +339,62 @@
       "matureHeight": "30 – 120 cm",
       "growthRate": "Fast"
     },
-    "warnings": { "headline": "Generally safe externally; internal use requires caution", "chips": ["Consult physician"] },
+    "warnings": {
+      "headline": "Generally safe externally; internal use requires caution",
+      "chips": ["Consult physician"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Bright indirect light to partial sun", "meterFilled": 2 },
-      "water": { "label": "Water", "value": "Low — let soil dry between watering", "meterFilled": 1 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Bright indirect light to partial sun",
+        "meterFilled": 2
+      },
+      "water": {
+        "label": "Water",
+        "value": "Low — let soil dry between watering",
+        "meterFilled": 1
+      },
       "soil": { "label": "Soil", "value": "Well-drained, sandy / cactus mix" },
       "temperature": { "label": "Temperature", "value": "15° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Tolerates dry air",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
     },
     "about": "A perennial succulent herb known for its extraordinary ability to propagate vegetatively — tiny plantlets grow along the scalloped leaf margins, drop off, and root wherever they land, earning it the name Life Plant or Miracle Leaf. Its thick, fleshy leaves are ovate and opposite. Pendulous, tubular reddish-purple flowers hang in terminal clusters like cathedral bells. Native to Madagascar, it has naturalised throughout the tropics and is widely used in folk medicine, particularly for kidney stones and wound healing.",
     "uses": [
-      { "label": "Kidney stone support", "description": "Leaf juice is a well-known folk remedy for kidney stones — the name Patharchatta literally means 'stone-breaker' in Hindi." },
-      { "label": "Wound healing", "description": "Crushed leaves are applied topically on wounds, burns, cuts, and insect bites to speed healing." },
-      { "label": "Anti-inflammatory", "description": "Used externally and internally in traditional medicine to reduce swelling and inflammation." },
-      { "label": "Cough & fever", "description": "Leaf extracts are used in folk preparations for respiratory ailments and fever reduction." }
+      {
+        "label": "Kidney stone support",
+        "description": "Leaf juice is a well-known folk remedy for kidney stones — the name Patharchatta literally means 'stone-breaker' in Hindi."
+      },
+      {
+        "label": "Wound healing",
+        "description": "Crushed leaves are applied topically on wounds, burns, cuts, and insect bites to speed healing."
+      },
+      {
+        "label": "Anti-inflammatory",
+        "description": "Used externally and internally in traditional medicine to reduce swelling and inflammation."
+      },
+      {
+        "label": "Cough & fever",
+        "description": "Leaf extracts are used in folk preparations for respiratory ailments and fever reduction."
+      }
     ],
     "funFacts": [
-      { "question": "How does it make babies on its leaves?", "answer": "This phenomenon is called vegetative vivipary — meristematic tissue along the leaf margin develops into complete miniature plantlets complete with roots, which detach and grow independently." },
-      { "question": "A survivor's strategy", "answer": "Its succulent leaves store water, allowing it to survive long dry spells — and the plantlets ensure it colonises new ground without needing seeds." },
-      { "question": "Also called Goethe Plant", "answer": "The German poet Goethe was fascinated by this plant's reproductive strategy and wrote about it in his scientific essays." }
+      {
+        "question": "How does it make babies on its leaves?",
+        "answer": "This phenomenon is called vegetative vivipary — meristematic tissue along the leaf margin develops into complete miniature plantlets complete with roots, which detach and grow independently."
+      },
+      {
+        "question": "A survivor's strategy",
+        "answer": "Its succulent leaves store water, allowing it to survive long dry spells — and the plantlets ensure it colonises new ground without needing seeds."
+      },
+      {
+        "question": "Also called Goethe Plant",
+        "answer": "The German poet Goethe was fascinated by this plant's reproductive strategy and wrote about it in his scientific essays."
+      }
     ]
   },
   {
@@ -165,25 +413,62 @@
       "matureHeight": "Prostrate (creeping)",
       "growthRate": "Moderate to fast"
     },
-    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Consult physician", "May cause mild stomach upset"] },
+    "warnings": {
+      "headline": "Generally safe when used as directed",
+      "chips": ["Consult physician", "May cause mild stomach upset"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun to partial shade", "meterFilled": 2 },
-      "water": { "label": "Water", "value": "High — thrives in wet / boggy soil", "meterFilled": 4 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun to partial shade",
+        "meterFilled": 2
+      },
+      "water": {
+        "label": "Water",
+        "value": "High — thrives in wet / boggy soil",
+        "meterFilled": 4
+      },
       "soil": { "label": "Soil", "value": "Moist, rich, loamy / aquatic" },
       "temperature": { "label": "Temperature", "value": "15° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "High humidity preferred", "meterFilled": 4, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "High humidity preferred",
+        "meterFilled": 4,
+        "fullWidth": true
+      }
     },
     "about": "A small creeping perennial herb with soft, branched, prostrate stems that root at the nodes. Its opposite leaves are simple, fleshy, oval-shaped, and sessile. Small white to pale-blue flowers with purple veins appear solitarily, maturing into tiny capsules. Brahmi thrives in wet, marshy habitats across the Indian subcontinent and Southeast Asia. Revered in Ayurveda for over 3,000 years, it is the premier intellect-enhancing herb, named after Lord Brahma, the creator in Hindu mythology, symbolising its power to enhance consciousness.",
     "uses": [
-      { "label": "Memory & cognition", "description": "The best-known Ayurvedic nootropic — used to enhance memory, learning, concentration, and mental clarity." },
-      { "label": "Stress & anxiety", "description": "Its adaptogenic and anxiolytic properties make it a cornerstone of stress-management herbal formulations." },
-      { "label": "Nervous system support", "description": "Used for neurological conditions including epilepsy support, with bacosides showing neuroprotective effects in studies." },
-      { "label": "Skin disorders", "description": "Paste of the fresh plant is applied to inflammatory skin conditions and wounds." }
+      {
+        "label": "Memory & cognition",
+        "description": "The best-known Ayurvedic nootropic — used to enhance memory, learning, concentration, and mental clarity."
+      },
+      {
+        "label": "Stress & anxiety",
+        "description": "Its adaptogenic and anxiolytic properties make it a cornerstone of stress-management herbal formulations."
+      },
+      {
+        "label": "Nervous system support",
+        "description": "Used for neurological conditions including epilepsy support, with bacosides showing neuroprotective effects in studies."
+      },
+      {
+        "label": "Skin disorders",
+        "description": "Paste of the fresh plant is applied to inflammatory skin conditions and wounds."
+      }
     ],
     "funFacts": [
-      { "question": "Named after a god", "answer": "The name Brahmi comes from Brahma, the Hindu god of creation — the plant is believed to enhance sattvic (pure, creative) qualities of the mind." },
-      { "question": "Fish love it too", "answer": "Brahmi is a popular aquarium and pond plant — it oxygenates water and provides shelter for small fish and amphibians." },
-      { "question": "3,000 years of use", "answer": "References to Brahmi appear in the Charaka Samhita, one of the foundational texts of Ayurveda written around 1000 BCE." }
+      {
+        "question": "Named after a god",
+        "answer": "The name Brahmi comes from Brahma, the Hindu god of creation — the plant is believed to enhance sattvic (pure, creative) qualities of the mind."
+      },
+      {
+        "question": "Fish love it too",
+        "answer": "Brahmi is a popular aquarium and pond plant — it oxygenates water and provides shelter for small fish and amphibians."
+      },
+      {
+        "question": "3,000 years of use",
+        "answer": "References to Brahmi appear in the Charaka Samhita, one of the foundational texts of Ayurveda written around 1000 BCE."
+      }
     ]
   },
   {
@@ -202,25 +487,62 @@
       "matureHeight": "10 – 15 cm",
       "growthRate": "Fast"
     },
-    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Consult physician if pregnant", "May cause skin sensitivity"] },
+    "warnings": {
+      "headline": "Generally safe when used as directed",
+      "chips": ["Consult physician if pregnant", "May cause skin sensitivity"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Partial shade to full sun", "meterFilled": 2 },
-      "water": { "label": "Water", "value": "High — keep soil consistently moist", "meterFilled": 4 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Partial shade to full sun",
+        "meterFilled": 2
+      },
+      "water": {
+        "label": "Water",
+        "value": "High — keep soil consistently moist",
+        "meterFilled": 4
+      },
       "soil": { "label": "Soil", "value": "Moist, rich, loamy" },
       "temperature": { "label": "Temperature", "value": "15° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "High humidity", "meterFilled": 4, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "High humidity",
+        "meterFilled": 4,
+        "fullWidth": true
+      }
     },
     "about": "A small creeping perennial herb with slender green stems that root at the nodes, forming dense mats in moist habitats. Its distinctive round to kidney-shaped peltate leaves on long petioles channel rainwater to the roots — a clever adaptation. Small pinkish-white flowers cluster in umbels, producing flattened schizocarpic fruits. Found across tropical Asia, Africa, and Australia, Gotu Kola has been a cornerstone of Ayurvedic, Traditional Chinese, and Southeast Asian medicine for centuries, prized as a brain tonic and wound healer.",
     "uses": [
-      { "label": "Brain tonic", "description": "Used in Ayurveda and TCM to enhance memory, concentration, and cognitive function — often paired with Brahmi." },
-      { "label": "Wound healing", "description": "Asiaticoside and madecassoside promote collagen synthesis, making Gotu Kola extracts popular in wound-healing creams and scar treatments." },
-      { "label": "Skin health", "description": "Widely used in cosmetic products for its skin-protective, soothing, and anti-ageing properties." },
-      { "label": "Stress & anxiety", "description": "Traditional herbal preparations use it to calm the mind and reduce mental fatigue." }
+      {
+        "label": "Brain tonic",
+        "description": "Used in Ayurveda and TCM to enhance memory, concentration, and cognitive function — often paired with Brahmi."
+      },
+      {
+        "label": "Wound healing",
+        "description": "Asiaticoside and madecassoside promote collagen synthesis, making Gotu Kola extracts popular in wound-healing creams and scar treatments."
+      },
+      {
+        "label": "Skin health",
+        "description": "Widely used in cosmetic products for its skin-protective, soothing, and anti-ageing properties."
+      },
+      {
+        "label": "Stress & anxiety",
+        "description": "Traditional herbal preparations use it to calm the mind and reduce mental fatigue."
+      }
     ],
     "funFacts": [
-      { "question": "Elephant wisdom", "answer": "Gotu Kola is popularly associated with elephants in folklore — the belief is that elephants, known for their long memory, eat it to stay sharp. There's even a saying: 'A leaf a day keeps old age away.'" },
-      { "question": "Nature's umbrella", "answer": "The round peltate leaves are shaped like tiny umbrellas — the long petiole attaches at the centre of the leaf blade, channelling rainwater directly to the roots." },
-      { "question": "A tale of two tonics", "answer": "Gotu Kola (Centella asiatica) and Brahmi (Bacopa monnieri) are often confused — both are called brain tonics, but they're completely different plants from different families." }
+      {
+        "question": "Elephant wisdom",
+        "answer": "Gotu Kola is popularly associated with elephants in folklore — the belief is that elephants, known for their long memory, eat it to stay sharp. There's even a saying: 'A leaf a day keeps old age away.'"
+      },
+      {
+        "question": "Nature's umbrella",
+        "answer": "The round peltate leaves are shaped like tiny umbrellas — the long petiole attaches at the centre of the leaf blade, channelling rainwater directly to the roots."
+      },
+      {
+        "question": "A tale of two tonics",
+        "answer": "Gotu Kola (Centella asiatica) and Brahmi (Bacopa monnieri) are often confused — both are called brain tonics, but they're completely different plants from different families."
+      }
     ]
   },
   {
@@ -229,7 +551,12 @@
     "commonNames": ["Safed Musli", "White Musli", "Indian Musli"],
     "family": "Asparagaceae",
     "pronunciation": "klor-oh-FY-tum boh-rih-vil-ee-AH-num",
-    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "images": {
+      "hero": "images/safed-musli/hero.jpg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
     "badges": {
       "conservation": "Near Threatened",
       "nativeRegion": "Central & Western India",
@@ -239,25 +566,62 @@
       "matureHeight": "30 – 60 cm",
       "growthRate": "Moderate"
     },
-    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Consult physician"] },
+    "warnings": {
+      "headline": "Generally safe when used as directed",
+      "chips": ["Consult physician"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
-      "water": { "label": "Water", "value": "Low — drought tolerant once established", "meterFilled": 1 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Low — drought tolerant once established",
+        "meterFilled": 1
+      },
       "soil": { "label": "Soil", "value": "Well-drained, sandy loam" },
       "temperature": { "label": "Temperature", "value": "20° – 40°C" },
-      "humidity": { "label": "Humidity preference", "value": "Low to moderate", "meterFilled": 1, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Low to moderate",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
     },
     "about": "A perennial herb prized for its fleshy, spindle-shaped, white tuberous roots — the most valuable part of the plant. Its narrow, lanceolate leaves form a basal rosette, while small white star-shaped flowers bloom on slender stalks. The roots are rich in saponins (up to 14%), among the highest of any Indian medicinal plant. Native to central and western India, Safed Musli is one of the most commercially important medicinal plants in Ayurveda, valued primarily as a rejuvenating tonic and adaptogen. Due to high demand, it is classified as Near Threatened.",
     "uses": [
-      { "label": "Rejuvenating tonic", "description": "Used as a general health tonic and rasayana in Ayurveda to build strength, stamina, and vitality." },
-      { "label": "Adaptogen", "description": "Helps the body cope with physical and mental stress — widely used in herbal formulations for fatigue and weakness." },
-      { "label": "Immune support", "description": "The saponins and polysaccharides in the roots have immunomodulatory properties." },
-      { "label": "Muscle strength", "description": "Traditionally used by athletes and bodybuilders in herbal preparations to support muscle development and recovery." }
+      {
+        "label": "Rejuvenating tonic",
+        "description": "Used as a general health tonic and rasayana in Ayurveda to build strength, stamina, and vitality."
+      },
+      {
+        "label": "Adaptogen",
+        "description": "Helps the body cope with physical and mental stress — widely used in herbal formulations for fatigue and weakness."
+      },
+      {
+        "label": "Immune support",
+        "description": "The saponins and polysaccharides in the roots have immunomodulatory properties."
+      },
+      {
+        "label": "Muscle strength",
+        "description": "Traditionally used by athletes and bodybuilders in herbal preparations to support muscle development and recovery."
+      }
     ],
     "funFacts": [
-      { "question": "Why is it called white musli?", "answer": "The harvested roots are peeled to reveal a pure white interior — 'safed' means white in Hindi, and the roots resemble the colour of bleached muslin cloth." },
-      { "question": "A saponin champion", "answer": "The roots contain up to 14% saponins by dry weight — one of the highest concentrations found in any medicinal plant, which explains its potent bioactivity." },
-      { "question": "Cultivation is critical", "answer": "Wild populations have declined sharply due to overharvesting. Today, most commercial Safed Musli comes from organised cultivation to protect wild stocks." }
+      {
+        "question": "Why is it called white musli?",
+        "answer": "The harvested roots are peeled to reveal a pure white interior — 'safed' means white in Hindi, and the roots resemble the colour of bleached muslin cloth."
+      },
+      {
+        "question": "A saponin champion",
+        "answer": "The roots contain up to 14% saponins by dry weight — one of the highest concentrations found in any medicinal plant, which explains its potent bioactivity."
+      },
+      {
+        "question": "Cultivation is critical",
+        "answer": "Wild populations have declined sharply due to overharvesting. Today, most commercial Safed Musli comes from organised cultivation to protect wild stocks."
+      }
     ]
   },
   {
@@ -276,25 +640,62 @@
       "matureHeight": "8 – 18 m",
       "growthRate": "Moderate"
     },
-    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Safe for consumption", "May interact with blood thinners"] },
+    "warnings": {
+      "headline": "Generally safe when used as directed",
+      "chips": ["Safe for consumption", "May interact with blood thinners"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
-      "water": { "label": "Water", "value": "Moderate — drought tolerant", "meterFilled": 2 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Moderate — drought tolerant",
+        "meterFilled": 2
+      },
       "soil": { "label": "Soil", "value": "Well-drained, sandy / loamy" },
       "temperature": { "label": "Temperature", "value": "10° – 45°C" },
-      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Tolerates dry air",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
     },
     "about": "A medium-sized deciduous tree with light grey to brown exfoliating bark. Its small, light-green leaves are closely arranged along branchlets, giving the foliage a feathery appearance. Small greenish-yellow flowers appear in clusters, maturing into smooth, round, pale greenish-yellow fruits with six distinct lobes. Amla is one of the richest natural sources of vitamin C — with 20 to 30 times more than oranges — and its vitamin C is stabilised by tannins so it survives drying and cooking. Revered in Ayurveda as a premier rasayana (rejuvenating tonic), it is among the most important medicinal plants in the Indian subcontinent.",
     "uses": [
-      { "label": "Immunity booster", "description": "The exceptionally high vitamin C content makes Amla a cornerstone of immune-support herbal formulations like Chyawanprash." },
-      { "label": "Digestive health", "description": "Fresh fruit, dried powder, or juice is used to improve digestion, relieve acidity, and support liver function." },
-      { "label": "Hair & skin care", "description": "Amla oil and powder are widely used in hair oils, shampoos, and face packs for their nourishing and antioxidant properties." },
-      { "label": "Cardiometabolic support", "description": "Studies suggest Amla helps regulate blood sugar, cholesterol, and blood pressure — supporting heart and metabolic health." }
+      {
+        "label": "Immunity booster",
+        "description": "The exceptionally high vitamin C content makes Amla a cornerstone of immune-support herbal formulations like Chyawanprash."
+      },
+      {
+        "label": "Digestive health",
+        "description": "Fresh fruit, dried powder, or juice is used to improve digestion, relieve acidity, and support liver function."
+      },
+      {
+        "label": "Hair & skin care",
+        "description": "Amla oil and powder are widely used in hair oils, shampoos, and face packs for their nourishing and antioxidant properties."
+      },
+      {
+        "label": "Cardiometabolic support",
+        "description": "Studies suggest Amla helps regulate blood sugar, cholesterol, and blood pressure — supporting heart and metabolic health."
+      }
     ],
     "funFacts": [
-      { "question": "Vitamin C that doesn't fade", "answer": "Unlike most fruits, Amla's vitamin C is remarkably stable — the high tannin content protects it from oxidation, so even dried and powdered Amla retains its potency." },
-      { "question": "The sacred tree", "answer": "In Hindu tradition, the Amla tree is considered sacred — it's believed that Lord Vishnu resides in it, and worshipping the tree on Amla Navami brings prosperity." },
-      { "question": "Chyawanprash's star ingredient", "answer": "Amla is the primary ingredient in Chyawanprash, one of the oldest and most famous Ayurvedic formulations, traditionally made from over 40 herbs." }
+      {
+        "question": "Vitamin C that doesn't fade",
+        "answer": "Unlike most fruits, Amla's vitamin C is remarkably stable — the high tannin content protects it from oxidation, so even dried and powdered Amla retains its potency."
+      },
+      {
+        "question": "The sacred tree",
+        "answer": "In Hindu tradition, the Amla tree is considered sacred — it's believed that Lord Vishnu resides in it, and worshipping the tree on Amla Navami brings prosperity."
+      },
+      {
+        "question": "Chyawanprash's star ingredient",
+        "answer": "Amla is the primary ingredient in Chyawanprash, one of the oldest and most famous Ayurvedic formulations, traditionally made from over 40 herbs."
+      }
     ]
   },
   {
@@ -313,25 +714,62 @@
       "matureHeight": "15 – 30 m",
       "growthRate": "Slow to moderate"
     },
-    "warnings": { "headline": "Generally safe when used as directed", "chips": ["Safe for consumption", "May lower blood sugar"] },
+    "warnings": {
+      "headline": "Generally safe when used as directed",
+      "chips": ["Safe for consumption", "May lower blood sugar"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
-      "water": { "label": "Water", "value": "Moderate — tolerates occasional drought", "meterFilled": 2 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Moderate — tolerates occasional drought",
+        "meterFilled": 2
+      },
       "soil": { "label": "Soil", "value": "Well-drained, loamy / clayey" },
       "temperature": { "label": "Temperature", "value": "15° – 40°C" },
-      "humidity": { "label": "Humidity preference", "value": "Moderate to high", "meterFilled": 3, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Moderate to high",
+        "meterFilled": 3,
+        "fullWidth": true
+      }
     },
     "about": "A large evergreen tree with rough, flaky grey to dark-brown bark. Its opposite leaves are leathery, glossy, and oval to lance-shaped, dotted with aromatic oil glands. Small, fragrant greenish-white flowers bloom in clusters, giving way to oval fleshy berries that ripen from green to deep purple-black. The fruit's deep-purple juice is rich in anthocyanins and stains the tongue for hours — a childhood memory for millions across South Asia. Jamun has been used for centuries in Ayurveda, particularly the seeds, which are valued for their antidiabetic properties.",
     "uses": [
-      { "label": "Diabetes management", "description": "Jamun seed powder is one of the most well-known Ayurvedic remedies for managing blood sugar — the compound jamboline is believed to slow starch-to-sugar conversion." },
-      { "label": "Digestive health", "description": "The fruit, bark, and seeds are used in traditional remedies for diarrhoea, dysentery, and other digestive complaints." },
-      { "label": "Antioxidant", "description": "The deep-purple anthocyanins in the fruit are potent antioxidants that help combat oxidative stress." },
-      { "label": "Oral health", "description": "Bark decoctions are traditionally used as a mouthwash for gum health and oral ulcers." }
+      {
+        "label": "Diabetes management",
+        "description": "Jamun seed powder is one of the most well-known Ayurvedic remedies for managing blood sugar — the compound jamboline is believed to slow starch-to-sugar conversion."
+      },
+      {
+        "label": "Digestive health",
+        "description": "The fruit, bark, and seeds are used in traditional remedies for diarrhoea, dysentery, and other digestive complaints."
+      },
+      {
+        "label": "Antioxidant",
+        "description": "The deep-purple anthocyanins in the fruit are potent antioxidants that help combat oxidative stress."
+      },
+      {
+        "label": "Oral health",
+        "description": "Bark decoctions are traditionally used as a mouthwash for gum health and oral ulcers."
+      }
     ],
     "funFacts": [
-      { "question": "The tongue-staining fruit", "answer": "The deep-purple juice stains the tongue for hours after eating — a familiar childhood experience for millions across the Indian subcontinent. Those same anthocyanins are powerful antioxidants." },
-      { "question": "A tree that lives a century", "answer": "Jamun trees can live over 100 years, and some specimens in India are estimated to be several centuries old, still producing fruit." },
-      { "question": "The seed is the medicine", "answer": "While the fruit is eaten fresh, it's the seed that holds the real medicinal value — dried and powdered Jamun seeds are a mainstay of Ayurvedic diabetes management." }
+      {
+        "question": "The tongue-staining fruit",
+        "answer": "The deep-purple juice stains the tongue for hours after eating — a familiar childhood experience for millions across the Indian subcontinent. Those same anthocyanins are powerful antioxidants."
+      },
+      {
+        "question": "A tree that lives a century",
+        "answer": "Jamun trees can live over 100 years, and some specimens in India are estimated to be several centuries old, still producing fruit."
+      },
+      {
+        "question": "The seed is the medicine",
+        "answer": "While the fruit is eaten fresh, it's the seed that holds the real medicinal value — dried and powdered Jamun seeds are a mainstay of Ayurvedic diabetes management."
+      }
     ]
   },
   {
@@ -350,25 +788,66 @@
       "matureHeight": "30 – 60 cm",
       "growthRate": "Moderate"
     },
-    "warnings": { "headline": "Two medicines in one leaf — use carefully", "chips": ["Gel is safe externally", "Latex is a potent laxative", "Consult physician"] },
+    "warnings": {
+      "headline": "Two medicines in one leaf — use carefully",
+      "chips": [
+        "Gel is safe externally",
+        "Latex is a potent laxative",
+        "Consult physician"
+      ]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Bright indirect to full sun", "meterFilled": 3 },
-      "water": { "label": "Water", "value": "Low — let soil dry completely", "meterFilled": 1 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Bright indirect to full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Low — let soil dry completely",
+        "meterFilled": 1
+      },
       "soil": { "label": "Soil", "value": "Well-drained, sandy / cactus mix" },
       "temperature": { "label": "Temperature", "value": "10° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Tolerates dry air",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
     },
     "about": "A perennial succulent herb with thick, fleshy, green, lance-shaped leaves arranged in a rosette, their serrated margins tapering to sharp points. Yellow tubular flowers rise on long spikes. The leaf contains two distinct medicinal products: the clear inner gel (rich in polysaccharides like acemannan, used for wound healing and skin care) and the yellow latex from the rind (containing anthraquinones like aloin, a potent natural laxative). One of the oldest documented medicinal plants, Aloe vera appears in Sumerian clay tablets from 2200 BCE and has been cultivated across warm regions worldwide for millennia.",
     "uses": [
-      { "label": "Skin care & burns", "description": "The clear gel is applied directly to minor burns, cuts, sunburn, and skin irritations — its cooling, moisturising, and wound-healing properties are well-documented." },
-      { "label": "Cosmetics", "description": "Aloe gel is a ubiquitous ingredient in moisturisers, shampoos, lotions, and sunscreens for its hydrating and soothing effects." },
-      { "label": "Digestive health", "description": "The yellow latex (aloin) is a powerful natural laxative — but must be used cautiously due to its potency." },
-      { "label": "Oral health", "description": "Aloe vera gel is used in some natural toothpastes and mouthwashes for its antimicrobial and anti-inflammatory effects on gums." }
+      {
+        "label": "Skin care & burns",
+        "description": "The clear gel is applied directly to minor burns, cuts, sunburn, and skin irritations — its cooling, moisturising, and wound-healing properties are well-documented."
+      },
+      {
+        "label": "Cosmetics",
+        "description": "Aloe gel is a ubiquitous ingredient in moisturisers, shampoos, lotions, and sunscreens for its hydrating and soothing effects."
+      },
+      {
+        "label": "Digestive health",
+        "description": "The yellow latex (aloin) is a powerful natural laxative — but must be used cautiously due to its potency."
+      },
+      {
+        "label": "Oral health",
+        "description": "Aloe vera gel is used in some natural toothpastes and mouthwashes for its antimicrobial and anti-inflammatory effects on gums."
+      }
     ],
     "funFacts": [
-      { "question": "One leaf, two medicines", "answer": "The same leaf contains two completely different products: the soothing clear inner gel for burns and skin, and the potent yellow latex from the rind — a powerful laxative known since ancient times." },
-      { "question": "Used by Cleopatra", "answer": "Legend holds that Cleopatra used Aloe vera as part of her daily beauty regimen — and historical records confirm its use in ancient Egyptian cosmetics and embalming." },
-      { "question": "A Sumerian prescription", "answer": "Aloe vera is mentioned on Sumerian clay tablets dating back to 2200 BCE, making it one of the oldest documented medicinal plants in human history." }
+      {
+        "question": "One leaf, two medicines",
+        "answer": "The same leaf contains two completely different products: the soothing clear inner gel for burns and skin, and the potent yellow latex from the rind — a powerful laxative known since ancient times."
+      },
+      {
+        "question": "Used by Cleopatra",
+        "answer": "Legend holds that Cleopatra used Aloe vera as part of her daily beauty regimen — and historical records confirm its use in ancient Egyptian cosmetics and embalming."
+      },
+      {
+        "question": "A Sumerian prescription",
+        "answer": "Aloe vera is mentioned on Sumerian clay tablets dating back to 2200 BCE, making it one of the oldest documented medicinal plants in human history."
+      }
     ]
   },
   {
@@ -387,25 +866,58 @@
       "matureHeight": "12 – 20 m",
       "growthRate": "Moderate"
     },
-    "warnings": { "headline": "Generally safe externally; avoid eye contact", "chips": ["External use only", "Avoid eye contact", "Consult physician"] },
+    "warnings": {
+      "headline": "Generally safe externally; avoid eye contact",
+      "chips": ["External use only", "Avoid eye contact", "Consult physician"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
       "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
       "soil": { "label": "Soil", "value": "Well-drained, loamy" },
       "temperature": { "label": "Temperature", "value": "5° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "Moderate to high", "meterFilled": 3, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Moderate to high",
+        "meterFilled": 3,
+        "fullWidth": true
+      }
     },
     "about": "A medium to large deciduous tree with rough, grey to dark-brown vertically fissured bark. Its alternate pinnate leaves bear 5 to 10 pairs of lance-shaped leaflets. Small greenish-white flowers form terminal panicles, maturing into round yellowish-brown fleshy drupes — the famous soapnuts. The fruit pericarp is sticky and rich in triterpenoid saponins that produce a natural soap-like lather when mixed with water. Native to the Himalayan foothills and East Asia, Reetha has been used for centuries as a natural cleanser for hair, skin, and delicate fabrics — a zero-waste, biodegradable detergent long before sustainability became mainstream.",
     "uses": [
-      { "label": "Natural shampoo", "description": "The most traditional use — soaked or boiled soapnuts produce a gentle, natural lather that cleanses hair without stripping natural oils." },
-      { "label": "Skin cleanser", "description": "Used in traditional skincare preparations for eczema, psoriasis, and general cleansing — its antimicrobial properties help with acne and dandruff." },
-      { "label": "Eco-friendly detergent", "description": "An increasingly popular zero-waste laundry and household cleaner — the saponins are fully biodegradable." },
-      { "label": "Jewellery cleaner", "description": "Traditionally used to clean delicate gold and silver jewellery without scratching." }
+      {
+        "label": "Natural shampoo",
+        "description": "The most traditional use — soaked or boiled soapnuts produce a gentle, natural lather that cleanses hair without stripping natural oils."
+      },
+      {
+        "label": "Skin cleanser",
+        "description": "Used in traditional skincare preparations for eczema, psoriasis, and general cleansing — its antimicrobial properties help with acne and dandruff."
+      },
+      {
+        "label": "Eco-friendly detergent",
+        "description": "An increasingly popular zero-waste laundry and household cleaner — the saponins are fully biodegradable."
+      },
+      {
+        "label": "Jewellery cleaner",
+        "description": "Traditionally used to clean delicate gold and silver jewellery without scratching."
+      }
     ],
     "funFacts": [
-      { "question": "How does a fruit become soap?", "answer": "The fruit pericarp contains triterpenoid saponins — natural surfactants that lower water surface tension and create a lather when agitated. No chemical processing needed." },
-      { "question": "Zero-waste before it was a movement", "answer": "Long before sustainability became a buzzword, Indian households used Reetha as a completely biodegradable shampoo, detergent, and cleaner — and the spent shells go right into compost." },
-      { "question": "The name says it all", "answer": "The genus name Sapindus comes from Latin 'sapo' (soap) and 'indicus' (Indian) — literally 'soap of India.'" }
+      {
+        "question": "How does a fruit become soap?",
+        "answer": "The fruit pericarp contains triterpenoid saponins — natural surfactants that lower water surface tension and create a lather when agitated. No chemical processing needed."
+      },
+      {
+        "question": "Zero-waste before it was a movement",
+        "answer": "Long before sustainability became a buzzword, Indian households used Reetha as a completely biodegradable shampoo, detergent, and cleaner — and the spent shells go right into compost."
+      },
+      {
+        "question": "The name says it all",
+        "answer": "The genus name Sapindus comes from Latin 'sapo' (soap) and 'indicus' (Indian) — literally 'soap of India.'"
+      }
     ]
   },
   {
@@ -414,7 +926,12 @@
     "commonNames": ["Neem", "Indian Lilac", "Margosa"],
     "family": "Meliaceae",
     "pronunciation": "az-uh-DIR-ak-tuh IN-dih-kuh",
-    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "images": {
+      "hero": "images/neem/hero.jpeg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
     "badges": {
       "conservation": "Least Concern",
       "nativeRegion": "Indian Subcontinent & Southeast Asia",
@@ -424,25 +941,66 @@
       "matureHeight": "15 – 30 m",
       "growthRate": "Fast"
     },
-    "warnings": { "headline": "Generally safe externally; internal use requires caution", "chips": ["Consult physician", "Internal use only under guidance", "Neem oil is potent"] },
+    "warnings": {
+      "headline": "Generally safe externally; internal use requires caution",
+      "chips": [
+        "Consult physician",
+        "Internal use only under guidance",
+        "Neem oil is potent"
+      ]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
-      "water": { "label": "Water", "value": "Low — highly drought tolerant", "meterFilled": 1 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Low — highly drought tolerant",
+        "meterFilled": 1
+      },
       "soil": { "label": "Soil", "value": "Well-drained, tolerates poor soil" },
       "temperature": { "label": "Temperature", "value": "10° – 45°C" },
-      "humidity": { "label": "Humidity preference", "value": "Tolerates dry air", "meterFilled": 1, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Tolerates dry air",
+        "meterFilled": 1,
+        "fullWidth": true
+      }
     },
     "about": "A large evergreen tree with rough, fissured grey to dark-brown bark that tastes distinctly bitter. Its leaves are alternate and imparipinnate, with 8 to 19 serrated leaflets. Small, white, fragrant flowers bloom in axillary panicles, giving way to smooth oval drupes that ripen from green to yellow — each containing a single seed rich in neem oil. Called the 'Village Pharmacy,' Neem has been a cornerstone of Ayurveda for over 4,000 years. Every part of the tree — leaves, bark, seeds, oil, and even twigs — has medicinal or practical use. The limonoid azadirachtin, unique to Neem, makes it one of the most potent natural insecticides known.",
     "uses": [
-      { "label": "Skin care", "description": "Neem leaf paste and oil are used for acne, eczema, psoriasis, and fungal infections — its antibacterial and anti-inflammatory properties are among the strongest in the plant kingdom." },
-      { "label": "Dental hygiene", "description": "Neem twigs have been used as natural toothbrushes (datun) for millennia — neem extracts are now common in herbal toothpaste." },
-      { "label": "Natural pesticide", "description": "Azadirachtin, unique to Neem, disrupts insect feeding and reproduction — Neem-based biopesticides are used worldwide in organic farming." },
-      { "label": "Hair care", "description": "Neem oil and leaf extracts are used in hair oils and shampoos to combat dandruff and scalp infections." }
+      {
+        "label": "Skin care",
+        "description": "Neem leaf paste and oil are used for acne, eczema, psoriasis, and fungal infections — its antibacterial and anti-inflammatory properties are among the strongest in the plant kingdom."
+      },
+      {
+        "label": "Dental hygiene",
+        "description": "Neem twigs have been used as natural toothbrushes (datun) for millennia — neem extracts are now common in herbal toothpaste."
+      },
+      {
+        "label": "Natural pesticide",
+        "description": "Azadirachtin, unique to Neem, disrupts insect feeding and reproduction — Neem-based biopesticides are used worldwide in organic farming."
+      },
+      {
+        "label": "Hair care",
+        "description": "Neem oil and leaf extracts are used in hair oils and shampoos to combat dandruff and scalp infections."
+      }
     ],
     "funFacts": [
-      { "question": "A pharmacy in every village", "answer": "Neem is called the Village Pharmacy because every part of the tree — leaves, bark, seeds, oil, flowers, and twigs — has medicinal value, and a single tree can serve an entire community." },
-      { "question": "4,000 years of documented use", "answer": "Neem appears in the earliest Ayurvedic texts and has been continuously used for over four millennia — few plants can claim such a long and well-documented medicinal history." },
-      { "question": "Nature's own insecticide", "answer": "Azadirachtin, the key limonoid in Neem, doesn't kill insects outright — it disrupts their hormonal systems so they stop feeding and can't reproduce, making it remarkably selective and biodegradable." }
+      {
+        "question": "A pharmacy in every village",
+        "answer": "Neem is called the Village Pharmacy because every part of the tree — leaves, bark, seeds, oil, flowers, and twigs — has medicinal value, and a single tree can serve an entire community."
+      },
+      {
+        "question": "4,000 years of documented use",
+        "answer": "Neem appears in the earliest Ayurvedic texts and has been continuously used for over four millennia — few plants can claim such a long and well-documented medicinal history."
+      },
+      {
+        "question": "Nature's own insecticide",
+        "answer": "Azadirachtin, the key limonoid in Neem, doesn't kill insects outright — it disrupts their hormonal systems so they stop feeding and can't reproduce, making it remarkably selective and biodegradable."
+      }
     ]
   },
   {
@@ -451,7 +1009,12 @@
     "commonNames": ["Neel Gulmohar", "Blue Jacaranda", "Fern Tree"],
     "family": "Bignoniaceae",
     "pronunciation": "jak-uh-RAN-duh mih-moh-sih-FOH-lee-uh",
-    "images": { "hero": "", "leaf": "", "flower": "", "fruit": "" },
+    "images": {
+      "hero": "images/neeli-gulmohr/hero.jpeg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
     "badges": {
       "conservation": "Least Concern",
       "nativeRegion": "South America (Argentina & Bolivia)",
@@ -461,25 +1024,327 @@
       "matureHeight": "10 – 15 m",
       "growthRate": "Fast"
     },
-    "warnings": { "headline": "Generally safe — primarily ornamental", "chips": ["Generally non-toxic", "Consult physician"] },
+    "warnings": {
+      "headline": "Generally safe — primarily ornamental",
+      "chips": ["Generally non-toxic", "Consult physician"]
+    },
     "care": {
-      "sunlight": { "label": "Sunlight", "value": "Full sun", "meterFilled": 3 },
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
       "water": { "label": "Water", "value": "Moderate", "meterFilled": 2 },
       "soil": { "label": "Soil", "value": "Well-drained, sandy / loamy" },
       "temperature": { "label": "Temperature", "value": "10° – 35°C" },
-      "humidity": { "label": "Humidity preference", "value": "Moderate", "meterFilled": 2, "fullWidth": true }
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Moderate",
+        "meterFilled": 2,
+        "fullWidth": true
+      }
     },
     "about": "A medium-sized deciduous to semi-evergreen tree renowned for its spectacular display of violet-blue flowers. Its thin, grey to grey-brown bark is rough and slightly fissured. The leaves are opposite and bipinnate — delicate, fern-like, and composed of numerous tiny leaflets that give the canopy a soft, airy texture. Large, fragrant trumpet-shaped flowers in vivid violet-blue to lavender appear in terminal panicles, often blanketing the entire crown before new leaves emerge. Flat, woody, dark-brown capsules follow, releasing thin, winged seeds that scatter on the wind. Native to Argentina and Bolivia, Jacaranda has been planted as an ornamental tree across warm regions worldwide — its breathtaking spring bloom transforms entire streets into tunnels of purple.",
     "uses": [
-      { "label": "Ornamental", "description": "One of the world's most beloved flowering trees — widely planted along streets, in parks, and in gardens for its spectacular seasonal purple display." },
-      { "label": "Folk medicine", "description": "Leaves and bark are used in traditional medicine in its native range for treating wounds, skin infections, and reducing fever." },
-      { "label": "Shade tree", "description": "Its broad, airy canopy provides dappled shade, making it a popular choice for avenues and public spaces in warm climates." },
-      { "label": "Woodworking", "description": "The timber, though not a primary use, is occasionally used for small carpentry and turned items." }
+      {
+        "label": "Ornamental",
+        "description": "One of the world's most beloved flowering trees — widely planted along streets, in parks, and in gardens for its spectacular seasonal purple display."
+      },
+      {
+        "label": "Folk medicine",
+        "description": "Leaves and bark are used in traditional medicine in its native range for treating wounds, skin infections, and reducing fever."
+      },
+      {
+        "label": "Shade tree",
+        "description": "Its broad, airy canopy provides dappled shade, making it a popular choice for avenues and public spaces in warm climates."
+      },
+      {
+        "label": "Woodworking",
+        "description": "The timber, though not a primary use, is occasionally used for small carpentry and turned items."
+      }
     ],
     "funFacts": [
-      { "question": "A purple phenomenon", "answer": "When Jacarandas bloom, the entire crown turns violet-blue before new leaves appear — the flowers fall to create a stunning purple carpet beneath the tree, a celebrated event in cities like Pretoria and Sydney." },
-      { "question": "Pretoria's purple blanket", "answer": "Pretoria, South Africa, is known as the Jacaranda City — over 70,000 trees line its streets, and each October the city transforms under a spectacular purple canopy." },
-      { "question": "A student's superstition", "answer": "At the University of Queensland, students say that if a Jacaranda blossom falls on you during exam season, you'll pass your exams — but if you haven't started studying by the time they bloom, it might already be too late." }
+      {
+        "question": "A purple phenomenon",
+        "answer": "When Jacarandas bloom, the entire crown turns violet-blue before new leaves appear — the flowers fall to create a stunning purple carpet beneath the tree, a celebrated event in cities like Pretoria and Sydney."
+      },
+      {
+        "question": "Pretoria's purple blanket",
+        "answer": "Pretoria, South Africa, is known as the Jacaranda City — over 70,000 trees line its streets, and each October the city transforms under a spectacular purple canopy."
+      },
+      {
+        "question": "A student's superstition",
+        "answer": "At the University of Queensland, students say that if a Jacaranda blossom falls on you during exam season, you'll pass your exams — but if you haven't started studying by the time they bloom, it might already be too late."
+      }
+    ]
+  },
+  {
+    "id": "cymbopogon-citratus",
+    "botanicalName": "Cymbopogon citratus (DC.) Stapf",
+    "commonNames": [
+      "Lemongrass",
+      "West Indian Lemongrass",
+      "Bhustrina",
+      "Hari Chah"
+    ],
+    "family": "Poaceae",
+    "pronunciation": "sim-boh-POH-gon sih-TRAY-tus",
+    "images": {
+      "hero": "images/lemon-grass/hero.jpg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
+    "badges": {
+      "conservation": "Not Evaluated",
+      "nativeRegion": "South & Southeast Asia",
+      "flowering": "Rare in cultivation",
+      "lifespan": "5 – 10 years",
+      "plantType": "Perennial Grass",
+      "matureHeight": "1 – 1.8 m",
+      "growthRate": "Fast"
+    },
+    "warnings": null,
+    "care": {
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Moderate",
+        "meterFilled": 2
+      },
+      "soil": {
+        "label": "Soil",
+        "value": "Well-drained, fertile sandy or loamy soil"
+      },
+      "temperature": {
+        "label": "Temperature",
+        "value": "18° – 35°C"
+      },
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Prefers warm, humid conditions",
+        "meterFilled": 2,
+        "fullWidth": true
+      }
+    },
+    "about": "Lemongrass is a fragrant perennial grass cultivated worldwide for its refreshing citrus aroma and culinary, medicinal, and aromatic uses. It forms dense clumps of long, narrow bluish-green leaves with sharp edges that release a strong lemon scent when crushed. The swollen white base of the stalk is widely used in cooking, while the leaves are commonly brewed into herbal tea or distilled for essential oil rich in citral.",
+    "uses": [
+      {
+        "label": "Culinary herb",
+        "description": "The tender stalks are widely used in soups, curries, teas, and Southeast Asian cuisine for their fresh citrus flavor."
+      },
+      {
+        "label": "Essential oil",
+        "description": "Leaves are distilled to produce lemongrass oil, which is used in perfumes, soaps, cosmetics, and aromatherapy."
+      },
+      {
+        "label": "Digestive support",
+        "description": "Herbal tea made from the leaves is traditionally consumed to aid digestion and relieve bloating."
+      },
+      {
+        "label": "Natural insect repellent",
+        "description": "The citral-rich essential oil helps repel mosquitoes and other insects and is used in natural repellents."
+      },
+      {
+        "label": "Herbal medicine",
+        "description": "Traditionally used to help relieve fever, colds, headaches, and mild inflammation in many cultures."
+      }
+    ],
+    "funFacts": [
+      {
+        "question": "Why does it smell like lemon?",
+        "answer": "Its characteristic citrus fragrance comes from citral, a natural compound that gives lemons their distinctive scent."
+      },
+      {
+        "question": "Not actually a lemon",
+        "answer": "Although it tastes and smells like lemon, lemongrass is a true grass and is unrelated to lemon trees."
+      },
+      {
+        "question": "A mosquito's least favorite plant",
+        "answer": "Lemongrass contains natural aromatic oils that help repel mosquitoes, making it a popular choice for gardens and outdoor spaces."
+      }
+    ]
+  },
+  {
+    "id": "hibiscus-rosa-sinensis",
+    "botanicalName": "Hibiscus rosa-sinensis L.",
+    "commonNames": [
+      "Rose Mallow",
+      "Chinese Hibiscus",
+      "Shoe Flower",
+      "Gudhal",
+      "Jaswand"
+    ],
+    "family": "Malvaceae",
+    "pronunciation": "hy-BIS-kus ROH-zuh sy-NEN-sis",
+    "images": {
+      "hero": "images/rose-mallow/hero.jpg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "East Asia",
+      "flowering": "Year-round in tropical climates",
+      "lifespan": "20+ years",
+      "plantType": "Evergreen Shrub",
+      "matureHeight": "2 – 5 m",
+      "growthRate": "Moderate – Fast"
+    },
+    "warnings": null,
+    "care": {
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Full sun to partial shade",
+        "meterFilled": 3
+      },
+      "water": {
+        "label": "Water",
+        "value": "Moderate – High",
+        "meterFilled": 3
+      },
+      "soil": {
+        "label": "Soil",
+        "value": "Rich, well-drained loamy soil"
+      },
+      "temperature": {
+        "label": "Temperature",
+        "value": "18° – 35°C"
+      },
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Prefers moderate to high humidity",
+        "meterFilled": 3,
+        "fullWidth": true
+      }
+    },
+    "about": "Hibiscus rosa-sinensis is a popular evergreen flowering shrub grown throughout tropical and subtropical regions for its spectacular blooms. It has glossy dark-green leaves with serrated edges and produces large trumpet-shaped flowers in shades of red, pink, yellow, orange, white, and many hybrids. Each flower typically lasts only a day, but the plant blooms continuously during warm weather, making it one of the world's favorite ornamental garden plants.",
+    "uses": [
+      {
+        "label": "Ornamental gardening",
+        "description": "Widely planted in gardens, parks, and landscapes for its vibrant, showy flowers and year-round blooms."
+      },
+      {
+        "label": "Hair care",
+        "description": "Flowers and leaves are traditionally used in herbal hair oils, shampoos, and hair masks to promote healthy hair."
+      },
+      {
+        "label": "Herbal tea",
+        "description": "The petals are used to prepare refreshing herbal teas and beverages rich in natural antioxidants."
+      },
+      {
+        "label": "Traditional medicine",
+        "description": "Used in Ayurveda and traditional medicine for skin care, wound healing, and supporting overall wellness."
+      },
+      {
+        "label": "Natural dye",
+        "description": "The colorful petals can be used as a natural dye and pH indicator in educational science experiments."
+      }
+    ],
+    "funFacts": [
+      {
+        "question": "Why is it called Shoe Flower?",
+        "answer": "The crushed flowers produce a slippery sap that was traditionally used to polish leather shoes, giving rise to the common name 'Shoe Flower'."
+      },
+      {
+        "question": "A flower for every day",
+        "answer": "Each hibiscus flower usually blooms for just one day, but the plant continuously produces new buds throughout the flowering season."
+      },
+      {
+        "question": "A symbol across cultures",
+        "answer": "Hibiscus flowers symbolize beauty, hospitality, and prosperity in many tropical countries and are commonly offered during religious ceremonies in India."
+      }
+    ]
+  },
+  {
+    "id": "asparagus-racemosus",
+    "botanicalName": "Asparagus racemosus Willd.",
+    "commonNames": ["Shatavari", "Wild Asparagus", "Satamuli", "Shatamull"],
+    "family": "Asparagaceae",
+    "pronunciation": "uh-SPAR-uh-gus rass-eh-MOH-sus",
+    "images": {
+      "hero": "images/shatavari/hero.jpg",
+      "leaf": "",
+      "flower": "",
+      "fruit": ""
+    },
+    "badges": {
+      "conservation": "Least Concern",
+      "nativeRegion": "South Asia",
+      "flowering": "Jul – Sept",
+      "lifespan": "10+ years",
+      "plantType": "Perennial Climbing Herb",
+      "matureHeight": "1 – 3 m",
+      "growthRate": "Moderate"
+    },
+    "warnings": null,
+    "care": {
+      "sunlight": {
+        "label": "Sunlight",
+        "value": "Partial shade to full sun",
+        "meterFilled": 2
+      },
+      "water": {
+        "label": "Water",
+        "value": "Moderate",
+        "meterFilled": 2
+      },
+      "soil": {
+        "label": "Soil",
+        "value": "Well-drained, sandy or loamy soil rich in organic matter"
+      },
+      "temperature": {
+        "label": "Temperature",
+        "value": "15° – 35°C"
+      },
+      "humidity": {
+        "label": "Humidity preference",
+        "value": "Prefers moderate humidity",
+        "meterFilled": 2,
+        "fullWidth": true
+      }
+    },
+    "about": "Asparagus racemosus, commonly known as Shatavari, is a thorny perennial climbing herb native to the Indian subcontinent. It produces slender, twining stems with soft needle-like cladodes that resemble leaves, while its true leaves are reduced to tiny scales. Small, fragrant white flowers bloom in clusters and later develop into bright red berries. Underground, the plant forms a cluster of fleshy tuberous roots that are highly valued in traditional Ayurvedic medicine.",
+    "uses": [
+      {
+        "label": "Ayurvedic medicine",
+        "description": "One of the most important herbs in Ayurveda, traditionally used as a rejuvenating tonic (Rasayana) to support overall health and vitality."
+      },
+      {
+        "label": "Women's health",
+        "description": "Traditionally used to support reproductive health, lactation, and hormonal balance under professional Ayurvedic guidance."
+      },
+      {
+        "label": "Digestive support",
+        "description": "The roots are used in herbal preparations to soothe the digestive tract and help maintain gastrointestinal health."
+      },
+      {
+        "label": "Adaptogenic herb",
+        "description": "Believed to help the body adapt to physical and mental stress and promote general well-being."
+      },
+      {
+        "label": "Antioxidant source",
+        "description": "Contains natural phytochemicals, flavonoids, and saponins that contribute to its antioxidant properties."
+      }
+    ],
+    "funFacts": [
+      {
+        "question": "What does 'Shatavari' mean?",
+        "answer": "The Sanskrit name 'Shatavari' translates to 'she who possesses a hundred husbands,' symbolizing vitality, fertility, and strength in traditional Ayurveda."
+      },
+      {
+        "question": "Not the common asparagus",
+        "answer": "Although it belongs to the same genus as the edible garden asparagus, Shatavari is cultivated primarily for its medicinal roots rather than its shoots."
+      },
+      {
+        "question": "Hidden treasure underground",
+        "answer": "A mature plant develops numerous finger-like tuberous roots, which are the most valuable part and have been used in traditional medicine for centuries."
+      }
     ]
   }
 ]

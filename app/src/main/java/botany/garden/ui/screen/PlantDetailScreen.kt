@@ -44,7 +44,7 @@ import botany.garden.ui.components.WarningCard
 import botany.garden.ui.theme.Paper
 
 @Composable
-fun PlantDetailScreen(plant: Plant) {
+fun PlantDetailScreen(plant: Plant, onBack: () -> Unit = {}) {
     val badges = plant.badges
     var visible by remember { mutableStateOf(false) }
 
@@ -76,6 +76,7 @@ fun PlantDetailScreen(plant: Plant) {
                     scientificName = plant.botanicalName,
                     familyTag = "Fam. ${plant.family} · ${plant.id}",
                     pronunciation = plant.pronunciation,
+                    imageUrl = plant.images.hero,
                 )
             }
 
@@ -131,6 +132,6 @@ fun PlantDetailScreen(plant: Plant) {
                 }
             }
         }
-        TopBar(Modifier.padding(top = 40.dp))
+        TopBar(onBack = onBack, modifier = Modifier.padding(top = 40.dp))
     }
 }

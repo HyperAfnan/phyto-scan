@@ -47,12 +47,16 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import botany.garden.ui.util.resolveIntroPage
+import coil.compose.AsyncImage
+import coil.request.ImageRequest
 import botany.garden.data.model.Plant
 import botany.garden.ui.theme.CardBg
 import botany.garden.ui.theme.Charcoal
@@ -137,7 +141,16 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
 private fun MeetPlant(plant: Plant) {
     Column(Modifier.fillMaxWidth()) {
         Box(Modifier.fillMaxWidth().height(290.dp).clip(RoundedCornerShape(24.dp)).background(Brush.linearGradient(listOf(Color(0xFFB4C999), Color(0xFF536C4B), Color(0xFFE7E8C8)))), contentAlignment = Alignment.Center) {
-            Icon(Icons.Outlined.LocalFlorist, null, tint = Color.White.copy(alpha = .9f), modifier = Modifier.size(120.dp))
+            if (plant.images.hero.isNotBlank()) {
+                AsyncImage(
+                    model = ImageRequest.Builder(LocalContext.current).data("file:///android_asset/${plant.images.hero}").crossfade(true).build(),
+                    contentDescription = plant.commonNames.first(),
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.fillMaxSize(),
+                )
+            } else {
+                Icon(Icons.Outlined.LocalFlorist, null, tint = Color.White.copy(alpha = .9f), modifier = Modifier.size(120.dp))
+            }
         }
         Spacer(Modifier.height(16.dp))
         Text(plant.commonNames.first(), color = Ink, fontFamily = FontFamily.Serif, fontSize = 31.sp)

@@ -16,12 +16,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import botany.garden.ui.theme.Ink
+import coil.compose.AsyncImage
+import coil.request.ImageRequest
 
 @Composable
 fun HeroSection(
@@ -29,6 +33,7 @@ fun HeroSection(
     scientificName: String,
     familyTag: String,
     pronunciation: String,
+    imageUrl: String = "",
     modifier: Modifier = Modifier,
 ) {
     Box(
@@ -45,6 +50,14 @@ fun HeroSection(
                 ),
             ),
     ) {
+        if (imageUrl.isNotBlank()) {
+            AsyncImage(
+                model = ImageRequest.Builder(LocalContext.current).data("file:///android_asset/$imageUrl").crossfade(true).build(),
+                contentDescription = commonName,
+                contentScale = ContentScale.Crop,
+                modifier = Modifier.fillMaxSize(),
+            )
+        }
         Box(
             modifier = Modifier
                 .fillMaxSize()
