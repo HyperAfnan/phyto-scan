@@ -13,7 +13,6 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.foundation.clickable
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -25,12 +24,23 @@ import botany.garden.ui.theme.Charcoal
 import botany.garden.ui.theme.Ink
 import botany.garden.ui.theme.Line
 import botany.garden.ui.theme.Moss
+import botany.garden.ui.util.applyPressFeedback
+import botany.garden.ui.util.rememberPressFeedbackState
 
 @Composable
 fun PlantCard(plant: Plant, onClick: () -> Unit, modifier: Modifier = Modifier) {
+    val pressState = rememberPressFeedbackState()
+
     Card(
-        modifier = modifier.fillMaxWidth().clickable(onClick = onClick),
-        shape = RoundedCornerShape(14.dp),
+        modifier = modifier
+            .fillMaxWidth()
+            .clickable(
+                interactionSource = pressState.interactionSource,
+                indication = null,
+                onClick = onClick,
+            )
+            .applyPressFeedback(pressState),
+        shape = RoundedCornerShape(18.dp),
         colors = CardDefaults.cardColors(containerColor = CardBg),
         border = BorderStroke(1.dp, Line),
     ) {

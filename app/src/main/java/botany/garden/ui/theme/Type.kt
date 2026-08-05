@@ -15,21 +15,25 @@ val Typography = Typography(
         fontFamily = FrauncesFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 32.sp,
+        lineHeight = 36.sp,
     ),
     headlineMedium = TextStyle(
         fontFamily = FrauncesFamily,
         fontWeight = FontWeight.Medium,
         fontSize = 20.sp,
+        lineHeight = 26.sp,
     ),
     titleMedium = TextStyle(
         fontFamily = FrauncesFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 15.sp,
+        lineHeight = 21.sp,
     ),
     titleSmall = TextStyle(
         fontFamily = InterFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 14.sp,
+        lineHeight = 20.sp,
     ),
     bodyLarge = TextStyle(
         fontFamily = InterFamily,
@@ -41,22 +45,26 @@ val Typography = Typography(
         fontFamily = InterFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 13.sp,
+        lineHeight = 19.sp,
     ),
     bodySmall = TextStyle(
         fontFamily = InterFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 12.5.sp,
+        lineHeight = 18.sp,
     ),
     labelMedium = TextStyle(
         fontFamily = IBMPlexMonoFamily,
         fontWeight = FontWeight.SemiBold,
         fontSize = 10.5.sp,
         letterSpacing = (0.14 * 10.5).sp,
+        lineHeight = 14.sp,
     ),
     labelSmall = TextStyle(
         fontFamily = IBMPlexMonoFamily,
         fontWeight = FontWeight.Normal,
         fontSize = 10.sp,
         letterSpacing = (0.06 * 10).sp,
+        lineHeight = 14.sp,
     ),
 )

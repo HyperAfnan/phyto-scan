@@ -38,8 +38,8 @@ fun HeroSection(
             .background(
                 Brush.linearGradient(
                     colors = listOf(
-                        Color(0xFFF6E1E6),
-                        Color(0xFFE9EFDF),
+                        Color(0xFFF5E3E8),
+                        Color(0xFFE9F0DF),
                         Color(0xFFCFDCC4),
                     ),
                 ),
@@ -59,7 +59,7 @@ fun HeroSection(
         Column(
             modifier = Modifier
                 .align(Alignment.BottomStart)
-                .padding(start = 20.dp, end = 20.dp, bottom = 16.dp),
+                .padding(start = 20.dp, end = 20.dp, bottom = 18.dp),
         ) {
             Text(
                 text = familyTag,

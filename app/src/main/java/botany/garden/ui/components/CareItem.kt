@@ -36,7 +36,7 @@ fun CareItem(
 ) {
     Card(
         modifier = modifier,
-        shape = RoundedCornerShape(14.dp),
+        shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = CardBg),
         border = androidx.compose.foundation.BorderStroke(1.dp, Line),
     ) {

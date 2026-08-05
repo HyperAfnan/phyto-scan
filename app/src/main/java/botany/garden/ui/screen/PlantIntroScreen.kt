@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -38,6 +39,8 @@ import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -49,6 +52,7 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import botany.garden.ui.util.resolveIntroPage
 import botany.garden.data.model.Plant
 import botany.garden.ui.theme.CardBg
 import botany.garden.ui.theme.Charcoal
@@ -63,6 +67,11 @@ import botany.garden.ui.theme.SubText
 fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
     var page by remember(plant.id) { mutableIntStateOf(0) }
     var dragDistance by remember { mutableFloatStateOf(0f) }
+    val animatedOffset by animateFloatAsState(
+        targetValue = if (dragDistance != 0f) dragDistance.coerceIn(-24f, 24f) else 0f,
+        animationSpec = spring(stiffness = 260f, dampingRatio = 0.86f),
+        label = "introSwipeOffset",
+    )
 
     Column(
         Modifier
@@ -72,8 +81,7 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
                 detectHorizontalDragGestures(
                     onHorizontalDrag = { _, amount -> dragDistance += amount },
                     onDragEnd = {
-                        if (dragDistance < -70f && page < 3) page++
-                        if (dragDistance > 70f && page > 0) page--
+                        page = resolveIntroPage(page, dragDistance, 4)
                         dragDistance = 0f
                     },
                 )
@@ -97,7 +105,13 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
             fontWeight = FontWeight.Medium,
         )
         Spacer(Modifier.height(14.dp))
-        Box(Modifier.weight(1f).fillMaxWidth().verticalScroll(rememberScrollState())) {
+        Box(
+            Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .verticalScroll(rememberScrollState())
+                .offset(x = animatedOffset.dp),
+        ) {
             when (page) {
                 0 -> MeetPlant(plant)
                 1 -> Origin(plant)

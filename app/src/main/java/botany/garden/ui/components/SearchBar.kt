@@ -34,6 +34,8 @@ import botany.garden.ui.theme.Line
 import botany.garden.ui.theme.Moss
 import botany.garden.ui.theme.NavInactive
 import botany.garden.ui.theme.SubText
+import botany.garden.ui.util.applyPressFeedback
+import botany.garden.ui.util.rememberPressFeedbackState
 
 @Composable
 fun SearchBar(
@@ -41,15 +43,18 @@ fun SearchBar(
     onQueryChange: (String) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val pressState = rememberPressFeedbackState()
+
     Box(
         modifier = modifier
             .padding(horizontal = 20.dp)
             .fillMaxWidth()
-            .height(48.dp)
-            .clip(RoundedCornerShape(12.dp))
+            .height(52.dp)
+            .clip(RoundedCornerShape(16.dp))
             .background(CardBg)
-            .border(BorderStroke(1.dp, Line), RoundedCornerShape(12.dp))
-            .padding(horizontal = 12.dp),
+            .border(BorderStroke(1.dp, Line), RoundedCornerShape(16.dp))
+            .padding(horizontal = 12.dp)
+            .applyPressFeedback(pressState),
         contentAlignment = Alignment.CenterStart,
     ) {
         Row(

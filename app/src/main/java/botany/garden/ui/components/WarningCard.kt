@@ -39,7 +39,7 @@ import botany.garden.ui.theme.WarnText
 fun WarningCard(headline: String, chips: List<String>, modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
-            .clip(RoundedCornerShape(16.dp))
+            .clip(RoundedCornerShape(18.dp))
             .background(
                 Brush.verticalGradient(
                     colors = listOf(CautionPale, Color(0xFFF8EEDF)),

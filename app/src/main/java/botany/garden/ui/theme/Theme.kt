@@ -12,6 +12,8 @@ private val ColorScheme = lightColorScheme(
     surfaceVariant = Paper,
     onSurfaceVariant = Charcoal,
     outline = Line,
+    background = Paper,
+    onBackground = Ink,
 )
 
 @Composable
