@@ -11,7 +11,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
+
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -34,19 +34,30 @@ import androidx.compose.material.icons.outlined.WbSunny
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.animation.core.spring
+import androidx.compose.animation.AnimatedContent
+
+import androidx.compose.animation.core.tween
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.foundation.layout.offset
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
@@ -71,16 +82,27 @@ import botany.garden.ui.theme.SubText
 fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
     var page by remember(plant.id) { mutableIntStateOf(0) }
     var dragDistance by remember { mutableFloatStateOf(0f) }
-    val animatedOffset by animateFloatAsState(
-        targetValue = if (dragDistance != 0f) dragDistance.coerceIn(-24f, 24f) else 0f,
-        animationSpec = spring(stiffness = 260f, dampingRatio = 0.86f),
-        label = "introSwipeOffset",
+    var appeared by remember(plant.id) { mutableStateOf(false) }
+
+    LaunchedEffect(plant.id) { appeared = true }
+
+    val entranceAlpha by animateFloatAsState(
+        targetValue = if (appeared) 1f else 0f,
+        animationSpec = tween(500),
+        label = "entranceAlpha",
+    )
+    val entranceOffset by animateFloatAsState(
+        targetValue = if (appeared) 0f else 32f,
+        animationSpec = tween(500),
+        label = "entranceOffset",
     )
 
     Column(
         Modifier
             .fillMaxSize()
             .background(Paper)
+            .alpha(entranceAlpha)
+            .offset(y = entranceOffset.dp)
             .pointerInput(plant.id) {
                 detectHorizontalDragGestures(
                     onHorizontalDrag = { _, amount -> dragDistance += amount },
@@ -101,26 +123,41 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
         Spacer(Modifier.height(8.dp))
         Text("❧", color = Fern, fontSize = 28.sp)
         Spacer(Modifier.height(4.dp))
-        Text(
-            listOf("Meet the Plant", "Plant Snapshot", "Why It Matters", "Care Snapshot")[page],
-            color = Ink,
-            fontFamily = FontFamily.Serif,
-            fontSize = 28.sp,
-            fontWeight = FontWeight.Medium,
-        )
+        AnimatedContent(
+            targetState = page,
+            transitionSpec = {
+                val direction = if (targetState > initialState) 1 else -1
+                (slideInHorizontally { width -> direction * width / 3 } + fadeIn(tween(300)))
+                    .togetherWith(slideOutHorizontally { width -> -direction * width / 3 } + fadeOut(tween(200)))
+            },
+            label = "introTitleTransition",
+        ) { targetPage ->
+            Text(
+                listOf("Meet the Plant", "Plant Snapshot", "Why It Matters", "Care Snapshot")[targetPage],
+                color = Ink,
+                fontFamily = FontFamily.Serif,
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Medium,
+            )
+        }
         Spacer(Modifier.height(14.dp))
-        Box(
-            Modifier
-                .weight(1f)
-                .fillMaxWidth()
-                .verticalScroll(rememberScrollState())
-                .offset(x = animatedOffset.dp),
-        ) {
-            when (page) {
-                0 -> MeetPlant(plant)
-                1 -> Origin(plant)
-                2 -> Matters(plant)
-                else -> Care(plant, onComplete)
+        AnimatedContent(
+            targetState = page,
+            transitionSpec = {
+                val direction = if (targetState > initialState) 1 else -1
+                (slideInHorizontally { width -> direction * width / 3 } + fadeIn(tween(300)))
+                    .togetherWith(slideOutHorizontally { width -> -direction * width / 3 } + fadeOut(tween(200)))
+            },
+            modifier = Modifier.weight(1f).fillMaxWidth(),
+            label = "introContentTransition",
+        ) { targetPage ->
+            Box(Modifier.fillMaxSize().verticalScroll(rememberScrollState())) {
+                when (targetPage) {
+                    0 -> MeetPlant(plant)
+                    1 -> Origin(plant)
+                    2 -> Matters(plant)
+                    else -> Care(plant, onComplete)
+                }
             }
         }
         Row(Modifier.fillMaxWidth(), Arrangement.SpaceBetween, Alignment.CenterVertically) {

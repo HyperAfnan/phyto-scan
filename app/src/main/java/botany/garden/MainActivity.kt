@@ -4,6 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -65,19 +72,30 @@ fun MainScreen() {
     }
 
     Box(modifier = Modifier.fillMaxSize().background(Paper)) {
-        when (selectedTab) {
-            0 -> ExploreScreen(onPlantSelected = ::openPlant)
-            1 -> selectedPlant?.let { plant ->
-                if (showIntro) {
-                    PlantIntroScreen(plant = plant, onComplete = {
-                        markIntroSeen(context, plant.id)
-                        showIntro = false
-                    })
-                } else {
-                    PlantDetailScreen(plant, onBack = { selectedTab = previousTab })
-                }
-            } ?: Text("Loading…")
-            2 -> ScanScreen(onPlantFound = ::openPlant)
+        AnimatedContent(
+            targetState = selectedTab,
+            transitionSpec = {
+                val direction = if (targetState > initialState) -1 else 1
+                (slideInHorizontally { width -> direction * width / 3 } + fadeIn(tween(300)))
+                    .togetherWith(slideOutHorizontally { width -> -direction * width / 3 } + fadeOut(tween(200)))
+            },
+            modifier = Modifier.fillMaxSize(),
+            label = "tabTransition",
+        ) { tab ->
+            when (tab) {
+                0 -> ExploreScreen(onPlantSelected = ::openPlant)
+                1 -> selectedPlant?.let { plant ->
+                    if (showIntro) {
+                        PlantIntroScreen(plant = plant, onComplete = {
+                            markIntroSeen(context, plant.id)
+                            showIntro = false
+                        })
+                    } else {
+                        PlantDetailScreen(plant, onBack = { selectedTab = previousTab })
+                    }
+                } ?: Text("Loading…")
+                2 -> ScanScreen(onPlantFound = ::openPlant)
+            }
         }
 
         if (!(selectedTab == 1 && showIntro)) {
