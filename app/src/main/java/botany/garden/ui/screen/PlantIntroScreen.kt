@@ -65,7 +65,6 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import botany.garden.ui.util.resolveIntroPage
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import botany.garden.data.model.Plant
@@ -249,3 +248,12 @@ private fun IntroCard(icon: androidx.compose.ui.graphics.vector.ImageVector, lab
         Text(value, color = Charcoal, fontSize = 12.sp, lineHeight = 18.sp)
     }
 }
+
+private fun resolveIntroPage(currentPage: Int, dragDistance: Float, pageCount: Int, threshold: Float = 72f): Int {
+    return when {
+        dragDistance < -threshold && currentPage < pageCount - 1 -> currentPage + 1
+        dragDistance > threshold && currentPage > 0 -> currentPage - 1
+        else -> currentPage
+    }
+}
+

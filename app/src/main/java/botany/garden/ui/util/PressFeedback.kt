@@ -48,10 +48,3 @@ fun Modifier.applyPressFeedback(state: PressFeedbackState): Modifier = this.grap
     alpha = state.alpha
 }
 
-fun resolveIntroPage(currentPage: Int, dragDistance: Float, pageCount: Int, threshold: Float = 72f): Int {
-    return when {
-        dragDistance < -threshold && currentPage < pageCount - 1 -> currentPage + 1
-        dragDistance > threshold && currentPage > 0 -> currentPage - 1
-        else -> currentPage
-    }
-}

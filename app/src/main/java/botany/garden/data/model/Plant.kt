@@ -19,7 +19,7 @@ data class Plant(
 )
 
 @Serializable
-data class PlantImages(val hero: String, val leaf: String, val flower: String, val fruit: String)
+data class PlantImages(val hero: String)
 
 @Serializable
 data class PlantBadges(
@@ -49,7 +49,6 @@ data class CareValue(
     val label: String,
     val value: String,
     val meterFilled: Int? = null,
-    val fullWidth: Boolean = false,
 )
 
 @Serializable

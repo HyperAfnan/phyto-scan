@@ -22,7 +22,6 @@ data class CareData(
     val label: String,
     val value: String,
     val meterFilled: Int? = null,
-    val fullWidth: Boolean = false,
 )
 
 @Composable
@@ -32,7 +31,7 @@ fun CareGrid(care: PlantCare, modifier: Modifier = Modifier) {
         CareData(Icons.Outlined.WaterDrop, care.water.label, care.water.value, care.water.meterFilled),
         CareData(Icons.Outlined.Terrain, care.soil.label, care.soil.value, care.soil.meterFilled),
         CareData(Icons.Outlined.AcUnit, care.temperature.label, care.temperature.value, care.temperature.meterFilled),
-        CareData(Icons.Outlined.Opacity, care.humidity.label, care.humidity.value, care.humidity.meterFilled, fullWidth = true),
+        CareData(Icons.Outlined.Opacity, care.humidity.label, care.humidity.value, care.humidity.meterFilled),
     )
 
     Column(

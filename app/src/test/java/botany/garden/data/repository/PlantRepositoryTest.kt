@@ -24,7 +24,7 @@ class PlantRepositoryTest {
         commonNames = listOf(commonName),
         family = family,
         pronunciation = "",
-        images = PlantImages("", "", "", ""),
+        images = PlantImages(""),
         badges = PlantBadges("", "", "", "", "", "", ""),
         warnings = null,
         care = PlantCare(
