@@ -52,14 +52,14 @@ class MainActivity : ComponentActivity() {
 fun MainScreen() {
     var selectedTab by remember { mutableIntStateOf(2) }
     val context = LocalContext.current
-    val repository = remember { PlantRepository(context) }
+    val repository = remember(context) { PlantRepository.getInstance(context) }
     var plants by remember { mutableStateOf<List<Plant>>(emptyList()) }
     var selectedPlantId by remember { mutableStateOf<String?>(null) }
     var showIntro by remember { mutableStateOf(false) }
     var previousTab by remember { mutableIntStateOf(2) }
     val selectedPlant = plants.firstOrNull { it.id == selectedPlantId }
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(repository) {
         plants = repository.loadPlants()
     }
 
@@ -82,7 +82,7 @@ fun MainScreen() {
             label = "tabTransition",
         ) { tab ->
             when (tab) {
-                0 -> ExploreScreen(onPlantSelected = ::openPlant)
+                0 -> ExploreScreen(repository = repository, onPlantSelected = ::openPlant)
                 1 -> selectedPlant?.let { plant ->
                     if (showIntro) {
                         PlantIntroScreen(plant = plant, onComplete = {
@@ -93,7 +93,7 @@ fun MainScreen() {
                         PlantDetailScreen(plant, onBack = { selectedTab = previousTab })
                     }
                 } ?: Text("Loading…")
-                2 -> ScanScreen(onPlantFound = ::openPlant)
+                2 -> ScanScreen(repository = repository, onPlantFound = ::openPlant)
             }
         }
 

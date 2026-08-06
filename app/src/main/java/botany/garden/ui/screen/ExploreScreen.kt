@@ -31,14 +31,14 @@ import botany.garden.ui.theme.Paper
 import botany.garden.ui.theme.SubText
 
 @Composable
-fun ExploreScreen(onPlantSelected: (Plant) -> Unit) {
-    val context = LocalContext.current
-    val repository = remember { PlantRepository(context) }
-
+fun ExploreScreen(
+    repository: PlantRepository,
+    onPlantSelected: (Plant) -> Unit,
+) {
     var allPlants by remember { mutableStateOf<List<Plant>>(emptyList()) }
     var searchQuery by remember { mutableStateOf("") }
 
-    LaunchedEffect(Unit) {
+    LaunchedEffect(repository) {
         allPlants = repository.loadPlants()
     }
 

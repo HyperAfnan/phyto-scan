@@ -3,17 +3,11 @@ package botany.garden.ui.screen
 import android.Manifest
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.graphics.Canvas
-import android.graphics.ColorMatrix
-import android.graphics.ColorMatrixColorFilter
 import android.graphics.Matrix
-import android.graphics.Paint
-import android.util.Log
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
-import androidx.camera.core.ImageProxy
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
 import androidx.compose.foundation.background
@@ -41,10 +35,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import botany.garden.data.model.Plant
+import botany.garden.data.ocr.OcrScanner
 import botany.garden.data.repository.PlantRepository
 import botany.garden.ui.theme.Paper
-import com.googlecode.tesseract.android.TessBaseAPI
-import java.io.File
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicLong
 import java.util.concurrent.Executors
@@ -53,10 +46,13 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 @Composable
-fun ScanScreen(onPlantFound: (Plant) -> Unit) {
+fun ScanScreen(
+    repository: PlantRepository,
+    onPlantFound: (Plant) -> Unit,
+) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
-    val repository = remember { PlantRepository(context) }
+    val ocrScanner = remember(context) { OcrScanner(context) }
     val executor = remember { Executors.newSingleThreadExecutor() }
     val scope = rememberCoroutineScope()
     val busy = remember { AtomicBoolean(false) }
@@ -70,8 +66,11 @@ fun ScanScreen(onPlantFound: (Plant) -> Unit) {
         hasPermission = it
     }
 
-    DisposableEffect(Unit) {
-        onDispose { executor.shutdown() }
+    DisposableEffect(ocrScanner) {
+        onDispose {
+            executor.shutdown()
+            ocrScanner.release()
+        }
     }
 
     LaunchedEffect(Unit) {
@@ -117,7 +116,7 @@ fun ScanScreen(onPlantFound: (Plant) -> Unit) {
                             scope.launch {
                                 try {
                                     val match = withContext(Dispatchers.Default) {
-                                        recognize(context, repository, bitmap)
+                                        ocrScanner.recognize(bitmap, repository)
                                     }
                                     if (match != null && found.compareAndSet(false, true)) {
                                         status = "Plant found"
@@ -146,60 +145,7 @@ fun ScanScreen(onPlantFound: (Plant) -> Unit) {
     }
 }
 
-private fun recognize(context: android.content.Context, repository: PlantRepository, bitmap: Bitmap): Plant? {
-    val root = File(context.filesDir, "tesseract")
-    val data = File(root, "tessdata/eng.traineddata")
-    if (!data.exists()) {
-        data.parentFile?.mkdirs()
-        context.assets.open("tessdata/eng.traineddata").use { input -> data.outputStream().use(input::copyTo) }
-    }
-    val api = TessBaseAPI()
-    return try {
-        check(api.init(root.path, "eng")) { "Tesseract initialization failed" }
-        api.setPageSegMode(11)
-        val variants = preprocess(bitmap)
-        try {
-            variants.asSequence()
-                .map { variant ->
-                    api.setImage(variant)
-                    val text = api.getUTF8Text() ?: ""
-                    Log.d("ScanScreen", "Recognized text: ${text.trim()}")
-                    text
-                }
-                .mapNotNull(repository::findBestMatch)
-                .firstOrNull()
-        } finally {
-            variants.forEach { it.recycle() }
-        }
-    } finally {
-        api.clear()
-        api.recycle()
-    }
-}
-
 private fun Bitmap.rotate(degrees: Int): Bitmap {
     if (degrees == 0) return this
     return Bitmap.createBitmap(this, 0, 0, width, height, Matrix().apply { postRotate(degrees.toFloat()) }, true)
-}
-
-private fun preprocess(source: Bitmap): List<Bitmap> {
-    val left = source.width / 10
-    val top = source.height / 10
-    val cropped = Bitmap.createBitmap(source, left, top, source.width - left * 2, source.height - top * 2)
-    val grayscale = Bitmap.createBitmap(cropped.width, cropped.height, Bitmap.Config.ARGB_8888)
-    val grayscalePaint = Paint().apply {
-        colorFilter = ColorMatrixColorFilter(ColorMatrix().apply { setSaturation(0f) })
-    }
-    Canvas(grayscale).drawBitmap(cropped, 0f, 0f, grayscalePaint)
-
-    val highContrast = Bitmap.createBitmap(cropped.width, cropped.height, Bitmap.Config.ARGB_8888)
-    val contrastPaint = Paint().apply {
-        colorFilter = ColorMatrixColorFilter(ColorMatrix().apply {
-            setSaturation(0f)
-            setScale(2f, 2f, 2f, 1f)
-        })
-    }
-    Canvas(highContrast).drawBitmap(cropped, 0f, 0f, contrastPaint)
-    cropped.recycle()
-    return listOf(grayscale, highContrast)
 }

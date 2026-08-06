@@ -18,6 +18,17 @@ class PlantRepository(private val context: Context) {
     }
 
     fun findBestMatch(text: String): Plant? = findBestPlantMatch(loadPlants(), text)
+
+    companion object {
+        @Volatile
+        private var instance: PlantRepository? = null
+
+        fun getInstance(context: Context): PlantRepository {
+            return instance ?: synchronized(this) {
+                instance ?: PlantRepository(context.applicationContext).also { instance = it }
+            }
+        }
+    }
 }
 
 fun findBestPlantMatch(plants: List<Plant>, text: String): Plant? {
