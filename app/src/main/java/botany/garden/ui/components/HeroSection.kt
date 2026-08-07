@@ -23,9 +23,22 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import botany.garden.data.model.Plant
 import botany.garden.ui.theme.Ink
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
+
+@Composable
+fun HeroSection(plant: Plant, modifier: Modifier = Modifier) {
+    HeroSection(
+        commonName = plant.commonNames.firstOrNull() ?: "",
+        scientificName = plant.botanicalName,
+        familyTag = "Fam. ${plant.family} · ${plant.id}",
+        pronunciation = plant.pronunciation,
+        imageUrl = plant.images.hero,
+        modifier = modifier,
+    )
+}
 
 @Composable
 fun HeroSection(

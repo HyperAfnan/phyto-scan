@@ -25,6 +25,22 @@ import botany.garden.ui.theme.Charcoal
 import botany.garden.ui.theme.Line
 import botany.garden.ui.theme.Moss
 import botany.garden.ui.theme.SubText
+import botany.garden.data.model.CareValue
+
+@Composable
+fun CareItem(
+    careValue: CareValue,
+    icon: ImageVector,
+    modifier: Modifier = Modifier,
+) {
+    CareItem(
+        icon = icon,
+        label = careValue.label,
+        value = careValue.value,
+        meterFilled = careValue.meterFilled,
+        modifier = modifier,
+    )
+}
 
 @Composable
 fun CareItem(

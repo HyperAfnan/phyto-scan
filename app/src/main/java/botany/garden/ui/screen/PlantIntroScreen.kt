@@ -68,6 +68,8 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import botany.garden.data.model.Plant
+import botany.garden.ui.components.CareItem
+import botany.garden.ui.components.HeroSection
 import botany.garden.ui.theme.CardBg
 import botany.garden.ui.theme.Charcoal
 import botany.garden.ui.theme.Fern
@@ -175,25 +177,7 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
 
 @Composable
 private fun MeetPlant(plant: Plant) {
-    Column(Modifier.fillMaxWidth()) {
-        Box(Modifier.fillMaxWidth().height(290.dp).clip(RoundedCornerShape(24.dp)).background(Brush.linearGradient(listOf(Color(0xFFB4C999), Color(0xFF536C4B), Color(0xFFE7E8C8)))), contentAlignment = Alignment.Center) {
-            if (plant.images.hero.isNotBlank()) {
-                AsyncImage(
-                    model = ImageRequest.Builder(LocalContext.current).data("file:///android_asset/${plant.images.hero}").crossfade(true).build(),
-                    contentDescription = plant.commonNames.first(),
-                    contentScale = ContentScale.Crop,
-                    modifier = Modifier.fillMaxSize(),
-                )
-            } else {
-                Icon(Icons.Outlined.LocalFlorist, null, tint = Color.White.copy(alpha = .9f), modifier = Modifier.size(120.dp))
-            }
-        }
-        Spacer(Modifier.height(16.dp))
-        Text(plant.commonNames.first(), color = Ink, fontFamily = FontFamily.Serif, fontSize = 31.sp)
-        Text(plant.botanicalName, color = Moss, fontFamily = FontFamily.Serif, fontStyle = FontStyle.Italic, fontSize = 16.sp)
-        Spacer(Modifier.height(8.dp))
-        Text("Family: ${plant.family}  ·  ${plant.pronunciation}", color = Charcoal, fontSize = 13.sp)
-    }
+    HeroSection(plant = plant, modifier = Modifier.clip(RoundedCornerShape(24.dp)))
 }
 
 @Composable
@@ -223,12 +207,12 @@ private fun Matters(plant: Plant) {
 private fun Care(plant: Plant, onComplete: () -> Unit) {
     Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
         Row(Modifier.fillMaxWidth(), Arrangement.spacedBy(12.dp)) {
-            IntroCard(Icons.Outlined.WbSunny, plant.care.sunlight.label, plant.care.sunlight.value, modifier = Modifier.weight(1f))
-            IntroCard(Icons.Outlined.WaterDrop, plant.care.water.label, plant.care.water.value, modifier = Modifier.weight(1f))
+            CareItem(plant.care.sunlight, Icons.Outlined.WbSunny, modifier = Modifier.weight(1f))
+            CareItem(plant.care.water, Icons.Outlined.WaterDrop, modifier = Modifier.weight(1f))
         }
         Row(Modifier.fillMaxWidth(), Arrangement.spacedBy(12.dp)) {
-            IntroCard(Icons.Outlined.Terrain, plant.care.soil.label, plant.care.soil.value, modifier = Modifier.weight(1f))
-            IntroCard(Icons.Outlined.AcUnit, plant.care.temperature.label, plant.care.temperature.value, modifier = Modifier.weight(1f))
+            CareItem(plant.care.soil, Icons.Outlined.Terrain, modifier = Modifier.weight(1f))
+            CareItem(plant.care.temperature, Icons.Outlined.AcUnit, modifier = Modifier.weight(1f))
         }
         Spacer(Modifier.height(8.dp))
         Box(Modifier.fillMaxWidth().height(54.dp).clip(RoundedCornerShape(18.dp)).background(Color(0xFFD6B19E)).clickable(onClick = onComplete), contentAlignment = Alignment.Center) {

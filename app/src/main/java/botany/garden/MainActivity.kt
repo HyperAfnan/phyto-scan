@@ -30,6 +30,7 @@ import botany.garden.data.model.Plant
 import botany.garden.data.repository.PlantRepository
 import botany.garden.ui.components.BottomNavBar
 import botany.garden.ui.screen.ExploreScreen
+import botany.garden.ui.screen.NoPlantSelectedScreen
 import botany.garden.ui.screen.PlantDetailScreen
 import botany.garden.ui.screen.PlantIntroScreen
 import botany.garden.ui.screen.ScanScreen
@@ -83,16 +84,21 @@ fun MainScreen() {
         ) { tab ->
             when (tab) {
                 0 -> ExploreScreen(repository = repository, onPlantSelected = ::openPlant)
-                1 -> selectedPlant?.let { plant ->
+                1 -> if (selectedPlant != null) {
                     if (showIntro) {
-                        PlantIntroScreen(plant = plant, onComplete = {
-                            markIntroSeen(context, plant.id)
+                        PlantIntroScreen(plant = selectedPlant, onComplete = {
+                            markIntroSeen(context, selectedPlant.id)
                             showIntro = false
                         })
                     } else {
-                        PlantDetailScreen(plant, onBack = { selectedTab = previousTab })
+                        PlantDetailScreen(selectedPlant, onBack = { selectedTab = previousTab })
                     }
-                } ?: Text("Loading…")
+                } else {
+                    NoPlantSelectedScreen(
+                        onExploreClick = { selectedTab = 0 },
+                        onScanClick = { selectedTab = 2 },
+                    )
+                }
                 2 -> ScanScreen(repository = repository, onPlantFound = ::openPlant)
             }
         }

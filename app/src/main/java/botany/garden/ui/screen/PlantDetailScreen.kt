@@ -71,13 +71,7 @@ fun PlantDetailScreen(plant: Plant, onBack: () -> Unit = {}) {
                     .offset(y = heroOffset.dp)
                     .alpha(heroAlpha),
             ) {
-                HeroSection(
-                    commonName = plant.commonNames.first(),
-                    scientificName = plant.botanicalName,
-                    familyTag = "Fam. ${plant.family} · ${plant.id}",
-                    pronunciation = plant.pronunciation,
-                    imageUrl = plant.images.hero,
-                )
+                HeroSection(plant = plant)
             }
 
             Spacer(Modifier.height(22.dp))
