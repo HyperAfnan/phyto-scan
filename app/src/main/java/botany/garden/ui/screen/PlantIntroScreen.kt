@@ -12,10 +12,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.role
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -120,7 +126,14 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
-            Box(Modifier.height(48.dp).clickable(onClick = onComplete).padding(horizontal = 12.dp), contentAlignment = Alignment.Center) {
+            Box(
+                Modifier
+                    .defaultMinSize(minWidth = 48.dp, minHeight = 48.dp)
+                    .clickable(role = Role.Button, onClick = onComplete)
+                    .semantics { contentDescription = "Skip introduction slides" }
+                    .padding(horizontal = 12.dp),
+                contentAlignment = Alignment.Center,
+            ) {
                 Text("SKIP", color = Moss, fontFamily = FontFamily.Monospace, fontSize = 12.sp, fontWeight = FontWeight.SemiBold)
             }
         }
@@ -142,6 +155,7 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
                 fontFamily = FontFamily.Serif,
                 fontSize = 28.sp,
                 fontWeight = FontWeight.Medium,
+                modifier = Modifier.semantics { heading() },
             )
         }
         Spacer(Modifier.height(14.dp))
@@ -171,8 +185,17 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
                 }
             }
             Text("${page + 1} of 4", color = SubText, fontFamily = FontFamily.Monospace, fontSize = 12.sp)
-            Box(Modifier.size(46.dp).clip(CircleShape).background(Moss).clickable { if (page == 3) onComplete() else page++ }, contentAlignment = Alignment.Center) {
-                Icon(Icons.Outlined.ArrowForward, if (page == 3) "Explore full profile" else "Next", tint = CardBg, modifier = Modifier.size(21.dp))
+            Box(
+                Modifier
+                    .defaultMinSize(minWidth = 48.dp, minHeight = 48.dp)
+                    .size(48.dp)
+                    .clip(CircleShape)
+                    .background(Moss)
+                    .clickable(role = Role.Button) { if (page == 3) onComplete() else page++ }
+                    .semantics { contentDescription = if (page == 3) "Explore full profile" else "Next slide" },
+                contentAlignment = Alignment.Center,
+            ) {
+                Icon(Icons.Outlined.ArrowForward, if (page == 3) "Explore full profile" else "Next slide", tint = CardBg, modifier = Modifier.size(21.dp))
             }
         }
     }

@@ -15,6 +15,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -150,6 +151,7 @@ fun ScanScreen(
                     previewView
                 },
             )
+
             IconButton(
                 onClick = {
                     val newState = !isTorchOn
@@ -160,7 +162,8 @@ fun ScanScreen(
                     .align(Alignment.TopEnd)
                     .statusBarsPadding()
                     .padding(16.dp)
-                    .size(38.dp)
+                    .defaultMinSize(minWidth = 48.dp, minHeight = 48.dp)
+                    .size(42.dp)
                     .clip(CircleShape)
                     .background(Paper92Alpha),
             ) {

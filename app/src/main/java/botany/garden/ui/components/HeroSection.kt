@@ -19,6 +19,8 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -104,6 +106,7 @@ fun HeroSection(
                 fontSize = 32.sp,
                 lineHeight = 34.sp,
                 color = Color.White,
+                modifier = Modifier.semantics { heading() },
             )
             Spacer(Modifier.height(4.dp))
             Row(

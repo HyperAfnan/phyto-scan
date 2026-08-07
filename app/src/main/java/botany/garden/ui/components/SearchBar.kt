@@ -37,6 +37,8 @@ import botany.garden.ui.theme.SubText
 import botany.garden.ui.util.applyPressFeedback
 import botany.garden.ui.util.rememberPressFeedbackState
 
+import androidx.compose.foundation.layout.defaultMinSize
+
 @Composable
 fun SearchBar(
     query: String,
@@ -63,7 +65,7 @@ fun SearchBar(
         ) {
             Icon(
                 imageVector = Icons.Outlined.Search,
-                contentDescription = null,
+                contentDescription = "Search plants",
                 tint = Moss,
                 modifier = Modifier.size(20.dp),
             )
@@ -93,13 +95,15 @@ fun SearchBar(
             if (query.isNotEmpty()) {
                 IconButton(
                     onClick = { onQueryChange("") },
-                    modifier = Modifier.size(20.dp),
+                    modifier = Modifier
+                        .defaultMinSize(minWidth = 48.dp, minHeight = 48.dp)
+                        .size(36.dp),
                 ) {
                     Icon(
                         imageVector = Icons.Outlined.Close,
-                        contentDescription = "Clear",
+                        contentDescription = "Clear search query",
                         tint = SubText,
-                        modifier = Modifier.size(16.dp),
+                        modifier = Modifier.size(18.dp),
                     )
                 }
             }

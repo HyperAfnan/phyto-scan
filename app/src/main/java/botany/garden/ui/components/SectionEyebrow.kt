@@ -16,6 +16,9 @@ import androidx.compose.ui.unit.sp
 import botany.garden.ui.theme.Line
 import botany.garden.ui.theme.Moss
 
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+
 @Composable
 fun SectionEyebrow(label: String, modifier: Modifier = Modifier) {
     Row(
@@ -29,6 +32,7 @@ fun SectionEyebrow(label: String, modifier: Modifier = Modifier) {
             fontSize = 10.5.sp,
             letterSpacing = (0.14 * 10.5).sp,
             color = Moss,
+            modifier = Modifier.semantics { heading() },
         )
         Spacer(Modifier.width(8.dp))
         HorizontalDivider(

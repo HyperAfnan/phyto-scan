@@ -17,6 +17,8 @@ import androidx.compose.ui.unit.dp
 import botany.garden.ui.theme.Ink
 import botany.garden.ui.theme.Paper92Alpha
 
+import androidx.compose.foundation.layout.defaultMinSize
+
 @Composable
 fun TopBar(onBack: () -> Unit = {}, modifier: Modifier = Modifier) {
     Row(
@@ -26,15 +28,16 @@ fun TopBar(onBack: () -> Unit = {}, modifier: Modifier = Modifier) {
         IconButton(
             onClick = onBack,
             modifier = Modifier
-                .size(38.dp)
+                .defaultMinSize(minWidth = 48.dp, minHeight = 48.dp)
+                .size(42.dp)
                 .clip(CircleShape)
                 .background(Paper92Alpha),
         ) {
             Icon(
                 imageVector = Icons.Filled.ArrowBack,
-                contentDescription = "Back",
+                contentDescription = "Navigate back",
                 tint = Ink,
-                modifier = Modifier.size(17.dp),
+                modifier = Modifier.size(20.dp),
             )
         }
     }
