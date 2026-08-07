@@ -2,6 +2,7 @@ package botany.garden
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.animation.AnimatedContent
@@ -36,10 +37,22 @@ import botany.garden.ui.screen.ScanScreen
 import botany.garden.ui.theme.BotanyGardenTheme
 import botany.garden.ui.theme.Paper
 
+import androidx.activity.SystemBarStyle
+import android.graphics.Color
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        enableEdgeToEdge(
+            statusBarStyle = SystemBarStyle.light(
+                Color.TRANSPARENT,
+                Color.TRANSPARENT,
+            ),
+            navigationBarStyle = SystemBarStyle.light(
+                Color.TRANSPARENT,
+                Color.TRANSPARENT,
+            ),
+        )
         setContent {
             BotanyGardenTheme {
                 MainScreen()
@@ -68,6 +81,15 @@ fun MainScreen() {
         selectedPlantId = plant.id
         selectedTab = 1
         showIntro = !isIntroSeen(context, plant.id)
+    }
+
+    val canGoBack = (selectedTab == 1 && selectedPlant != null) || selectedTab != 0
+    BackHandler(enabled = canGoBack) {
+        if (selectedTab == 1 && selectedPlant != null) {
+            selectedTab = previousTab
+        } else if (selectedTab != 0) {
+            selectedTab = 0
+        }
     }
 
     Box(modifier = Modifier.fillMaxSize().background(Paper)) {
@@ -102,14 +124,12 @@ fun MainScreen() {
             }
         }
 
-        if (!(selectedTab == 1 && showIntro)) {
-            BottomNavBar(
-                selectedIndex = selectedTab,
-                onTabSelected = { selectedTab = it },
-                modifier = Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
-                    .padding(horizontal = 14.dp, vertical = 14.dp),
-            )
-        }
+        BottomNavBar(
+            selectedIndex = selectedTab,
+            onTabSelected = { selectedTab = it },
+            modifier = Modifier.align(androidx.compose.ui.Alignment.BottomCenter)
+                .padding(horizontal = 14.dp, vertical = 14.dp),
+        )
     }
 }
 

@@ -79,6 +79,8 @@ import botany.garden.ui.theme.Moss
 import botany.garden.ui.theme.Paper
 import botany.garden.ui.theme.SubText
 
+import androidx.compose.foundation.layout.statusBarsPadding
+
 @Composable
 fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
     var page by remember(plant.id) { mutableIntStateOf(0) }
@@ -102,6 +104,7 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
         Modifier
             .fillMaxSize()
             .background(Paper)
+            .statusBarsPadding()
             .alpha(entranceAlpha)
             .offset(y = entranceOffset.dp)
             .pointerInput(plant.id) {
@@ -113,7 +116,7 @@ fun PlantIntroScreen(plant: Plant, onComplete: () -> Unit) {
                     },
                 )
             }
-            .padding(start = 20.dp, top = 16.dp, end = 20.dp, bottom = 24.dp),
+            .padding(start = 20.dp, top = 8.dp, end = 20.dp, bottom = 104.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
