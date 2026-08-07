@@ -39,6 +39,8 @@ class PlantRepositoryTest {
         funFacts = emptyList(),
     )
 
+    private val aloe = plant("aloe-vera", "Aloe vera (L.) Burm.f.", "Indian Aloe Vera", "Asphodelaceae")
+
     @Test
     fun matchesCommonNameAndRejectsDigits() {
         assertEquals(neem, findBestPlantMatch(listOf(neem), "NEEM"))
@@ -57,8 +59,16 @@ class PlantRepositoryTest {
     }
 
     @Test
+    fun matchesAloeVeraCorrectly() {
+        assertEquals(aloe, findBestPlantMatch(listOf(aloe), "Aloe Vera"))
+        assertEquals(aloe, findBestPlantMatch(listOf(aloe), "Indian Aloe Vera"))
+    }
+
+    @Test
     fun ignoresShortOcrFragments() {
         assertNull(findBestPlantMatch(listOf(neem), "ee"))
         assertNull(findBestPlantMatch(listOf(neem), "a"))
+        assertNull(findBestPlantMatch(listOf(aloe, neem), "haloes"))
+        assertNull(findBestPlantMatch(listOf(aloe, neem), "xyzabc"))
     }
 }

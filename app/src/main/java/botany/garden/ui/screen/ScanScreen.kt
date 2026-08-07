@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.graphics.Matrix
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.camera.core.Camera
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.lifecycle.ProcessCameraProvider
@@ -16,7 +17,15 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.FlashOff
+import androidx.compose.material.icons.filled.FlashOn
 import androidx.compose.material3.Button
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
@@ -28,6 +37,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
@@ -37,7 +47,9 @@ import androidx.core.content.ContextCompat
 import botany.garden.data.model.Plant
 import botany.garden.data.ocr.OcrScanner
 import botany.garden.data.repository.PlantRepository
+import botany.garden.ui.theme.Ink
 import botany.garden.ui.theme.Paper
+import botany.garden.ui.theme.Paper92Alpha
 import java.util.concurrent.atomic.AtomicBoolean
 import java.util.concurrent.atomic.AtomicLong
 import java.util.concurrent.Executors
@@ -58,6 +70,8 @@ fun ScanScreen(
     val busy = remember { AtomicBoolean(false) }
     val lastScan = remember { AtomicLong(0L) }
     val found = remember { AtomicBoolean(false) }
+    var camera by remember { mutableStateOf<Camera?>(null) }
+    var isTorchOn by remember { mutableStateOf(false) }
     var hasPermission by remember {
         mutableStateOf(ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED)
     }
@@ -129,11 +143,34 @@ fun ScanScreen(
                             }
                         }
                         provider.unbindAll()
-                        provider.bindToLifecycle(lifecycleOwner, CameraSelector.DEFAULT_BACK_CAMERA, preview, analysis)
+                        val boundCamera = provider.bindToLifecycle(lifecycleOwner, CameraSelector.DEFAULT_BACK_CAMERA, preview, analysis)
+                        camera = boundCamera
+                        boundCamera.cameraControl.enableTorch(isTorchOn)
                     }, ContextCompat.getMainExecutor(viewContext))
                     previewView
                 },
             )
+            IconButton(
+                onClick = {
+                    val newState = !isTorchOn
+                    isTorchOn = newState
+                    camera?.cameraControl?.enableTorch(newState)
+                },
+                modifier = Modifier
+                    .align(Alignment.TopEnd)
+                    .statusBarsPadding()
+                    .padding(16.dp)
+                    .size(38.dp)
+                    .clip(CircleShape)
+                    .background(Paper92Alpha),
+            ) {
+                Icon(
+                    imageVector = if (isTorchOn) Icons.Filled.FlashOn else Icons.Filled.FlashOff,
+                    contentDescription = if (isTorchOn) "Turn torch off" else "Turn torch on",
+                    tint = Ink,
+                    modifier = Modifier.size(20.dp),
+                )
+            }
             Column(
                 modifier = Modifier.align(Alignment.BottomCenter).padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,

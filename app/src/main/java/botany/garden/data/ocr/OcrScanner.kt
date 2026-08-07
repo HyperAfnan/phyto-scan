@@ -40,20 +40,45 @@ class OcrScanner(private val context: Context) {
             init()
         }
         val api = tessApi ?: return null
+        if (isTooDark(bitmap)) {
+            Log.d("OcrScanner", "Image too dark for OCR, skipping")
+            return null
+        }
         val variants = preprocess(bitmap)
         return try {
             variants.asSequence()
-                .map { variant ->
+                .mapNotNull { variant ->
                     api.setImage(variant)
                     val text = api.utF8Text ?: ""
-                    Log.d("OcrScanner", "Recognized text: ${text.trim()}")
-                    text
+                    val confidence = api.meanConfidence()
+                    Log.d("OcrScanner", "Recognized text: '${text.trim()}', confidence: $confidence")
+                    if (confidence >= 50 && text.isNotBlank()) text else null
                 }
                 .mapNotNull(repository::findBestMatch)
                 .firstOrNull()
         } finally {
             variants.forEach { if (!it.isRecycled) it.recycle() }
         }
+    }
+
+    private fun isTooDark(bitmap: Bitmap): Boolean {
+        var totalLuminance = 0.0
+        var count = 0
+        val stepX = (bitmap.width / 20).coerceAtLeast(1)
+        val stepY = (bitmap.height / 20).coerceAtLeast(1)
+        for (x in 0 until bitmap.width step stepX) {
+            for (y in 0 until bitmap.height step stepY) {
+                val pixel = bitmap.getPixel(x, y)
+                val r = (pixel shr 16) and 0xFF
+                val g = (pixel shr 8) and 0xFF
+                val b = pixel and 0xFF
+                val luminance = 0.299 * r + 0.587 * g + 0.114 * b
+                totalLuminance += luminance
+                count++
+            }
+        }
+        val avg = if (count > 0) totalLuminance / count else 0.0
+        return avg < 20.0
     }
 
     fun release() {

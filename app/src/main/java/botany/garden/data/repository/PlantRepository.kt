@@ -41,7 +41,7 @@ fun findBestPlantMatch(plants: List<Plant>, text: String): Plant? {
             plant to inputs.maxOf { input -> similarity(input, normalizeOcr(name)) }
         }
         .maxByOrNull { it.second }
-        ?.takeIf { it.second >= 0.65 }
+        ?.takeIf { it.second >= 0.70 }
         ?.first
 }
 
@@ -68,9 +68,18 @@ private fun normalizeOcr(value: String) = value.lowercase()
 
 private fun similarity(a: String, b: String): Double {
     if (a == b) return 1.0
-    if (minOf(a.length, b.length) >= 4 && (a.contains(b) || b.contains(a))) return 0.9
+    val minLen = minOf(a.length, b.length)
+    if (minLen >= 4 && (a.contains(b) || b.contains(a))) {
+        if (minLen >= 5 || isWordMatch(a, b)) return 0.9
+    }
     val distance = levenshtein(a, b)
     return 1.0 - distance.toDouble() / max(a.length, b.length).coerceAtLeast(1)
+}
+
+private fun isWordMatch(a: String, b: String): Boolean {
+    val (shorter, longer) = if (a.length < b.length) a to b else b to a
+    val regex = Regex("\\b${Regex.escape(shorter)}\\b")
+    return regex.containsMatchIn(longer)
 }
 
 private fun levenshtein(a: String, b: String): Int {
