@@ -22,7 +22,11 @@
     },
     "warnings": {
       "headline": "Highly Toxic",
-      "chips": ["Toxic cardiac glycosides", "Dangerous if ingested", "Wear gloves while pruning"]
+      "chips": [
+        "Toxic cardiac glycosides",
+        "Dangerous if ingested",
+        "Wear gloves while pruning"
+      ]
     },
     "care": {
       "sunlight": {
@@ -170,7 +174,7 @@
     "family": "Rutaceae",
     "pronunciation": "muh-RAY-uh koh-NIG-ee-eye",
     "images": {
-      "hero": "images/curry-tree/hero.jpeg",
+      "hero": "images/curry-tree/hero.jpg",
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -249,7 +253,7 @@
     "family": "Acanthaceae",
     "pronunciation": "an-droh-GRAF-iss puh-NIK-yoo-lah-tuh",
     "images": {
-      "hero": "images/kalmegh/hero.jpeg",
+      "hero": "images/kalmegh/hero.jpg",
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -927,7 +931,7 @@
     "family": "Meliaceae",
     "pronunciation": "az-uh-DIR-ak-tuh IN-dih-kuh",
     "images": {
-      "hero": "images/neem/hero.jpeg",
+      "hero": "images/neem/hero.jpg",
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -1010,7 +1014,7 @@
     "family": "Bignoniaceae",
     "pronunciation": "jak-uh-RAN-duh mih-moh-sih-FOH-lee-uh",
     "images": {
-      "hero": "images/neeli-gulmohr/hero.jpeg",
+      "hero": "images/neeli-gulmohr/hero.jpg",
       "leaf": "",
       "flower": "",
       "fruit": ""

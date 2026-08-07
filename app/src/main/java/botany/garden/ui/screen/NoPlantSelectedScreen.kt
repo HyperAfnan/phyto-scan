@@ -6,8 +6,10 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -31,6 +33,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import botany.garden.ui.theme.CardBg
@@ -92,8 +95,11 @@ fun NoPlantSelectedScreen(
             ) {
                 Button(
                     onClick = onExploreClick,
-                    modifier = Modifier.weight(1f),
+                    modifier = Modifier
+                        .weight(1f)
+                        .defaultMinSize(minWidth = 100.dp, minHeight = 48.dp),
                     colors = ButtonDefaults.buttonColors(containerColor = Moss),
+                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 12.dp),
                     shape = RoundedCornerShape(14.dp),
                 ) {
                     Icon(
@@ -107,11 +113,17 @@ fun NoPlantSelectedScreen(
                         fontFamily = FontFamily.Monospace,
                         fontSize = 12.sp,
                         fontWeight = FontWeight.SemiBold,
+                        maxLines = 1,
+                        softWrap = false,
+                        overflow = TextOverflow.Ellipsis,
                     )
                 }
                 OutlinedButton(
                     onClick = onScanClick,
-                    modifier = Modifier.weight(1f),
+                    modifier = Modifier
+                        .weight(1f)
+                        .defaultMinSize(minWidth = 100.dp, minHeight = 48.dp),
+                    contentPadding = PaddingValues(horizontal = 8.dp, vertical = 12.dp),
                     shape = RoundedCornerShape(14.dp),
                     border = BorderStroke(1.dp, Line),
                 ) {
@@ -128,6 +140,9 @@ fun NoPlantSelectedScreen(
                         fontSize = 12.sp,
                         color = Ink,
                         fontWeight = FontWeight.SemiBold,
+                        maxLines = 1,
+                        softWrap = false,
+                        overflow = TextOverflow.Ellipsis,
                     )
                 }
             }

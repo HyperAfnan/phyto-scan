@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,6 +22,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import botany.garden.data.model.Plant
@@ -104,7 +106,11 @@ fun HeroSection(
                 color = Color.White,
             )
             Spacer(Modifier.height(4.dp))
-            Row(verticalAlignment = Alignment.CenterVertically) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween,
+            ) {
                 Text(
                     text = scientificName,
                     fontFamily = FontFamily.Serif,
@@ -112,9 +118,14 @@ fun HeroSection(
                     fontWeight = FontWeight.Normal,
                     fontSize = 16.sp,
                     color = Color.White.copy(alpha = 0.95f),
+                    modifier = Modifier.weight(1f, fill = false),
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
-                Spacer(Modifier.width(10.dp))
-                SayButton(label = pronunciation)
+                if (pronunciation.isNotBlank()) {
+                    Spacer(Modifier.width(10.dp))
+                    SayButton(label = pronunciation)
+                }
             }
         }
     }
