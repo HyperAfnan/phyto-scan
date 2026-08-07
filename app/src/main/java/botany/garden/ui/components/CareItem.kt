@@ -33,23 +33,6 @@ fun CareItem(
     icon: ImageVector,
     modifier: Modifier = Modifier,
 ) {
-    CareItem(
-        icon = icon,
-        label = careValue.label,
-        value = careValue.value,
-        meterFilled = careValue.meterFilled,
-        modifier = modifier,
-    )
-}
-
-@Composable
-fun CareItem(
-    icon: ImageVector,
-    label: String,
-    value: String,
-    meterFilled: Int? = null,
-    modifier: Modifier = Modifier,
-) {
     Card(
         modifier = modifier,
         shape = RoundedCornerShape(16.dp),
@@ -66,7 +49,7 @@ fun CareItem(
                 )
                 Spacer(Modifier.width(8.dp))
                 Text(
-                    text = label,
+                    text = careValue.label,
                     style = MaterialTheme.typography.labelSmall.copy(
                         color = SubText,
                         fontSize = 10.sp,
@@ -74,12 +57,12 @@ fun CareItem(
                 )
             }
             Spacer(Modifier.height(9.dp))
-            if (meterFilled != null) {
-                MeterBar(filled = meterFilled)
+            careValue.meterFilled?.let { filled ->
+                MeterBar(filled = filled)
                 Spacer(Modifier.height(6.dp))
             }
             Text(
-                text = value,
+                text = careValue.value,
                 style = MaterialTheme.typography.bodySmall.copy(
                     color = Charcoal,
                     fontSize = 12.sp,

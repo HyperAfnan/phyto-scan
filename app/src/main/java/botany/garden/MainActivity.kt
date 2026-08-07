@@ -25,7 +25,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.material3.Text
 import botany.garden.data.model.Plant
 import botany.garden.data.repository.PlantRepository
 import botany.garden.ui.components.BottomNavBar

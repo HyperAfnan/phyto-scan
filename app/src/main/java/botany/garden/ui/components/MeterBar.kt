@@ -17,7 +17,7 @@ import botany.garden.ui.theme.Moss
 fun MeterBar(filled: Int, total: Int = 4, modifier: Modifier = Modifier) {
     val segments = total.coerceIn(1, 8)
     Row(
-        modifier = modifier.then(Modifier.fillMaxWidth()),
+        modifier = modifier.fillMaxWidth(),
         horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(4.dp),
     ) {
         repeat(segments) { index ->
