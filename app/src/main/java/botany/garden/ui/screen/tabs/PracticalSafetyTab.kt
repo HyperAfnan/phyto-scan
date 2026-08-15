@@ -12,15 +12,12 @@ import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.CheckBoxOutlineBlank
 import androidx.compose.material.icons.outlined.Eco
 import androidx.compose.material.icons.outlined.Yard
 import androidx.compose.material3.Icon
@@ -97,15 +94,14 @@ fun PracticalSafetyTabContent(
                         modifier = Modifier.padding(16.dp),
                         verticalArrangement = Arrangement.spacedBy(8.dp),
                     ) {
-                        plant.preparationSteps.forEach { step ->
+                        plant.preparationSteps.forEachIndexed { index, step ->
                             Row(verticalAlignment = Alignment.Top) {
-                                Icon(
-                                    imageVector = Icons.Outlined.CheckBoxOutlineBlank,
-                                    contentDescription = null,
-                                    tint = Moss,
-                                    modifier = Modifier.size(16.dp).offset(y = 2.dp),
+                                Text(
+                                    text = "${index + 1}.",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = Moss,
+                                    modifier = Modifier.width(20.dp),
                                 )
-                                Spacer(modifier = Modifier.width(8.dp))
                                 Text(
                                     text = step,
                                     style = MaterialTheme.typography.bodySmall,

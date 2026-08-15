@@ -73,7 +73,7 @@ fun MoreInfoTabContent(
                     ) {
                         plant.references.forEach { reference ->
                             Row {
-                                Text(text = "–", color = SubText)
+                                Text(text = "•", color = SubText)
                                 Spacer(modifier = Modifier.width(8.dp))
                                 Text(
                                     text = reference,
