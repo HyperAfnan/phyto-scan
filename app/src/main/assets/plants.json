@@ -2,12 +2,7 @@
   {
     "id": "aegle-marmelos",
     "botanicalName": "Aegle marmelos (L.) Corrêa",
-    "commonNames": [
-      "Bael",
-      "Wood Apple",
-      "Stone Apple",
-      "Bengal Quince"
-    ],
+    "commonNames": ["Bael", "Wood Apple", "Stone Apple", "Bengal Quince"],
     "family": "Rutaceae (Citrus Family)",
     "pronunciation": "AY-glee mar-MEH-loss",
     "images": {
@@ -276,17 +271,9 @@
       "Mouthwashes"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Astringent (Kashaya)",
-        "Bitter (Tikta)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Hot (Ushna)"
-      ],
+      "rasa": ["Astringent (Kashaya)", "Bitter (Tikta)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Hot (Ushna)"],
       "doshaAction": "Particularly associated with balancing Kapha & Vata doshas"
     },
     "interestingFacts": [
@@ -325,11 +312,7 @@
   {
     "id": "costus-igneus",
     "botanicalName": "Costus igneus Nak.",
-    "commonNames": [
-      "Insulin Plant",
-      "Spiral Flag",
-      "Fiery Costus"
-    ],
+    "commonNames": ["Insulin Plant", "Spiral Flag", "Fiery Costus"],
     "family": "Costaceae",
     "pronunciation": "KOSS-tus IG-nee-us",
     "images": {
@@ -474,9 +457,7 @@
       {
         "title": "Liver Health",
         "icon": "",
-        "points": [
-          "Investigated for protective effects against liver injury"
-        ]
+        "points": ["Investigated for protective effects against liver injury"]
       }
     ],
     "pharmacologicalActivities": [
@@ -544,15 +525,9 @@
       "Antioxidant support"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)"
-      ],
-      "guna": [
-        "Light (Laghu)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Bitter (Tikta)"],
+      "guna": ["Light (Laghu)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Modern introduced species — used in contemporary herbalism"
     },
     "interestingFacts": [
@@ -584,12 +559,7 @@
   {
     "id": "terminalia-chebula",
     "botanicalName": "Terminalia chebula Retz.",
-    "commonNames": [
-      "Haritaki",
-      "Harad",
-      "Chebulic Myrobalan",
-      "Ink Nut"
-    ],
+    "commonNames": ["Haritaki", "Harad", "Chebulic Myrobalan", "Ink Nut"],
     "family": "Combretaceae",
     "pronunciation": "ter-mih-NAY-lee-uh CHEB-yoo-luh",
     "images": {
@@ -751,11 +721,7 @@
       {
         "title": "Oral Health",
         "icon": "",
-        "points": [
-          "Mouth ulcers",
-          "Gingivitis",
-          "Sore throat"
-        ]
+        "points": ["Mouth ulcers", "Gingivitis", "Sore throat"]
       },
       {
         "title": "Rejuvenation",
@@ -826,20 +792,9 @@
       "Rasayana"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Astringent (dominant)",
-        "Sweet",
-        "Sour",
-        "Bitter",
-        "Pungent"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Warm (Ushna)"
-      ],
+      "rasa": ["Astringent (dominant)", "Sweet", "Sour", "Bitter", "Pungent"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Warm (Ushna)"],
       "doshaAction": "Tridoshara — Balances Vata, Pitta, and Kapha"
     },
     "interestingFacts": [
@@ -870,12 +825,7 @@
   {
     "id": "murraya-koenigii",
     "botanicalName": "Murraya koenigii (L.) Spreng.",
-    "commonNames": [
-      "Curry Tree",
-      "Curry Leaf",
-      "Kadi Patta",
-      "Sweet Neem"
-    ],
+    "commonNames": ["Curry Tree", "Curry Leaf", "Kadi Patta", "Sweet Neem"],
     "family": "Rutaceae (Citrus Family)",
     "pronunciation": "mur-RAY-uh kay-NIG-ee-eye",
     "images": {
@@ -1029,10 +979,7 @@
       {
         "title": "Hair & Skin",
         "icon": "",
-        "points": [
-          "Promotes healthy hair growth",
-          "Maintains scalp health"
-        ]
+        "points": ["Promotes healthy hair growth", "Maintains scalp health"]
       },
       {
         "title": "Diabetes & Metabolic",
@@ -1108,17 +1055,9 @@
       "Diabetes"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)",
-        "Pungent (Katu)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Mildly heating (Ushna)"
-      ],
+      "rasa": ["Bitter (Tikta)", "Pungent (Katu)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Mildly heating (Ushna)"],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -1143,11 +1082,7 @@
   {
     "id": "centella-asiatica",
     "botanicalName": "Centella asiatica (L.) Urb.",
-    "commonNames": [
-      "Indian Pennywort",
-      "Gotu Kola",
-      "Mandukaparni"
-    ],
+    "commonNames": ["Indian Pennywort", "Gotu Kola", "Mandukaparni"],
     "family": "Apiaceae (Umbelliferae)",
     "pronunciation": "sen-TELL-uh ay-zee-AT-ih-kuh",
     "images": {
@@ -1302,17 +1237,12 @@
       {
         "title": "Skin & Tissue Repair",
         "icon": "",
-        "points": [
-          "Wound healing & scar reduction",
-          "Burns & eczema support"
-        ]
+        "points": ["Wound healing & scar reduction", "Burns & eczema support"]
       },
       {
         "title": "Circulation",
         "icon": "",
-        "points": [
-          "Helps varicose veins & venous insufficiency"
-        ]
+        "points": ["Helps varicose veins & venous insufficiency"]
       }
     ],
     "pharmacologicalActivities": [
@@ -1372,16 +1302,9 @@
       "Longevity"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)",
-        "Sweet (Madhura)"
-      ],
-      "guna": [
-        "Light (Laghu)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Bitter (Tikta)", "Sweet (Madhura)"],
+      "guna": ["Light (Laghu)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Balances Pitta and Vata"
     },
     "interestingFacts": [
@@ -1406,12 +1329,7 @@
   {
     "id": "datura-stramonium",
     "botanicalName": "Datura stramonium L.",
-    "commonNames": [
-      "Thorn Apple",
-      "Jimson Weed",
-      "Devil's Trumpet",
-      "Dhatura"
-    ],
+    "commonNames": ["Thorn Apple", "Jimson Weed", "Devil's Trumpet", "Dhatura"],
     "family": "Solanaceae (Nightshade Family)",
     "pronunciation": "dah-TOO-ruh struh-MOH-nee-um",
     "images": {
@@ -1550,11 +1468,7 @@
       "Bronchodilator",
       "Mydriatic"
     ],
-    "phytochemicals": [
-      "Atropine",
-      "Hyoscyamine",
-      "Scopolamine"
-    ],
+    "phytochemicals": ["Atropine", "Hyoscyamine", "Scopolamine"],
     "scientificEvidence": "Tropane alkaloids act as competitive antagonists at muscarinic acetylcholine receptors. Ingestion of raw plant material carries extreme risk of toxicity.",
     "safetyPrecautions": [
       "HIGHLY TOXIC — Keep away from children and pets.",
@@ -1594,17 +1508,9 @@
       "External pain relief oils"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)",
-        "Pungent (Katu)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Heating (Ushna)"
-      ],
+      "rasa": ["Bitter (Tikta)", "Pungent (Katu)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Heating (Ushna)"],
       "doshaAction": "Balances Kapha and Vata (Used only after Shodhana purification)"
     },
     "interestingFacts": [
@@ -1629,12 +1535,7 @@
   {
     "id": "asparagus-racemosus",
     "botanicalName": "Asparagus racemosus Willd.",
-    "commonNames": [
-      "Shatavari",
-      "Wild Asparagus",
-      "Satamuli",
-      "Shatamull"
-    ],
+    "commonNames": ["Shatavari", "Wild Asparagus", "Satamuli", "Shatamull"],
     "family": "Asparagaceae",
     "pronunciation": "uh-SPAR-uh-gus rass-eh-MOH-sus",
     "images": {
@@ -1832,17 +1733,9 @@
       "Gastric ulcer relief"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Sweet (Madhura)",
-        "Bitter (Tikta)"
-      ],
-      "guna": [
-        "Heavy (Guru)",
-        "Oily (Snigdha)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Sweet (Madhura)", "Bitter (Tikta)"],
+      "guna": ["Heavy (Guru)", "Oily (Snigdha)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Balances Vata and Pitta"
     },
     "interestingFacts": [
@@ -1867,11 +1760,7 @@
   {
     "id": "polyalthia-longifolia",
     "botanicalName": "Polyalthia longifolia (Sonn.) Thwaites",
-    "commonNames": [
-      "False Ashoka",
-      "Indian Mast Tree",
-      "Mast Tree"
-    ],
+    "commonNames": ["False Ashoka", "Indian Mast Tree", "Mast Tree"],
     "family": "Annonaceae",
     "pronunciation": "pol-ee-AL-thee-uh lon-jih-FOH-lee-uh",
     "images": {
@@ -1943,12 +1832,7 @@
         "answer": "No. It is often called Ashoka, but True Ashoka is Saraca asoca, a totally different medicinal tree."
       }
     ],
-    "synonyms": [
-      "False Ashoka",
-      "Indian Mast Tree",
-      "Mast Tree",
-      "Polyalthia"
-    ],
+    "synonyms": ["False Ashoka", "Indian Mast Tree", "Mast Tree", "Polyalthia"],
     "commonNameTable": [
       {
         "language": "English",
@@ -2003,20 +1887,13 @@
       "Antifungal",
       "Cytotoxic (laboratory)"
     ],
-    "phytochemicals": [
-      "Liriodenine",
-      "Anonaine",
-      "Diterpenoids",
-      "Tannins"
-    ],
+    "phytochemicals": ["Liriodenine", "Anonaine", "Diterpenoids", "Tannins"],
     "scientificEvidence": "Alkaloid liriodenine has shown antibacterial and cytotoxic properties in vitro.",
     "safetyPrecautions": [
       "Medicinal use is less established than classical Ayurvedic herbs.",
       "Avoid self-medication."
     ],
-    "preparationSteps": [
-      "Bark decoction or leaf paste (Folk use)."
-    ],
+    "preparationSteps": ["Bark decoction or leaf paste (Folk use)."],
     "cultivationInfo": [
       {
         "label": "Propagation: Seeds",
@@ -2037,20 +1914,11 @@
         "imageUrl": "images/false-ashoka/split/11_seed.webp"
       }
     ],
-    "traditionalUses": [
-      "Folk fever remedy",
-      "Skin issue paste"
-    ],
+    "traditionalUses": ["Folk fever remedy", "Skin issue paste"],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)"
-      ],
-      "guna": [
-        "Light (Laghu)"
-      ],
-      "virya": [
-        "Heating (Ushna)"
-      ],
+      "rasa": ["Bitter (Tikta)"],
+      "guna": ["Light (Laghu)"],
+      "virya": ["Heating (Ushna)"],
       "doshaAction": "Folk medicine plant (Not classical Saraca asoca)"
     },
     "interestingFacts": [
@@ -2067,18 +1935,12 @@
         "description": "Frequently mistaken for Saraca asoca (True Ashoka used for women's health)."
       }
     ],
-    "references": [
-      "Indian Trees & Urban Forestry Handbook"
-    ]
+    "references": ["Indian Trees & Urban Forestry Handbook"]
   },
   {
     "id": "chlorophytum-borivilianum",
     "botanicalName": "Chlorophytum borivilianum Santapau & R.R. Fern.",
-    "commonNames": [
-      "Safed Musli",
-      "White Musli",
-      "Indian Musli"
-    ],
+    "commonNames": ["Safed Musli", "White Musli", "Indian Musli"],
     "family": "Asparagaceae",
     "pronunciation": "klor-oh-FY-tum bor-ih-vil-ee-AH-num",
     "images": {
@@ -2207,10 +2069,7 @@
       {
         "title": "General Vitality & Stamina",
         "icon": "",
-        "points": [
-          "Rejuvenative tonic",
-          "Improves stamina & reduces fatigue"
-        ]
+        "points": ["Rejuvenative tonic", "Improves stamina & reduces fatigue"]
       },
       {
         "title": "Immune & Adaptogenic",
@@ -2241,9 +2100,7 @@
       "Generally safe in recommended doses.",
       "Monitor blood glucose if taking antidiabetic drugs."
     ],
-    "preparationSteps": [
-      "Root powder (Churna): Taken with warm milk."
-    ],
+    "preparationSteps": ["Root powder (Churna): Taken with warm milk."],
     "cultivationInfo": [
       {
         "label": "Propagation: Tuber divisions",
@@ -2264,22 +2121,11 @@
         "imageUrl": "images/safed-musli/split/9_seeds.webp"
       }
     ],
-    "traditionalUses": [
-      "Rasayana",
-      "Stamina tonic",
-      "Debility recovery"
-    ],
+    "traditionalUses": ["Rasayana", "Stamina tonic", "Debility recovery"],
     "ayurvedicProperties": {
-      "rasa": [
-        "Sweet (Madhura)"
-      ],
-      "guna": [
-        "Heavy (Guru)",
-        "Oily (Snigdha)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Sweet (Madhura)"],
+      "guna": ["Heavy (Guru)", "Oily (Snigdha)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Balances Vata and Pitta"
     },
     "interestingFacts": [
@@ -2304,12 +2150,7 @@
   {
     "id": "justicia-adhatoda",
     "botanicalName": "Justicia adhatoda L.",
-    "commonNames": [
-      "Malabar Nut",
-      "Vasaka",
-      "Adusa",
-      "Adulsa"
-    ],
+    "commonNames": ["Malabar Nut", "Vasaka", "Adusa", "Adulsa"],
     "family": "Acanthaceae",
     "pronunciation": "jus-TISH-ee-uh ad-huh-TOH-duh",
     "images": {
@@ -2387,13 +2228,7 @@
         "answer": "Its alkaloid vasicine inspired the modern mucolytic drugs Bromhexine and Ambroxol."
       }
     ],
-    "synonyms": [
-      "Vasaka",
-      "Adhatoda",
-      "Malabar Nut",
-      "Adulsa",
-      "Arusa"
-    ],
+    "synonyms": ["Vasaka", "Adhatoda", "Malabar Nut", "Adulsa", "Arusa"],
     "commonNameTable": [
       {
         "language": "English",
@@ -2468,10 +2303,7 @@
       {
         "title": "Fever & Immunity",
         "icon": "",
-        "points": [
-          "Helps reduce fever",
-          "Supportive respiratory care"
-        ]
+        "points": ["Helps reduce fever", "Supportive respiratory care"]
       }
     ],
     "pharmacologicalActivities": [
@@ -2531,17 +2363,9 @@
       "Hoarseness"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)",
-        "Astringent (Kashaya)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Bitter (Tikta)", "Astringent (Kashaya)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Balances Kapha and Pitta"
     },
     "interestingFacts": [
@@ -2566,11 +2390,7 @@
   {
     "id": "ocimum-tenuiflorum",
     "botanicalName": "Ocimum tenuiflorum L.",
-    "commonNames": [
-      "Tulsi",
-      "Holy Basil",
-      "Sacred Basil"
-    ],
+    "commonNames": ["Tulsi", "Holy Basil", "Sacred Basil"],
     "family": "Lamiaceae (Mint Family)",
     "pronunciation": "OH-sih-mum ten-yoo-ih-FLOR-um",
     "images": {
@@ -2720,10 +2540,7 @@
       {
         "title": "Stress & Immunity",
         "icon": "",
-        "points": [
-          "Adaptogenic stress resilience",
-          "Immune system enhancement"
-        ]
+        "points": ["Adaptogenic stress resilience", "Immune system enhancement"]
       },
       {
         "title": "Oral & Skin",
@@ -2794,17 +2611,9 @@
       "Rasayana"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Pungent (Katu)",
-        "Bitter (Tikta)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Heating (Ushna)"
-      ],
+      "rasa": ["Pungent (Katu)", "Bitter (Tikta)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Heating (Ushna)"],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -2829,11 +2638,7 @@
   {
     "id": "elettaria-cardamomum",
     "botanicalName": "Elettaria cardamomum (L.) Maton",
-    "commonNames": [
-      "Small Cardamom",
-      "Green Cardamom",
-      "Elaichi"
-    ],
+    "commonNames": ["Small Cardamom", "Green Cardamom", "Elaichi"],
     "family": "Zingiberaceae (Ginger Family)",
     "pronunciation": "el-eh-TAR-ee-uh kar-duh-MOH-mum",
     "images": {
@@ -3042,17 +2847,9 @@
       "Elaichadi formulations"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Sweet (Madhura)",
-        "Pungent (Katu)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Sweet (Madhura)", "Pungent (Katu)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -3069,19 +2866,12 @@
         "description": "Ranks right after saffron and vanilla in world spice value."
       }
     ],
-    "references": [
-      "Spices Board of India",
-      "Phytochemistry Journal"
-    ]
+    "references": ["Spices Board of India", "Phytochemistry Journal"]
   },
   {
     "id": "gymnema-sylvestre",
     "botanicalName": "Gymnema sylvestre (Retz.) R.Br. ex Sm.",
-    "commonNames": [
-      "Gurmar",
-      "Sugar Destroyer",
-      "Madhunashini"
-    ],
+    "commonNames": ["Gurmar", "Sugar Destroyer", "Madhunashini"],
     "family": "Apocynaceae",
     "pronunciation": "JIM-nee-muh sil-VES-tree",
     "images": {
@@ -3159,12 +2949,7 @@
         "answer": "Gymnemic acids temporarily bind to sweet receptors on taste buds, blocking sweetness perception for 30–120 mins."
       }
     ],
-    "synonyms": [
-      "Gurmar",
-      "Sugar Destroyer",
-      "Meshashringi",
-      "Madhunashini"
-    ],
+    "synonyms": ["Gurmar", "Sugar Destroyer", "Meshashringi", "Madhunashini"],
     "commonNameTable": [
       {
         "language": "English",
@@ -3231,10 +3016,7 @@
       {
         "title": "Weight Management",
         "icon": "",
-        "points": [
-          "Blocks sweet cravings",
-          "Supports lipid metabolism"
-        ]
+        "points": ["Blocks sweet cravings", "Supports lipid metabolism"]
       }
     ],
     "pharmacologicalActivities": [
@@ -3281,23 +3063,11 @@
         "imageUrl": "images/gurmar/split/8_milky_latex.webp"
       }
     ],
-    "traditionalUses": [
-      "Madhumeha (Diabetes)",
-      "Obesity",
-      "Excessive thirst"
-    ],
+    "traditionalUses": ["Madhumeha (Diabetes)", "Obesity", "Excessive thirst"],
     "ayurvedicProperties": {
-      "rasa": [
-        "Bitter (Tikta)",
-        "Astringent (Kashaya)"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Heating (Ushna)"
-      ],
+      "rasa": ["Bitter (Tikta)", "Astringent (Kashaya)"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Heating (Ushna)"],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -3322,12 +3092,7 @@
   {
     "id": "syzygium-cumini",
     "botanicalName": "Syzygium cumini (L.) Skeels",
-    "commonNames": [
-      "Jamun",
-      "Java Plum",
-      "Black Plum",
-      "Indian Blackberry"
-    ],
+    "commonNames": ["Jamun", "Java Plum", "Black Plum", "Indian Blackberry"],
     "family": "Myrtaceae",
     "pronunciation": "sih-ZIJ-ee-um kyoo-MY-nee",
     "images": {
@@ -3405,12 +3170,7 @@
         "answer": "The deep purple color comes from high concentrations of natural anthocyanin antioxidants."
       }
     ],
-    "synonyms": [
-      "Java Plum",
-      "Indian Blackberry",
-      "Black Plum",
-      "Jambu"
-    ],
+    "synonyms": ["Java Plum", "Indian Blackberry", "Black Plum", "Jambu"],
     "commonNameTable": [
       {
         "language": "English",
@@ -3536,24 +3296,11 @@
         "imageUrl": "images/jamun/split/2_leaves_opposite.webp"
       }
     ],
-    "traditionalUses": [
-      "Jambu",
-      "Madhumeha",
-      "Diarrhea",
-      "Excessive thirst"
-    ],
+    "traditionalUses": ["Jambu", "Madhumeha", "Diarrhea", "Excessive thirst"],
     "ayurvedicProperties": {
-      "rasa": [
-        "Astringent (Kashaya)",
-        "Sour (Amla)",
-        "Sweet (Madhura)"
-      ],
-      "guna": [
-        "Light (Laghu)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Astringent (Kashaya)", "Sour (Amla)", "Sweet (Madhura)"],
+      "guna": ["Light (Laghu)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Balances Kapha and Pitta"
     },
     "interestingFacts": [
@@ -3578,11 +3325,7 @@
   {
     "id": "phyllanthus-emblica",
     "botanicalName": "Phyllanthus emblica L.",
-    "commonNames": [
-      "Amla",
-      "Indian Gooseberry",
-      "Amalaki"
-    ],
+    "commonNames": ["Amla", "Indian Gooseberry", "Amalaki"],
     "family": "Phyllanthaceae (formerly Euphorbiaceae)",
     "pronunciation": "fil-AN-thus em-BLIH-kuh",
     "images": {
@@ -3592,7 +3335,8 @@
         "images/amla/split/2_branch_with_leaves.webp",
         "images/amla/split/4_flowers.webp",
         "images/amla/split/6_mature_fruits.webp",
-        "images/amla/split/7_fruit_cross_section.webp"
+        "images/amla/split/23_ref_flowers.webp",
+        "images/amla/split/9_bark.webp"
       ],
       "leaf": "images/amla/split/3_close_up_leaves.webp",
       "flower": "images/amla/split/4_flowers.webp",
@@ -3659,13 +3403,7 @@
         "answer": "Amla's unique combination of tannins and sour/astringent tastes alters taste receptor sensitivity so plain water tastes sweet right after."
       }
     ],
-    "synonyms": [
-      "Indian Gooseberry",
-      "Amla",
-      "Amalaki",
-      "Dhatri",
-      "Emblica"
-    ],
+    "synonyms": ["Indian Gooseberry", "Amla", "Amalaki", "Dhatri", "Emblica"],
     "commonNameTable": [
       {
         "language": "English",
@@ -3714,7 +3452,7 @@
         "caption": "Feathery Small Leaves"
       },
       {
-        "imageUrl": "images/amla/split/4_flowers.webp",
+        "imageUrl": "images/amla/split/23_ref_flowers.webp",
         "caption": "Yellow-Green Flowers"
       },
       {
@@ -3805,20 +3543,9 @@
       "Hair care"
     ],
     "ayurvedicProperties": {
-      "rasa": [
-        "Sour (dominant)",
-        "Sweet",
-        "Bitter",
-        "Pungent",
-        "Astringent"
-      ],
-      "guna": [
-        "Light (Laghu)",
-        "Dry (Ruksha)"
-      ],
-      "virya": [
-        "Cooling (Shita)"
-      ],
+      "rasa": ["Sour (dominant)", "Sweet", "Bitter", "Pungent", "Astringent"],
+      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
+      "virya": ["Cooling (Shita)"],
       "doshaAction": "Tridoshahara — Balances Vata, Pitta, and Kapha"
     },
     "interestingFacts": [
@@ -3835,9 +3562,6 @@
         "description": "Plain water tastes delightfully sweet right after chewing an Amla fruit."
       }
     ],
-    "references": [
-      "Ayurvedic Pharmacopoeia of India",
-      "Food Chemistry Journal"
-    ]
+    "references": ["Ayurvedic Pharmacopoeia of India", "Food Chemistry Journal"]
   }
 ]
