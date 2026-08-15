@@ -22,8 +22,8 @@ fun ChipFlowRow(items: List<String>, modifier: Modifier = Modifier) {
 
     FlowRow(
         modifier = modifier,
-        horizontalArrangement = Arrangement.spacedBy(8.dp),
-        verticalArrangement = Arrangement.spacedBy(8.dp)
+        horizontalArrangement = Arrangement.spacedBy(2.dp),
+        verticalArrangement = Arrangement.spacedBy(0.dp)
     ) {
         items.forEach { item ->
             AssistChip(

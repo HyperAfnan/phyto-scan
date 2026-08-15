@@ -20,9 +20,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import botany.garden.data.model.Plant
-import botany.garden.ui.components.InfoCardGrid
-import botany.garden.ui.components.InfoCardItem
 import botany.garden.ui.components.SectionEyebrow
+import botany.garden.ui.components.TextFactItem
+import botany.garden.ui.components.TextFactList
 import botany.garden.ui.theme.Charcoal
 import botany.garden.ui.theme.SubText
 
@@ -39,10 +39,9 @@ fun MoreInfoTabContent(
             Column {
                 SectionEyebrow(label = "INTERESTING FACTS", modifier = Modifier.padding(horizontal = 20.dp))
                 Spacer(modifier = Modifier.height(10.dp))
-                InfoCardGrid(
-                    items = plant.interestingFacts.map { InfoCardItem(it.title, it.imageUrl, Icons.Outlined.Lightbulb) },
+                TextFactList(
+                    items = plant.interestingFacts.map { TextFactItem(it.title, it.description, Icons.Outlined.Lightbulb) },
                     modifier = Modifier.padding(horizontal = 20.dp),
-                    onImageClick = onImageClick,
                 )
             }
         }
@@ -51,10 +50,9 @@ fun MoreInfoTabContent(
             Column {
                 SectionEyebrow(label = "DO YOU KNOW?", modifier = Modifier.padding(horizontal = 20.dp))
                 Spacer(modifier = Modifier.height(10.dp))
-                InfoCardGrid(
-                    items = plant.doYouKnow.map { InfoCardItem(it.title, it.imageUrl, Icons.Outlined.QuestionMark) },
+                TextFactList(
+                    items = plant.doYouKnow.map { TextFactItem(it.title, it.description, Icons.Outlined.QuestionMark) },
                     modifier = Modifier.padding(horizontal = 20.dp),
-                    onImageClick = onImageClick,
                 )
             }
         }
