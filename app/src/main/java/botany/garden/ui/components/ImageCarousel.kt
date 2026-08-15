@@ -19,6 +19,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
@@ -35,7 +36,16 @@ fun ImageCarousel(
     modifier: Modifier = Modifier,
     onImageClick: (String) -> Unit = {},
 ) {
-    val displayImages = if (images.gallery.isNotEmpty()) images.gallery else listOf(images.hero).filter { it.isNotBlank() }
+    val displayImages = remember(images) {
+        val list = mutableListOf<String>()
+        if (images.hero.isNotBlank()) {
+            list.add(images.hero)
+        }
+        images.gallery.filter { it.isNotBlank() && it != images.hero }.forEach {
+            list.add(it)
+        }
+        list
+    }
 
     if (displayImages.isEmpty()) return
 

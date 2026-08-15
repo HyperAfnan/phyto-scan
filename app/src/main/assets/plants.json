@@ -562,10 +562,10 @@
     "family": "Combretaceae",
     "pronunciation": "ter-mih-NAY-lee-uh CHEB-yoo-luh",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
+      "hero": "images/haritaki/image1.webp",
       "gallery": [
-        "images/insulin-plant/image1.webp",
-        "images/insulin-plant/image2.webp"
+        "images/haritaki/image1.webp",
+        "images/haritaki/image2.webp"
       ],
       "leaf": "",
       "flower": "",
@@ -819,8 +819,8 @@
     "images": {
       "hero": "images/curry-tree/hero.webp",
       "gallery": [
-        "images/insulin-plant/image1.webp",
-        "images/insulin-plant/image2.webp"
+        "images/curry-tree/image1.webp",
+        "images/curry-tree/image2.webp"
       ],
       "leaf": "",
       "flower": "",
@@ -1070,8 +1070,8 @@
     "images": {
       "hero": "images/gotu-kola/image1.webp",
       "gallery": [
-        "images/insulin-plant/image1.webp",
-        "images/insulin-plant/image2.webp"
+        "images/gotu-kola/image1.webp",
+        "images/gotu-kola/image2.webp"
       ],
       "leaf": "",
       "flower": "",
@@ -1306,8 +1306,8 @@
     "images": {
       "hero": "images/datura/image1.webp",
       "gallery": [
-        "images/insulin-plant/image1.webp",
-        "images/insulin-plant/image2.webp"
+        "images/datura/image1.webp",
+        "images/datura/image2.webp"
       ],
       "leaf": "",
       "flower": "",
@@ -1496,7 +1496,7 @@
     "pronunciation": "uh-SPAR-uh-gus rass-eh-MOH-sus",
     "images": {
       "hero": "images/shatavari/hero.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "gallery": ["images/shatavari/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -1702,8 +1702,8 @@
     "family": "Annonaceae",
     "pronunciation": "pol-ee-AL-thee-uh lon-jih-FOH-lee-uh",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/false-ashoka/image1.webp",
+      "gallery": ["images/false-ashoka/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -1869,7 +1869,7 @@
     "pronunciation": "klor-oh-FY-tum bor-ih-vil-ee-AH-num",
     "images": {
       "hero": "images/safed-musli/hero.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "gallery": ["images/safed-musli/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -2060,8 +2060,8 @@
     "family": "Acanthaceae",
     "pronunciation": "jus-TISH-ee-uh ad-huh-TOH-duh",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/vasaka/image1.webp",
+      "gallery": ["images/vasaka/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -2286,8 +2286,8 @@
     "family": "Lamiaceae (Mint Family)",
     "pronunciation": "OH-sih-mum ten-yoo-ih-FLOR-um",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/tulsi/image1.webp",
+      "gallery": ["images/tulsi/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -2524,8 +2524,8 @@
     "family": "Zingiberaceae (Ginger Family)",
     "pronunciation": "el-eh-TAR-ee-uh kar-duh-MOH-mum",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/cardamom/image1.webp",
+      "gallery": ["images/cardamom/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -2747,8 +2747,8 @@
     "family": "Apocynaceae",
     "pronunciation": "JIM-nee-muh sil-VES-tree",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/gurmar/image1.webp",
+      "gallery": ["images/gurmar/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -2950,8 +2950,8 @@
     "family": "Myrtaceae",
     "pronunciation": "sih-ZIJ-ee-um kyoo-MY-nee",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/jamun/image1.webp",
+      "gallery": ["images/jamun/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
@@ -3173,8 +3173,8 @@
     "family": "Phyllanthaceae (formerly Euphorbiaceae)",
     "pronunciation": "fil-AN-thus em-BLIH-kuh",
     "images": {
-      "hero": "images/insulin-plant/image1.webp",
-      "gallery": ["images/insulin-plant/image1.webp"],
+      "hero": "images/amla/image1.webp",
+      "gallery": ["images/amla/image1.webp"],
       "leaf": "",
       "flower": "",
       "fruit": ""
