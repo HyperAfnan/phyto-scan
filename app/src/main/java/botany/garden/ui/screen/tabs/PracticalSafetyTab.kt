@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -109,6 +110,7 @@ fun PracticalSafetyTabContent(
                                     text = step,
                                     style = MaterialTheme.typography.bodySmall,
                                     color = Charcoal,
+                                    lineHeight = 20.sp,
                                 )
                             }
                         }
@@ -139,7 +141,7 @@ fun PracticalSafetyTabContent(
                                 Box(
                                     modifier = Modifier
                                         .fillMaxWidth()
-                                        .height(80.dp)
+                                        .aspectRatio(1f)
                                         .background(FernPale),
                                     contentAlignment = Alignment.Center,
                                 ) {
@@ -178,9 +180,9 @@ fun PracticalSafetyTabContent(
                 ) {
                     items(plant.medicinalParts) { part ->
                         val cardModifier = if (part.imageUrl.isNotBlank()) {
-                            Modifier.width(100.dp).clickable { onImageClick(part.imageUrl) }
+                            Modifier.width(110.dp).clickable { onImageClick(part.imageUrl) }
                         } else {
-                            Modifier.width(100.dp)
+                            Modifier.width(110.dp)
                         }
                         OutlinedCard(
                             modifier = cardModifier,
@@ -190,7 +192,7 @@ fun PracticalSafetyTabContent(
                                 Box(
                                     modifier = Modifier
                                         .fillMaxWidth()
-                                        .height(70.dp)
+                                        .aspectRatio(1f)
                                         .background(FernPale),
                                     contentAlignment = Alignment.Center,
                                 ) {
