@@ -8,15 +8,9 @@ data class Plant(
     val botanicalName: String,
     val commonNames: List<String>,
     val family: String,
-    val pronunciation: String,
+    val pronunciation: String = "",
     val images: PlantImages,
-    val badges: PlantBadges,
-    val warnings: PlantWarnings?,
-    val care: PlantCare,
-    val about: String,
-    val uses: List<PlantUse>,
-    val funFacts: List<PlantFact>,
-    // New fields for the redesigned detail screen — all optional with defaults
+    val about: String = "",
     val synonyms: List<String> = emptyList(),
     val commonNameTable: List<CommonNameEntry> = emptyList(),
     val spotImages: List<SpotImage> = emptyList(),
@@ -40,48 +34,7 @@ data class Plant(
 data class PlantImages(
     val hero: String,
     val gallery: List<String> = emptyList(),
-    val leaf: String = "",
-    val flower: String = "",
-    val fruit: String = "",
 )
-
-@Serializable
-data class PlantBadges(
-    val conservation: String,
-    val nativeRegion: String,
-    val flowering: String,
-    val lifespan: String,
-    val plantType: String,
-    val matureHeight: String,
-    val growthRate: String,
-)
-
-@Serializable
-data class PlantWarnings(val headline: String, val chips: List<String>)
-
-@Serializable
-data class PlantCare(
-    val sunlight: CareValue,
-    val water: CareValue,
-    val soil: CareValue,
-    val temperature: CareValue,
-    val humidity: CareValue,
-)
-
-@Serializable
-data class CareValue(
-    val label: String,
-    val value: String,
-    val meterFilled: Int? = null,
-)
-
-@Serializable
-data class PlantUse(val label: String, val description: String)
-
-@Serializable
-data class PlantFact(val question: String, val answer: String)
-
-// New data classes for the redesigned detail screen
 
 @Serializable
 data class CommonNameEntry(

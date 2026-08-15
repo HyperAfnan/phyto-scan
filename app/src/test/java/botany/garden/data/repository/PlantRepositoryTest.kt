@@ -1,9 +1,6 @@
 package botany.garden.data.repository
 
-import botany.garden.data.model.CareValue
 import botany.garden.data.model.Plant
-import botany.garden.data.model.PlantBadges
-import botany.garden.data.model.PlantCare
 import botany.garden.data.model.PlantImages
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -25,18 +22,6 @@ class PlantRepositoryTest {
         family = family,
         pronunciation = "",
         images = PlantImages(""),
-        badges = PlantBadges("", "", "", "", "", "", ""),
-        warnings = null,
-        care = PlantCare(
-            CareValue("", ""),
-            CareValue("", ""),
-            CareValue("", ""),
-            CareValue("", ""),
-            CareValue("", ""),
-        ),
-        about = "",
-        uses = emptyList(),
-        funFacts = emptyList(),
     )
 
     private val aloe = plant("aloe-vera", "Aloe vera (L.) Burm.f.", "Indian Aloe Vera", "Asphodelaceae")
