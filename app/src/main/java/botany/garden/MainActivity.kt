@@ -39,7 +39,6 @@ import botany.garden.ui.components.BottomNavBar
 import botany.garden.ui.screen.ExploreScreen
 import botany.garden.ui.screen.NoPlantSelectedScreen
 import botany.garden.ui.screen.PlantDetailScreen
-import botany.garden.ui.screen.PlantIntroScreen
 import botany.garden.ui.screen.ScanScreen
 import botany.garden.ui.theme.BotanyGardenTheme
 import botany.garden.ui.theme.Paper
@@ -79,12 +78,7 @@ fun MainScreen() {
 
     fun openPlant(plant: Plant) {
         gardenPlantId = plant.id
-        val route = if (isIntroSeen(context, plant.id)) {
-            AppRoutes.plantDetail(plant.id)
-        } else {
-            AppRoutes.plantIntro(plant.id)
-        }
-        navController.navigate(route)
+        navController.navigate(AppRoutes.plantDetail(plant.id))
     }
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -93,8 +87,7 @@ fun MainScreen() {
     val selectedIndex = when {
         currentRoute == AppRoutes.EXPLORE -> 0
         currentRoute == AppRoutes.GARDEN ||
-            currentRoute?.startsWith("plant_detail") == true ||
-            currentRoute?.startsWith("plant_intro") == true -> 1
+            currentRoute?.startsWith("plant_detail") == true -> 1
         else -> 2 // AppRoutes.SCAN
     }
 
@@ -125,23 +118,10 @@ fun MainScreen() {
             composable(AppRoutes.GARDEN) {
                 val gardenPlant = plants.firstOrNull { it.id == gardenPlantId }
                 if (gardenPlant != null) {
-                    var isSeen by remember(gardenPlant.id) {
-                        mutableStateOf(isIntroSeen(context, gardenPlant.id))
-                    }
-                    if (isSeen) {
-                        PlantDetailScreen(
-                            plant = gardenPlant,
-                            onBack = { gardenPlantId = null },
-                        )
-                    } else {
-                        PlantIntroScreen(
-                            plant = gardenPlant,
-                            onComplete = {
-                                markIntroSeen(context, gardenPlant.id)
-                                isSeen = true
-                            },
-                        )
-                    }
+                    PlantDetailScreen(
+                        plant = gardenPlant,
+                        onBack = { gardenPlantId = null },
+                    )
                 } else {
                     NoPlantSelectedScreen(
                         onExploreClick = {
@@ -154,24 +134,6 @@ fun MainScreen() {
                             navController.navigate(AppRoutes.SCAN) {
                                 popUpTo(navController.graph.findStartDestination().id) { saveState = true }
                                 launchSingleTop = true
-                            }
-                        },
-                    )
-                }
-            }
-            composable(
-                route = AppRoutes.PLANT_INTRO,
-                arguments = listOf(navArgument("plantId") { type = NavType.StringType }),
-            ) { backStackEntry ->
-                val plantId = backStackEntry.arguments?.getString("plantId")
-                val plant = plants.firstOrNull { it.id == plantId }
-                if (plant != null) {
-                    PlantIntroScreen(
-                        plant = plant,
-                        onComplete = {
-                            markIntroSeen(context, plant.id)
-                            navController.navigate(AppRoutes.plantDetail(plant.id)) {
-                                popUpTo(AppRoutes.PLANT_INTRO) { inclusive = true }
                             }
                         },
                     )
@@ -210,11 +172,4 @@ fun MainScreen() {
                 .padding(horizontal = 14.dp, vertical = 14.dp),
         )
     }
-}
-
-private fun isIntroSeen(context: android.content.Context, plantId: String) =
-    context.getSharedPreferences("plant_intro", 0).getBoolean("intro_seen_$plantId", false)
-
-private fun markIntroSeen(context: android.content.Context, plantId: String) {
-    context.getSharedPreferences("plant_intro", 0).edit().putBoolean("intro_seen_$plantId", true).apply()
 }
