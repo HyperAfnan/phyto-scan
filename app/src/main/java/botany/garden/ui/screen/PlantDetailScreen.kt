@@ -11,16 +11,20 @@ import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
+
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.pager.HorizontalPager
 import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowUp
@@ -30,7 +34,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ScrollableTabRow
 import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRowDefaults
-import androidx.compose.material3.TabRowDefaults.tabIndicatorOffset
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -40,11 +43,12 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import androidx.compose.runtime.snapshotFlow
+
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.lerp
 import botany.garden.data.model.Plant
 import botany.garden.ui.components.BotanicalInfoCards
 import botany.garden.ui.components.FullScreenImageViewer
@@ -57,6 +61,7 @@ import botany.garden.ui.screen.tabs.PracticalSafetyTabContent
 import botany.garden.ui.theme.Moss
 import botany.garden.ui.theme.Paper
 import botany.garden.ui.theme.SubText
+import kotlin.math.abs
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalFoundationApi::class)
@@ -72,14 +77,7 @@ fun PlantDetailScreen(plant: Plant, onBack: () -> Unit = {}) {
         visible = true
     }
 
-    // Reset scroll position when swiping to a new tab
-    LaunchedEffect(pagerState) {
-        snapshotFlow { pagerState.currentPage }.collect {
-            if (listState.firstVisibleItemIndex >= 2) {
-                listState.animateScrollToItem(index = 2)
-            }
-        }
-    }
+
 
     val showScrollToTop by remember {
         derivedStateOf {
@@ -148,9 +146,32 @@ fun PlantDetailScreen(plant: Plant, onBack: () -> Unit = {}) {
                         contentColor = Moss,
                         edgePadding = 16.dp,
                         indicator = { tabPositions ->
-                            if (pagerState.currentPage < tabPositions.size) {
+                            if (tabPositions.isNotEmpty()) {
+                                val currentPage = pagerState.currentPage.coerceIn(0, tabPositions.lastIndex)
+                                val fraction = pagerState.currentPageOffsetFraction
+                                val targetPage = if (fraction > 0f) {
+                                    (currentPage + 1).coerceAtMost(tabPositions.lastIndex)
+                                } else if (fraction < 0f) {
+                                    (currentPage - 1).coerceAtLeast(0)
+                                } else {
+                                    currentPage
+                                }
+                                val indicatorLeft = lerp(
+                                    tabPositions[currentPage].left,
+                                    tabPositions[targetPage].left,
+                                    abs(fraction),
+                                )
+                                val indicatorWidth = lerp(
+                                    tabPositions[currentPage].width,
+                                    tabPositions[targetPage].width,
+                                    abs(fraction),
+                                )
                                 TabRowDefaults.SecondaryIndicator(
-                                    modifier = Modifier.tabIndicatorOffset(tabPositions[pagerState.currentPage]),
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .wrapContentSize(Alignment.BottomStart)
+                                        .offset(x = indicatorLeft)
+                                        .width(indicatorWidth),
                                     color = Moss,
                                 )
                             }
@@ -180,27 +201,36 @@ fun PlantDetailScreen(plant: Plant, onBack: () -> Unit = {}) {
 
                 // Tab content with swipe gesture
                 item(key = "tab_pager") {
-                    Spacer(Modifier.height(12.dp))
                     HorizontalPager(
                         state = pagerState,
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .fillParentMaxHeight(),
+                        beyondViewportPageCount = 1,
                     ) { page ->
-                        when (page) {
-                            0 -> OverviewTabContent(
-                                plant = plant,
-                                onImageClick = { selectedImageUrl = it },
-                            )
-                            1 -> MedicinalScienceTabContent(
-                                plant = plant,
-                            )
-                            2 -> PracticalSafetyTabContent(
-                                plant = plant,
-                                onImageClick = { selectedImageUrl = it },
-                            )
-                            3 -> MoreInfoTabContent(
-                                plant = plant,
-                                onImageClick = { selectedImageUrl = it },
-                            )
+                        Column(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .verticalScroll(rememberScrollState())
+                                .padding(top = 12.dp),
+                        ) {
+                            when (page) {
+                                0 -> OverviewTabContent(
+                                    plant = plant,
+                                    onImageClick = { selectedImageUrl = it },
+                                )
+                                1 -> MedicinalScienceTabContent(
+                                    plant = plant,
+                                )
+                                2 -> PracticalSafetyTabContent(
+                                    plant = plant,
+                                    onImageClick = { selectedImageUrl = it },
+                                )
+                                3 -> MoreInfoTabContent(
+                                    plant = plant,
+                                    onImageClick = { selectedImageUrl = it },
+                                )
+                            }
                         }
                     }
                 }
