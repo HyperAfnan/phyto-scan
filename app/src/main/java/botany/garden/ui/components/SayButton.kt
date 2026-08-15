@@ -43,9 +43,18 @@ fun SayButton(label: String) {
     var isPlaying by remember { mutableStateOf(false) }
     val context = LocalContext.current
     val tts = remember(context) {
-        TextToSpeech(context) { status ->
-            ready = status == TextToSpeech.SUCCESS
+        lateinit var instance: TextToSpeech
+        instance = TextToSpeech(context) { status ->
+            if (status == TextToSpeech.SUCCESS) {
+                val localeIn = java.util.Locale("en", "IN")
+                val result = instance.setLanguage(localeIn)
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    instance.setLanguage(java.util.Locale.ENGLISH)
+                }
+                ready = true
+            }
         }
+        instance
     }
 
     DisposableEffect(tts) {
