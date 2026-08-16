@@ -2,8 +2,6 @@ package botany.garden.ui.screen
 
 import android.Manifest
 import android.content.pm.PackageManager
-import android.graphics.Bitmap
-import android.graphics.Matrix
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.Camera
@@ -11,6 +9,7 @@ import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.camera.view.PreviewView
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -39,14 +38,20 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.CornerRadius
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
+import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Path
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalLifecycleOwner
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.content.ContextCompat
 import botany.garden.data.model.Plant
-import botany.garden.data.ocr.OcrScanner
+import botany.garden.data.qr.QrScanner
 import botany.garden.data.repository.PlantRepository
 import botany.garden.ui.theme.Ink
 import botany.garden.ui.theme.Paper
@@ -65,7 +70,7 @@ fun ScanScreen(
 ) {
     val context = LocalContext.current
     val lifecycleOwner = LocalLifecycleOwner.current
-    val ocrScanner = remember(context) { OcrScanner(context) }
+    val qrScanner = remember { QrScanner() }
     val executor = remember { Executors.newSingleThreadExecutor() }
     val scope = rememberCoroutineScope()
     val busy = remember { AtomicBoolean(false) }
@@ -76,15 +81,14 @@ fun ScanScreen(
     var hasPermission by remember {
         mutableStateOf(ContextCompat.checkSelfPermission(context, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED)
     }
-    var status by remember { mutableStateOf("Point at a printed plant name") }
+    var status by remember { mutableStateOf("Point camera at a plant QR code") }
     val permissionLauncher = rememberLauncherForActivityResult(ActivityResultContracts.RequestPermission()) {
         hasPermission = it
     }
 
-    DisposableEffect(ocrScanner) {
+    DisposableEffect(Unit) {
         onDispose {
             executor.shutdown()
-            ocrScanner.release()
         }
     }
 
@@ -99,7 +103,7 @@ fun ScanScreen(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(12.dp),
             ) {
-                Text("Camera access is needed to scan a plant name")
+                Text("Camera access is needed to scan a plant QR code")
                 Button(onClick = { permissionLauncher.launch(Manifest.permission.CAMERA) }) { Text("Allow camera") }
             }
         } else {
@@ -116,31 +120,35 @@ fun ScanScreen(
                         val analysis = ImageAnalysis.Builder()
                             .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                             .build()
-                        analysis.setAnalyzer(executor) { image ->
+                        analysis.setAnalyzer(executor) { imageProxy ->
                             val now = System.currentTimeMillis()
-                            if (found.get() || now - lastScan.get() < 500L || !busy.compareAndSet(false, true)) {
-                                image.close()
+                            if (found.get() || now - lastScan.get() < 250L || !busy.compareAndSet(false, true)) {
+                                imageProxy.close()
                                 return@setAnalyzer
                             }
                             lastScan.set(now)
-                            val bitmap = try {
-                                image.toBitmap().rotate(image.imageInfo.rotationDegrees)
+                            val scannedText = try {
+                                qrScanner.scan(imageProxy)
                             } finally {
-                                image.close()
+                                imageProxy.close()
                             }
-                            scope.launch {
-                                try {
-                                    val match = withContext(Dispatchers.Default) {
-                                        ocrScanner.recognize(bitmap, repository)
+
+                            if (!scannedText.isNullOrBlank()) {
+                                scope.launch {
+                                    try {
+                                        val match = withContext(Dispatchers.Default) {
+                                            repository.findPlantByQrCode(scannedText)
+                                        }
+                                        if (match != null && found.compareAndSet(false, true)) {
+                                            status = "Plant found: ${match.commonNames.firstOrNull() ?: match.botanicalName}"
+                                            onPlantFound(match)
+                                        }
+                                    } finally {
+                                        busy.set(false)
                                     }
-                                    if (match != null && found.compareAndSet(false, true)) {
-                                        status = "Plant found"
-                                        onPlantFound(match)
-                                    }
-                                } finally {
-                                    if (!bitmap.isRecycled) bitmap.recycle()
-                                    busy.set(false)
                                 }
+                            } else {
+                                busy.set(false)
                             }
                         }
                         provider.unbindAll()
@@ -151,6 +159,34 @@ fun ScanScreen(
                     previewView
                 },
             )
+
+            // QR Viewfinder Overlay
+            Canvas(modifier = Modifier.fillMaxSize()) {
+                val boxSize = size.minDimension * 0.65f
+                val left = (size.width - boxSize) / 2f
+                val top = (size.height - boxSize) / 2.3f
+
+                // Semi-transparent dim background
+                drawRect(color = Color(0x66000000))
+
+                // Clear center scanning hole
+                drawRoundRect(
+                    color = Color.Transparent,
+                    topLeft = Offset(left, top),
+                    size = Size(boxSize, boxSize),
+                    cornerRadius = CornerRadius(24.dp.toPx(), 24.dp.toPx()),
+                    blendMode = BlendMode.Clear,
+                )
+
+                // Outer border accent
+                drawRoundRect(
+                    color = Color.White.copy(alpha = 0.8f),
+                    topLeft = Offset(left, top),
+                    size = Size(boxSize, boxSize),
+                    cornerRadius = CornerRadius(24.dp.toPx(), 24.dp.toPx()),
+                    style = Stroke(width = 2.dp.toPx()),
+                )
+            }
 
             IconButton(
                 onClick = {
@@ -174,8 +210,11 @@ fun ScanScreen(
                     modifier = Modifier.size(20.dp),
                 )
             }
+
             Column(
-                modifier = Modifier.align(Alignment.BottomCenter).padding(24.dp),
+                modifier = Modifier
+                    .align(Alignment.BottomCenter)
+                    .padding(bottom = 90.dp, start = 24.dp, end = 24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(12.dp),
             ) {
@@ -183,9 +222,4 @@ fun ScanScreen(
             }
         }
     }
-}
-
-private fun Bitmap.rotate(degrees: Int): Bitmap {
-    if (degrees == 0) return this
-    return Bitmap.createBitmap(this, 0, 0, width, height, Matrix().apply { postRotate(degrees.toFloat()) }, true)
 }

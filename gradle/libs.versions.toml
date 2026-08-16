@@ -6,7 +6,7 @@ activity-compose = "1.9.3"
 core-ktx = "1.15.0"
 kotlinx-serialization = "1.7.3"
 camera = "1.4.1"
-tesseract = "4.7.0"
+zxing = "3.5.3"
 coil = "2.7.0"
 navigation-compose = "2.8.5"
 
@@ -27,7 +27,7 @@ camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "
 camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "camera" }
 camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "camera" }
 camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "camera" }
-tesseract4android = { group = "com.github.adaptech-cz.Tesseract4Android", name = "tesseract4android", version.ref = "tesseract" }
+zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxing" }
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 [plugins]
