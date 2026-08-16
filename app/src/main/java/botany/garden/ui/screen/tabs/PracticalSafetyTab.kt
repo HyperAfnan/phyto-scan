@@ -17,9 +17,19 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.AccountTree
+import androidx.compose.material.icons.outlined.Agriculture
+import androidx.compose.material.icons.outlined.ContentCut
+import androidx.compose.material.icons.outlined.ContentPaste
 import androidx.compose.material.icons.outlined.Eco
+import androidx.compose.material.icons.outlined.Grain
+import androidx.compose.material.icons.outlined.Grass
+import androidx.compose.material.icons.outlined.WaterDrop
+import androidx.compose.material.icons.outlined.WbSunny
 import androidx.compose.material.icons.outlined.Yard
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedCard
@@ -149,7 +159,12 @@ fun PracticalSafetyTabContent(
                                             modifier = Modifier.fillMaxSize(),
                                         )
                                     } else {
-                                        Icon(imageVector = Icons.Outlined.Yard, contentDescription = null, tint = Moss)
+                                        Icon(
+                                            imageVector = getCultivationIcon(info.label),
+                                            contentDescription = info.label,
+                                            tint = Moss,
+                                            modifier = Modifier.size(38.dp)
+                                        )
                                     }
                                 }
                                 Text(
@@ -232,5 +247,20 @@ fun PracticalSafetyTabContent(
                 AyurvedicTree(plant.ayurvedicProperties, modifier = Modifier.padding(horizontal = 20.dp))
             }
         }
+    }
+}
+
+private fun getCultivationIcon(label: String): ImageVector {
+    val lower = label.lowercase()
+    return when {
+        lower.contains("sunlight") -> Icons.Outlined.WbSunny
+        lower.contains("water") -> Icons.Outlined.WaterDrop
+        lower.contains("pruning") -> Icons.Outlined.ContentCut
+        lower.contains("grafting") -> Icons.Outlined.ContentPaste
+        lower.contains("stem cut") || lower.contains("cuttings") -> Icons.Outlined.ContentCut
+        lower.contains("stolon") || lower.contains("rhizome") || lower.contains("tuber") || lower.contains("root division") -> Icons.Outlined.AccountTree
+        lower.contains("seed") -> Icons.Outlined.Grain
+        lower.contains("propagation") -> Icons.Outlined.Grass
+        else -> Icons.Outlined.Agriculture
     }
 }
