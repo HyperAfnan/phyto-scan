@@ -22,7 +22,7 @@
       "leaf": "images/bael/split/2_leaves.webp",
       "flower": "images/bael/split/3_flowers.webp",
       "fruit": "images/bael/split/4_whole_fruit.webp",
-      "habitatMap": "images/bael/bael habitat.jpg"
+      "habitatMap": "images/habitat_maps/bael_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -345,7 +345,7 @@
       "leaf": "images/insulin-plant/split/7_leaf_closeup.webp",
       "flower": "images/insulin-plant/split/5_flower_closeup.webp",
       "fruit": "",
-      "habitatMap": "images/insulin-plant/insulin_plant_habitat.jpg"
+      "habitatMap": "images/habitat_maps/insulin_plant_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Not Evaluated",
@@ -606,7 +606,7 @@
       "leaf": "images/haritaki/split/3_leaves_opposite.webp",
       "flower": "images/haritaki/split/4_flowers.webp",
       "fruit": "images/haritaki/split/5_fruits_raw.webp",
-      "habitatMap": "images/haritaki/haritaki_habitat.jpg"
+      "habitatMap": "images/habitat_maps/haritaki_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -892,7 +892,7 @@
       "leaf": "images/curry-tree/split/2_compound_leaf.webp",
       "flower": "images/curry-tree/split/5_flower_closeup.webp",
       "fruit": "images/curry-tree/split/7_fruits_ripe.webp",
-      "habitatMap": "images/curry-tree/curry_tree_habitat.jpg"
+      "habitatMap": "images/habitat_maps/curry_tree_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -1166,7 +1166,7 @@
       "leaf": "images/gotu-kola/split/2_leaves.webp",
       "flower": "images/gotu-kola/split/4_flowers.webp",
       "fruit": "images/gotu-kola/split/5_fruit.webp",
-      "habitatMap": "images/gotu-kola/indian-pennywort-habitat.jpg"
+      "habitatMap": "images/habitat_maps/gotu_kola_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -1431,7 +1431,7 @@
       "leaf": "images/datura/split/3_leaf_closeup.webp",
       "flower": "images/datura/split/2_flower.webp",
       "fruit": "images/datura/split/4_spiny_fruit.webp",
-      "habitatMap": "images/datura/dhatura-habitat.jpg"
+      "habitatMap": "images/habitat_maps/datura_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -1654,7 +1654,8 @@
       ],
       "leaf": "images/shatavari/split/2_needle_like_cladodes.webp",
       "flower": "images/shatavari/split/4_flowers_raceme.webp",
-      "fruit": "images/shatavari/split/6_fruits_red_berries.webp"
+      "fruit": "images/shatavari/split/6_fruits_red_berries.webp",
+      "habitatMap": "images/habitat_maps/shatavari_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -1891,7 +1892,8 @@
       ],
       "leaf": "images/false-ashoka/split/8_leaf_closeup.webp",
       "flower": "images/false-ashoka/split/9_flower_closeup.webp",
-      "fruit": "images/false-ashoka/split/6_fruits.webp"
+      "fruit": "images/false-ashoka/split/6_fruits.webp",
+      "habitatMap": "images/habitat_maps/false_ashoka_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -2098,7 +2100,8 @@
       ],
       "leaf": "images/safed-musli/split/2_basal_leaf_rosette.webp",
       "flower": "images/safed-musli/split/6_flower_closeup.webp",
-      "fruit": "images/safed-musli/split/7_fruits_capsule.webp"
+      "fruit": "images/safed-musli/split/7_fruits_capsule.webp",
+      "habitatMap": "images/habitat_maps/safed_musli_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Endangered in Wild",
@@ -2329,7 +2332,8 @@
       ],
       "leaf": "images/vasaka/split/2_leaves_opposite.webp",
       "flower": "images/vasaka/split/4_flower_closeup.webp",
-      "fruit": "images/vasaka/split/6_fruit_capsule.webp"
+      "fruit": "images/vasaka/split/6_fruit_capsule.webp",
+      "habitatMap": "images/habitat_maps/vasaka_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -2590,7 +2594,8 @@
       ],
       "leaf": "images/tulsi/split/2_leaves_opposite.webp",
       "flower": "images/tulsi/split/4_flower_closeup.webp",
-      "fruit": "images/tulsi/split/6_fruit_schizocarp.webp"
+      "fruit": "images/tulsi/split/6_fruit_schizocarp.webp",
+      "habitatMap": "images/habitat_maps/tulsi_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -2853,7 +2858,8 @@
       ],
       "leaf": "images/cardamom/split/2_leaves.webp",
       "flower": "images/cardamom/split/4_flower.webp",
-      "fruit": "images/cardamom/split/10_harvested_fruits.webp"
+      "fruit": "images/cardamom/split/10_harvested_fruits.webp",
+      "habitatMap": "images/habitat_maps/cardamom_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -3101,7 +3107,8 @@
       ],
       "leaf": "images/gurmar/split/2_leaves.webp",
       "flower": "images/gurmar/split/4_flower_closeup.webp",
-      "fruit": "images/gurmar/split/5_fruits_follicles.webp"
+      "fruit": "images/gurmar/split/5_fruits_follicles.webp",
+      "habitatMap": "images/habitat_maps/gurmar_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -3347,7 +3354,8 @@
       ],
       "leaf": "images/jamun/split/2_leaves_opposite.webp",
       "flower": "images/jamun/split/3_flowers_clusters.webp",
-      "fruit": "images/jamun/split/5_ripe_fruits.webp"
+      "fruit": "images/jamun/split/5_ripe_fruits.webp",
+      "habitatMap": "images/habitat_maps/jamun_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",
@@ -3603,7 +3611,8 @@
       ],
       "leaf": "images/amla/split/3_close_up_leaves.webp",
       "flower": "images/amla/split/4_flowers.webp",
-      "fruit": "images/amla/split/6_mature_fruits.webp"
+      "fruit": "images/amla/split/6_mature_fruits.webp",
+      "habitatMap": "images/habitat_maps/amla_habitat_map.jpg"
     },
     "badges": {
       "conservation": "Least Concern",

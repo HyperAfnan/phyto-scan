@@ -14,6 +14,7 @@ class PlantRepositoryTest {
         "Safed Musli",
         "Asparagaceae",
     )
+    private val aloe = plant("aloe-vera", "Aloe vera (L.) Burm.f.", "Indian Aloe Vera", "Asphodelaceae")
 
     private fun plant(id: String, botanicalName: String, commonName: String, family: String) = Plant(
         id = id,
@@ -24,36 +25,49 @@ class PlantRepositoryTest {
         images = PlantImages(""),
     )
 
-    private val aloe = plant("aloe-vera", "Aloe vera (L.) Burm.f.", "Indian Aloe Vera", "Asphodelaceae")
-
     @Test
-    fun matchesCommonNameAndRejectsDigits() {
-        assertEquals(neem, findBestPlantMatch(listOf(neem), "NEEM"))
-        assertNull(findBestPlantMatch(listOf(neem), "123456"))
+    fun matchesCommonName() {
+        val plants = listOf(neem, musli, aloe)
+        assertEquals(neem, findPlantByQrCode(plants, "NEEM"))
+        assertEquals(musli, findPlantByQrCode(plants, "Safed Musli"))
+        assertEquals(aloe, findPlantByQrCode(plants, "Indian Aloe Vera"))
     }
 
     @Test
-    fun matchesNameInsideMultilineOcrWithBotanicalTypo() {
-        assertEquals(
-            musli,
-            findBestPlantMatch(
-                listOf(musli),
-                "Chlorophylum brivillianum\n(ASPARAGACAE)\nSafed Musli",
-            ),
-        )
+    fun matchesBiologicalBotanicalName() {
+        val plants = listOf(neem, musli, aloe)
+        assertEquals(neem, findPlantByQrCode(plants, "Azadirachta indica"))
+        assertEquals(musli, findPlantByQrCode(plants, "Chlorophytum borivilianum"))
+        assertEquals(aloe, findPlantByQrCode(plants, "Aloe vera"))
     }
 
     @Test
-    fun matchesAloeVeraCorrectly() {
-        assertEquals(aloe, findBestPlantMatch(listOf(aloe), "Aloe Vera"))
-        assertEquals(aloe, findBestPlantMatch(listOf(aloe), "Indian Aloe Vera"))
+    fun matchesPlantIdDirectly() {
+        val plants = listOf(neem, musli, aloe)
+        assertEquals(neem, findPlantByQrCode(plants, "azadirachta-indica"))
+        assertEquals(aloe, findPlantByQrCode(plants, "aloe-vera"))
     }
 
     @Test
-    fun ignoresShortOcrFragments() {
-        assertNull(findBestPlantMatch(listOf(neem), "ee"))
-        assertNull(findBestPlantMatch(listOf(neem), "a"))
-        assertNull(findBestPlantMatch(listOf(aloe, neem), "haloes"))
-        assertNull(findBestPlantMatch(listOf(aloe, neem), "xyzabc"))
+    fun matchesUrlAndDeepLinkQrPayloads() {
+        val plants = listOf(neem, musli, aloe)
+        assertEquals(aloe, findPlantByQrCode(plants, "https://botanygarden.app/plant?id=aloe-vera"))
+        assertEquals(musli, findPlantByQrCode(plants, "botanygarden://plant/chlorophytum-borivilianum"))
+    }
+
+    @Test
+    fun matchesJsonQrPayload() {
+        val plants = listOf(neem, musli, aloe)
+        assertEquals(neem, findPlantByQrCode(plants, "{\"id\":\"azadirachta-indica\"}"))
+        assertEquals(aloe, findPlantByQrCode(plants, "{\"name\":\"Indian Aloe Vera\"}"))
+    }
+
+    @Test
+    fun rejectsInvalidOrUnknownQrStrings() {
+        val plants = listOf(neem, musli, aloe)
+        assertNull(findPlantByQrCode(plants, "123456"))
+        assertNull(findPlantByQrCode(plants, "xyzabc"))
+        assertNull(findPlantByQrCode(plants, "a"))
+        assertNull(findPlantByQrCode(plants, ""))
     }
 }
