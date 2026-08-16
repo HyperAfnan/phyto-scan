@@ -1,10 +1,12 @@
 package botany.garden.ui.screen.tabs
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -18,6 +20,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import botany.garden.data.model.Plant
@@ -31,6 +34,7 @@ import botany.garden.ui.theme.Charcoal
 import botany.garden.ui.theme.FernPale
 import botany.garden.ui.theme.Moss
 import botany.garden.ui.theme.SubText
+import coil.compose.AsyncImage
 
 @Composable
 fun OverviewTabContent(
@@ -80,10 +84,15 @@ fun OverviewTabContent(
             Column {
                 SectionEyebrow(label = "HABITAT", modifier = Modifier.padding(horizontal = 20.dp))
                 Spacer(modifier = Modifier.height(10.dp))
+                val hasHabitatMap = plant.images.habitatMap.isNotBlank()
                 OutlinedCard(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(horizontal = 20.dp),
+                        .padding(horizontal = 20.dp)
+                        .then(
+                            if (hasHabitatMap) Modifier.clickable { onImageClick(plant.images.habitatMap) }
+                            else Modifier
+                        ),
                 ) {
                     Box(
                         modifier = Modifier
@@ -92,23 +101,34 @@ fun OverviewTabContent(
                             .background(FernPale),
                         contentAlignment = Alignment.Center,
                     ) {
-                        Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                            Icon(
-                                imageVector = Icons.Outlined.Map,
-                                contentDescription = "Map",
-                                modifier = Modifier.size(48.dp),
-                                tint = Moss,
+                        if (hasHabitatMap) {
+                            AsyncImage(
+                                model = "file:///android_asset/${plant.images.habitatMap}",
+                                contentDescription = "Habitat map",
+                                contentScale = ContentScale.Crop,
+                                modifier = Modifier.fillMaxSize(),
                             )
-                            Spacer(modifier = Modifier.height(8.dp))
-                            Text(text = "Map", color = SubText)
-                            Text(
-                                text = plant.habitat,
-                                color = Charcoal,
-                                textAlign = TextAlign.Center,
-                                modifier = Modifier.padding(8.dp),
-                            )
+                        } else {
+                            Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                                Icon(
+                                    imageVector = Icons.Outlined.Map,
+                                    contentDescription = "Map",
+                                    modifier = Modifier.size(48.dp),
+                                    tint = Moss,
+                                )
+                                Spacer(modifier = Modifier.height(8.dp))
+                                Text(text = "Map", color = SubText)
+                            }
                         }
                     }
+                    Text(
+                        text = plant.habitat,
+                        color = Charcoal,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(8.dp),
+                    )
                 }
             }
         }

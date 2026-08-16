@@ -34,6 +34,7 @@ data class Plant(
 data class PlantImages(
     val hero: String,
     val gallery: List<String> = emptyList(),
+    val habitatMap: String = "",
 )
 
 @Serializable
