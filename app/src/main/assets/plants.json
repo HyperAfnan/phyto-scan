@@ -2,7 +2,12 @@
   {
     "id": "aegle-marmelos",
     "botanicalName": "Aegle marmelos (L.) Corrêa",
-    "commonNames": ["Bael", "Wood Apple", "Stone Apple", "Bengal Quince"],
+    "commonNames": [
+      "Bael",
+      "Wood Apple",
+      "Stone Apple",
+      "Bengal Quince"
+    ],
     "family": "Rutaceae (Citrus Family)",
     "pronunciation": "AY-glee mar-MEH-loss",
     "images": {
@@ -17,86 +22,9 @@
         "images/bael/split/8_thorny_branch.webp",
         "images/bael/split/bael_roots.webp"
       ],
-      "leaf": "images/bael/split/2_leaves.webp",
-      "flower": "images/bael/split/3_flowers.webp",
-      "fruit": "images/bael/split/4_whole_fruit.webp",
       "habitatMap": "images/habitat_maps/bael_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Indian Subcontinent & SE Asia",
-      "flowering": "May – Jul",
-      "lifespan": "100+ years",
-      "plantType": "Deciduous Tree",
-      "matureHeight": "8 – 15 m",
-      "growthRate": "Slow – Moderate"
-    },
-    "warnings": {
-      "headline": "Use with medical guidance",
-      "chips": [
-        "May interact with diabetes medication",
-        "Excess raw fruit may cause constipation",
-        "Consult doctor if pregnant"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Low – drought tolerant",
-        "meterFilled": 1
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Sandy, well-drained, alkaline"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "–7° – 48°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Tolerates dry climates well",
-        "meterFilled": 1
-      }
-    },
     "about": "Bael is a medium-sized, slow-growing deciduous tree native to the Indian subcontinent. It is highly revered in Ayurveda and Hindu culture, especially because its trifoliate leaves are traditionally offered to Lord Shiva. The tree can grow 8–15 meters in height and has a spreading crown with numerous branches. Young branches often bear sharp spines. The bark is pale brown to greyish and may appear slightly flaky with age. The leaves are aromatic when crushed due to the presence of volatile oils. Its flowers are small, green-white, and pleasantly fragrant. The fruit is spherical to oval with a hard woody shell enclosing aromatic orange pulp and numerous seeds surrounded by mucilage.",
-    "uses": [
-      {
-        "label": "Digestive health",
-        "description": "Ripe bael fruit pulp is widely consumed to support digestive health and relieve chronic diarrhoea and dysentery."
-      },
-      {
-        "label": "Religious significance",
-        "description": "Trifoliate bael leaves are sacred in Hinduism and offered during the worship of Lord Shiva."
-      },
-      {
-        "label": "Traditional beverages",
-        "description": "Bael sherbet (sweetened fruit pulp drink) is a popular summer coolant across North India."
-      },
-      {
-        "label": "Timber and crafts",
-        "description": "The hard wood is used for cart construction, tool handles, and small household items."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why is Bael sacred to Lord Shiva?",
-        "answer": "The trifoliate leaf of bael is said to represent the three eyes of Lord Shiva. Offering bael leaves during worship is believed to be highly auspicious and is mentioned in several Puranic texts."
-      },
-      {
-        "question": "Can Bael survive extreme climates?",
-        "answer": "Yes — bael is remarkably hardy and can withstand temperatures from –7°C to 48°C, prolonged drought, and poor alkaline soils, making it one of the toughest fruit trees in India."
-      },
-      {
-        "question": "How long does a Bael tree live?",
-        "answer": "A healthy bael tree can live well over 100 years, and some temple specimens in India are believed to be several centuries old."
-      }
-    ],
     "synonyms": [
       "Bel",
       "Bilva",
@@ -275,9 +203,17 @@
       "Mouthwashes"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Astringent (Kashaya)", "Bitter (Tikta)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Hot (Ushna)"],
+      "rasa": [
+        "Astringent (Kashaya)",
+        "Bitter (Tikta)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Hot (Ushna)"
+      ],
       "doshaAction": "Particularly associated with balancing Kapha & Vata doshas"
     },
     "interestingFacts": [
@@ -316,7 +252,11 @@
   {
     "id": "costus-igneus",
     "botanicalName": "Costus igneus Nak.",
-    "commonNames": ["Insulin Plant", "Spiral Flag", "Fiery Costus"],
+    "commonNames": [
+      "Insulin Plant",
+      "Spiral Flag",
+      "Fiery Costus"
+    ],
     "family": "Costaceae",
     "pronunciation": "KOSS-tus IG-nee-us",
     "images": {
@@ -329,73 +269,9 @@
         "images/insulin-plant/split/6_rhizome_root.webp",
         "images/insulin-plant/split/leaf.webp"
       ],
-      "leaf": "images/insulin-plant/split/7_leaf_closeup.webp",
-      "flower": "images/insulin-plant/split/5_flower_closeup.webp",
-      "fruit": "images/insulin-plant/split/fruit.webp",
       "habitatMap": "images/habitat_maps/insulin_plant_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Not Evaluated",
-      "nativeRegion": "Mexico & Central America",
-      "flowering": "Summer – Autumn",
-      "lifespan": "Perennial",
-      "plantType": "Ornamental Medicinal Herb",
-      "matureHeight": "0.6 – 2 m",
-      "growthRate": "Fast"
-    },
-    "warnings": {
-      "headline": "Monitor Blood Glucose",
-      "chips": [
-        "May cause hypoglycemia when taken with diabetes medication",
-        "Not a substitute for insulin"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Partial shade to full sun",
-        "meterFilled": 3
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate (Keep moist)",
-        "meterFilled": 3
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained fertile soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "20° – 35°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Humid conditions",
-        "meterFilled": 3
-      }
-    },
     "about": "The Insulin Plant is a perennial, evergreen, ornamental medicinal herb native to Mexico and Central America. It is widely cultivated in India due to its reported blood glucose-lowering properties. It grows 0.6–2 meters tall with thick, fleshy stems arranged in a spiral pattern. The leaves are large, dark green, smooth, and spirally arranged around the stem. During the flowering season, it produces attractive orange to reddish-orange flowers in cone-like terminal clusters.",
-    "uses": [
-      {
-        "label": "Diabetes Management",
-        "description": "Traditionally used to help reduce blood glucose levels as an adjunct therapy."
-      },
-      {
-        "label": "Cardiovascular Support",
-        "description": "May help improve lipid profile and reduce oxidative stress."
-      },
-      {
-        "label": "Liver Protection",
-        "description": "Investigated for protective effects against liver injury."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Does it contain insulin?",
-        "answer": "No. Despite its name, it contains phytochemicals that help support glucose metabolism."
-      }
-    ],
     "synonyms": [
       "Spiral Flag",
       "Fiery Costus",
@@ -463,7 +339,9 @@
       {
         "title": "Liver Health",
         "icon": "",
-        "points": ["Investigated for protective effects against liver injury"]
+        "points": [
+          "Investigated for protective effects against liver injury"
+        ]
       }
     ],
     "pharmacologicalActivities": [
@@ -531,9 +409,15 @@
       "Antioxidant support"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)"],
-      "guna": ["Light (Laghu)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Bitter (Tikta)"
+      ],
+      "guna": [
+        "Light (Laghu)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Modern introduced species — used in contemporary herbalism"
     },
     "interestingFacts": [
@@ -565,7 +449,12 @@
   {
     "id": "terminalia-chebula",
     "botanicalName": "Terminalia chebula Retz.",
-    "commonNames": ["Haritaki", "Harad", "Chebulic Myrobalan", "Ink Nut"],
+    "commonNames": [
+      "Haritaki",
+      "Harad",
+      "Chebulic Myrobalan",
+      "Ink Nut"
+    ],
     "family": "Combretaceae",
     "pronunciation": "ter-mih-NAY-lee-uh CHEB-yoo-luh",
     "images": {
@@ -578,73 +467,9 @@
         "images/haritaki/split/6_fruits_dried.webp",
         "images/haritaki/split/7_cut_open_fruit.webp"
       ],
-      "leaf": "images/haritaki/split/3_leaves_opposite.webp",
-      "flower": "images/haritaki/split/4_flowers.webp",
-      "fruit": "images/haritaki/split/5_fruits_raw.webp",
       "habitatMap": "images/habitat_maps/haritaki_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "South & Southeast Asia",
-      "flowering": "Apr – Jun",
-      "lifespan": "50+ years",
-      "plantType": "Large Deciduous Tree",
-      "matureHeight": "15 – 30 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Laxative Effect",
-      "chips": [
-        "Excessive intake may cause diarrhea",
-        "Use cautiously in severe dehydration"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained loamy soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "10° – 42°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Haritaki is a large deciduous medicinal tree native to South and Southeast Asia. It is regarded as one of the most important medicinal plants in Ayurveda, where it is known as the 'King of Medicines'. The dried fruit is the principal medicinal part and is a key ingredient of the famous Ayurvedic formulation Triphala.",
-    "uses": [
-      {
-        "label": "Digestive Health",
-        "description": "Used for constipation, indigestion, acidity, and flatulence."
-      },
-      {
-        "label": "Oral Health",
-        "description": "Used as a gargle for mouth ulcers, gingivitis, and dental plaque."
-      },
-      {
-        "label": "General Rejuvenation",
-        "description": "Revered as a Rasayana for promoting longevity and digestion."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why is it called King of Medicines?",
-        "answer": "Ancient Ayurvedic texts praise Haritaki as a master rejuvenative herb for all body systems."
-      }
-    ],
     "synonyms": [
       "Haritaki",
       "Harad",
@@ -729,7 +554,11 @@
       {
         "title": "Oral Health",
         "icon": "",
-        "points": ["Mouth ulcers", "Gingivitis", "Sore throat"]
+        "points": [
+          "Mouth ulcers",
+          "Gingivitis",
+          "Sore throat"
+        ]
       },
       {
         "title": "Rejuvenation",
@@ -800,9 +629,20 @@
       "Rasayana"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Astringent (dominant)", "Sweet", "Sour", "Bitter", "Pungent"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Warm (Ushna)"],
+      "rasa": [
+        "Astringent (dominant)",
+        "Sweet",
+        "Sour",
+        "Bitter",
+        "Pungent"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Warm (Ushna)"
+      ],
       "doshaAction": "Tridoshara — Balances Vata, Pitta, and Kapha"
     },
     "interestingFacts": [
@@ -833,7 +673,12 @@
   {
     "id": "murraya-koenigii",
     "botanicalName": "Murraya koenigii (L.) Spreng.",
-    "commonNames": ["Curry Tree", "Curry Leaf", "Kadi Patta", "Sweet Neem"],
+    "commonNames": [
+      "Curry Tree",
+      "Curry Leaf",
+      "Kadi Patta",
+      "Sweet Neem"
+    ],
     "family": "Rutaceae (Citrus Family)",
     "pronunciation": "mur-RAY-uh kay-NIG-ee-eye",
     "images": {
@@ -845,73 +690,9 @@
         "images/curry-tree/split/7_fruits_ripe.webp",
         "images/curry-tree/split/9_seed.webp"
       ],
-      "leaf": "images/curry-tree/split/2_compound_leaf.webp",
-      "flower": "images/curry-tree/split/5_flower_closeup.webp",
-      "fruit": "images/curry-tree/split/7_fruits_ripe.webp",
       "habitatMap": "images/habitat_maps/curry_tree_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Indian Subcontinent",
-      "flowering": "Apr – Jun",
-      "lifespan": "20+ years",
-      "plantType": "Evergreen Aromatic Tree",
-      "matureHeight": "3 – 6 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Avoid Seeds",
-      "chips": [
-        "Seeds are not commonly consumed",
-        "Monitor blood sugar if taking antidiabetic drugs"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun to partial shade",
-        "meterFilled": 3
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained fertile soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "18° – 35°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "The Curry Tree is a small to medium-sized evergreen aromatic tree native to the Indian subcontinent. It is widely cultivated for its fragrant leaves, which are an essential ingredient in Indian cuisine and are also valued in traditional medicine.",
-    "uses": [
-      {
-        "label": "Culinary Seasoning",
-        "description": "Fresh aromatic leaves are a staple flavor component in South Asian cuisine."
-      },
-      {
-        "label": "Digestive Support",
-        "description": "Relieves nausea, flatulence, and stimulates appetite."
-      },
-      {
-        "label": "Hair & Scalp Care",
-        "description": "Used in traditional herbal hair oils to promote scalp health."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Are curry leaves curry powder?",
-        "answer": "No. Curry leaves are fresh aromatic tree leaves, completely distinct from commercial curry powder mixtures."
-      }
-    ],
     "synonyms": [
       "Curry Tree",
       "Curry Leaf Tree",
@@ -989,7 +770,10 @@
       {
         "title": "Hair & Skin",
         "icon": "",
-        "points": ["Promotes healthy hair growth", "Maintains scalp health"]
+        "points": [
+          "Promotes healthy hair growth",
+          "Maintains scalp health"
+        ]
       },
       {
         "title": "Diabetes & Metabolic",
@@ -1065,9 +849,17 @@
       "Diabetes"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)", "Pungent (Katu)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Mildly heating (Ushna)"],
+      "rasa": [
+        "Bitter (Tikta)",
+        "Pungent (Katu)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Mildly heating (Ushna)"
+      ],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -1092,7 +884,11 @@
   {
     "id": "centella-asiatica",
     "botanicalName": "Centella asiatica (L.) Urb.",
-    "commonNames": ["Indian Pennywort", "Gotu Kola", "Mandukaparni"],
+    "commonNames": [
+      "Indian Pennywort",
+      "Gotu Kola",
+      "Mandukaparni"
+    ],
     "family": "Apiaceae (Umbelliferae)",
     "pronunciation": "sen-TELL-uh ay-zee-AT-ih-kuh",
     "images": {
@@ -1106,73 +902,9 @@
         "images/gotu-kola/split/6_root_system.webp",
         "images/gotu-kola/split/7_leaf_top_view.webp"
       ],
-      "leaf": "images/gotu-kola/split/2_leaves.webp",
-      "flower": "images/gotu-kola/split/4_flowers.webp",
-      "fruit": "images/gotu-kola/split/5_fruit.webp",
       "habitatMap": "images/habitat_maps/gotu_kola_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Tropical Asia & Africa",
-      "flowering": "Year-round",
-      "lifespan": "Perennial",
-      "plantType": "Creeping Herb",
-      "matureHeight": "5 – 15 cm",
-      "growthRate": "Fast"
-    },
-    "warnings": {
-      "headline": "Use Moderately",
-      "chips": [
-        "Excessive intake may cause headache or dizziness",
-        "Consult doctor if taking sedatives"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Partial shade",
-        "meterFilled": 2
-      },
-      "water": {
-        "label": "Water",
-        "value": "High (Keep moist)",
-        "meterFilled": 4
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Moist fertile soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "15° – 35°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "High",
-        "meterFilled": 4
-      }
-    },
     "about": "Centella asiatica is a small, creeping, perennial medicinal herb that grows in moist, shaded environments. It spreads by slender stolons forming dense mats. Highly valued in Ayurveda and TCM for memory, wound healing, and skin health.",
-    "uses": [
-      {
-        "label": "Brain & Memory",
-        "description": "Revered as Medhya Rasayana to enhance concentration and memory."
-      },
-      {
-        "label": "Wound Healing",
-        "description": "Stimulates collagen synthesis and aids tissue repair."
-      },
-      {
-        "label": "Circulatory Support",
-        "description": "Improves microcirculation and relieves varicose vein symptoms."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why do elephants eat it?",
-        "answer": "Folklore says elephants consume Gotu Kola, inspiring its reputation for longevity and memory."
-      }
-    ],
     "synonyms": [
       "Gotu Kola",
       "Indian Pennywort",
@@ -1250,12 +982,17 @@
       {
         "title": "Skin & Tissue Repair",
         "icon": "",
-        "points": ["Wound healing & scar reduction", "Burns & eczema support"]
+        "points": [
+          "Wound healing & scar reduction",
+          "Burns & eczema support"
+        ]
       },
       {
         "title": "Circulation",
         "icon": "",
-        "points": ["Helps varicose veins & venous insufficiency"]
+        "points": [
+          "Helps varicose veins & venous insufficiency"
+        ]
       }
     ],
     "pharmacologicalActivities": [
@@ -1315,9 +1052,16 @@
       "Longevity"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)", "Sweet (Madhura)"],
-      "guna": ["Light (Laghu)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Bitter (Tikta)",
+        "Sweet (Madhura)"
+      ],
+      "guna": [
+        "Light (Laghu)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Balances Pitta and Vata"
     },
     "interestingFacts": [
@@ -1342,7 +1086,12 @@
   {
     "id": "datura-stramonium",
     "botanicalName": "Datura stramonium L.",
-    "commonNames": ["Thorn Apple", "Jimson Weed", "Devil's Trumpet", "Dhatura"],
+    "commonNames": [
+      "Thorn Apple",
+      "Jimson Weed",
+      "Devil's Trumpet",
+      "Dhatura"
+    ],
     "family": "Solanaceae (Nightshade Family)",
     "pronunciation": "dah-TOO-ruh struh-MOH-nee-um",
     "images": {
@@ -1356,70 +1105,9 @@
         "images/datura/split/5_mature_dry_fruit.webp",
         "images/datura/split/6_seeds.webp"
       ],
-      "leaf": "images/datura/split/3_leaf_closeup.webp",
-      "flower": "images/datura/split/2_flower.webp",
-      "fruit": "images/datura/split/4_spiny_fruit.webp",
       "habitatMap": "images/habitat_maps/datura_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Central America",
-      "flowering": "Jun – Oct",
-      "lifespan": "Annual",
-      "plantType": "Poisonous Herb",
-      "matureHeight": "0.5 – 1.5 m",
-      "growthRate": "Fast"
-    },
-    "warnings": {
-      "headline": "HIGHLY POISONOUS",
-      "chips": [
-        "Contains toxic tropane alkaloids",
-        "NEVER self-medicate or ingest",
-        "Fatal in high doses"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Low to moderate",
-        "meterFilled": 1
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Disturbed well-drained soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "15° – 38°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Low",
-        "meterFilled": 1
-      }
-    },
     "about": "Datura stramonium is an annual poisonous herb known for its large trumpet-shaped flowers and spiny fruits. Every part of the plant contains dangerous tropane alkaloids (atropine, scopolamine) and must never be ingested.",
-    "uses": [
-      {
-        "label": "Pharmaceutical Source",
-        "description": "Source of atropine and scopolamine used in modern prescription medicine."
-      },
-      {
-        "label": "Traditional Pain Relief",
-        "description": "Historically used in external purified oils for joint pain under expert care."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why is it dangerous?",
-        "answer": "All parts contain variable high concentrations of toxic alkaloids causing severe anticholinergic poisoning."
-      }
-    ],
     "synonyms": [
       "Thorn Apple",
       "Jimson Weed",
@@ -1484,7 +1172,11 @@
       "Bronchodilator",
       "Mydriatic"
     ],
-    "phytochemicals": ["Atropine", "Hyoscyamine", "Scopolamine"],
+    "phytochemicals": [
+      "Atropine",
+      "Hyoscyamine",
+      "Scopolamine"
+    ],
     "scientificEvidence": "Tropane alkaloids act as competitive antagonists at muscarinic acetylcholine receptors. Ingestion of raw plant material carries extreme risk of toxicity.",
     "safetyPrecautions": [
       "HIGHLY TOXIC — Keep away from children and pets.",
@@ -1524,9 +1216,17 @@
       "External pain relief oils"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)", "Pungent (Katu)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Heating (Ushna)"],
+      "rasa": [
+        "Bitter (Tikta)",
+        "Pungent (Katu)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Heating (Ushna)"
+      ],
       "doshaAction": "Balances Kapha and Vata (Used only after Shodhana purification)"
     },
     "interestingFacts": [
@@ -1551,7 +1251,12 @@
   {
     "id": "asparagus-racemosus",
     "botanicalName": "Asparagus racemosus Willd.",
-    "commonNames": ["Shatavari", "Wild Asparagus", "Satamuli", "Shatamull"],
+    "commonNames": [
+      "Shatavari",
+      "Wild Asparagus",
+      "Satamuli",
+      "Shatamull"
+    ],
     "family": "Asparagaceae",
     "pronunciation": "uh-SPAR-uh-gus rass-eh-MOH-sus",
     "images": {
@@ -1563,73 +1268,9 @@
         "images/shatavari/split/6_fruits_red_berries.webp",
         "images/shatavari/split/9_tuberous_roots.webp"
       ],
-      "leaf": "images/shatavari/split/2_needle_like_cladodes.webp",
-      "flower": "images/shatavari/split/4_flowers_raceme.webp",
-      "fruit": "images/shatavari/split/6_fruits_red_berries.webp",
       "habitatMap": "images/habitat_maps/shatavari_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "South Asia",
-      "flowering": "Jul – Sept",
-      "lifespan": "10+ years",
-      "plantType": "Perennial Climbing Herb",
-      "matureHeight": "1 – 3 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Check for Allergies",
-      "chips": [
-        "Avoid if allergic to asparagus",
-        "Consult doctor if taking diuretics"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Partial shade to full sun",
-        "meterFilled": 2
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained sandy loam"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "15° – 35°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Asparagus racemosus, commonly known as Shatavari, is a thorny perennial climbing herb native to the Indian subcontinent. It produces slender, twining stems with soft needle-like cladodes. Underground, it forms fleshy tuberous roots highly valued as a female reproductive tonic and Rasayana.",
-    "uses": [
-      {
-        "label": "Women's Health",
-        "description": "Supports reproductive health, lactation, and hormonal balance."
-      },
-      {
-        "label": "Digestive Protection",
-        "description": "Soothes stomach lining and provides gastroprotective benefits."
-      },
-      {
-        "label": "Adaptogen",
-        "description": "Helps the body adapt to physical and emotional stress."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "What does Shatavari mean?",
-        "answer": "It translates to 'she who possesses a hundred husbands', symbolizing vitality and reproductive strength."
-      }
-    ],
     "synonyms": [
       "Shatavari",
       "Satavari",
@@ -1750,9 +1391,17 @@
       "Gastric ulcer relief"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Sweet (Madhura)", "Bitter (Tikta)"],
-      "guna": ["Heavy (Guru)", "Oily (Snigdha)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Sweet (Madhura)",
+        "Bitter (Tikta)"
+      ],
+      "guna": [
+        "Heavy (Guru)",
+        "Oily (Snigdha)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Balances Vata and Pitta"
     },
     "interestingFacts": [
@@ -1777,7 +1426,11 @@
   {
     "id": "polyalthia-longifolia",
     "botanicalName": "Polyalthia longifolia (Sonn.) Thwaites",
-    "commonNames": ["False Ashoka", "Indian Mast Tree", "Mast Tree"],
+    "commonNames": [
+      "False Ashoka",
+      "Indian Mast Tree",
+      "Mast Tree"
+    ],
     "family": "Annonaceae",
     "pronunciation": "pol-ee-AL-thee-uh lon-jih-FOH-lee-uh",
     "images": {
@@ -1789,68 +1442,15 @@
         "images/false-ashoka/split/5_flowers.webp",
         "images/false-ashoka/split/6_fruits.webp"
       ],
-      "leaf": "images/false-ashoka/split/8_leaf_closeup.webp",
-      "flower": "images/false-ashoka/split/9_flower_closeup.webp",
-      "fruit": "images/false-ashoka/split/6_fruits.webp",
       "habitatMap": "images/habitat_maps/false_ashoka_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Sri Lanka & India",
-      "flowering": "Feb – Apr",
-      "lifespan": "40+ years",
-      "plantType": "Tall Columnar Tree",
-      "matureHeight": "10 – 20 m",
-      "growthRate": "Fast"
-    },
-    "warnings": null,
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "15° – 40°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Polyalthia longifolia is a tall, evergreen ornamental tree with a narrow, columnar crown and drooping branches. It is commonly planted along roadsides, schools, and temples for shade, landscaping, noise reduction, and dust suppression.",
-    "uses": [
-      {
-        "label": "Avenue & Landscape",
-        "description": "Planted in narrow spaces due to its vertical growth habit."
-      },
-      {
-        "label": "Pollution Control",
-        "description": "Dense foliage reduces noise and traps urban dust."
-      },
-      {
-        "label": "Folk Medicine",
-        "description": "Bark decoctions used in traditional remedies for fever and skin issues."
-      }
+    "synonyms": [
+      "False Ashoka",
+      "Indian Mast Tree",
+      "Mast Tree",
+      "Polyalthia"
     ],
-    "funFacts": [
-      {
-        "question": "Is it true Ashoka?",
-        "answer": "No. It is often called Ashoka, but True Ashoka is Saraca asoca, a totally different medicinal tree."
-      }
-    ],
-    "synonyms": ["False Ashoka", "Indian Mast Tree", "Mast Tree", "Polyalthia"],
     "commonNameTable": [
       {
         "language": "English",
@@ -1905,13 +1505,20 @@
       "Antifungal",
       "Cytotoxic (laboratory)"
     ],
-    "phytochemicals": ["Liriodenine", "Anonaine", "Diterpenoids", "Tannins"],
+    "phytochemicals": [
+      "Liriodenine",
+      "Anonaine",
+      "Diterpenoids",
+      "Tannins"
+    ],
     "scientificEvidence": "Alkaloid liriodenine has shown antibacterial and cytotoxic properties in vitro.",
     "safetyPrecautions": [
       "Medicinal use is less established than classical Ayurvedic herbs.",
       "Avoid self-medication."
     ],
-    "preparationSteps": ["Bark decoction or leaf paste (Folk use)."],
+    "preparationSteps": [
+      "Bark decoction or leaf paste (Folk use)."
+    ],
     "cultivationInfo": [
       {
         "label": "Propagation: Seeds",
@@ -1932,11 +1539,20 @@
         "imageUrl": "images/false-ashoka/split/11_seed.webp"
       }
     ],
-    "traditionalUses": ["Folk fever remedy", "Skin issue paste"],
+    "traditionalUses": [
+      "Folk fever remedy",
+      "Skin issue paste"
+    ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)"],
-      "guna": ["Light (Laghu)"],
-      "virya": ["Heating (Ushna)"],
+      "rasa": [
+        "Bitter (Tikta)"
+      ],
+      "guna": [
+        "Light (Laghu)"
+      ],
+      "virya": [
+        "Heating (Ushna)"
+      ],
       "doshaAction": "Folk medicine plant (Not classical Saraca asoca)"
     },
     "interestingFacts": [
@@ -1953,12 +1569,18 @@
         "description": "Frequently mistaken for Saraca asoca (True Ashoka used for women's health)."
       }
     ],
-    "references": ["Indian Trees & Urban Forestry Handbook"]
+    "references": [
+      "Indian Trees & Urban Forestry Handbook"
+    ]
   },
   {
     "id": "chlorophytum-borivilianum",
     "botanicalName": "Chlorophytum borivilianum Santapau & R.R. Fern.",
-    "commonNames": ["Safed Musli", "White Musli", "Indian Musli"],
+    "commonNames": [
+      "Safed Musli",
+      "White Musli",
+      "Indian Musli"
+    ],
     "family": "Asparagaceae",
     "pronunciation": "klor-oh-FY-tum bor-ih-vil-ee-AH-num",
     "images": {
@@ -1970,73 +1592,9 @@
         "images/safed-musli/split/3_tuberous_roots.webp",
         "images/safed-musli/split/10_harvested_roots.webp"
       ],
-      "leaf": "images/safed-musli/split/2_basal_leaf_rosette.webp",
-      "flower": "images/safed-musli/split/6_flower_closeup.webp",
-      "fruit": "images/safed-musli/split/7_fruits_capsule.webp",
       "habitatMap": "images/habitat_maps/safed_musli_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Endangered in Wild",
-      "nativeRegion": "India",
-      "flowering": "Jun – Aug",
-      "lifespan": "Perennial",
-      "plantType": "Tuberous Herb",
-      "matureHeight": "30 – 45 cm",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Verify Quality",
-      "chips": [
-        "Buy from reputable sources to avoid adulteration",
-        "May cause mild stomach upset in high doses"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Partial shade to full sun",
-        "meterFilled": 3
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained loamy sandy soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "20° – 38°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Chlorophytum borivilianum is a small perennial herb famous for its fleshy white tuberous roots. Native to India, it is considered one of the most valuable herbs in Ayurveda and is widely used as a Rasayana (rejuvenator) and adaptogen.",
-    "uses": [
-      {
-        "label": "Vitality & Stamina",
-        "description": "Rejuvenative tonic used to reduce fatigue and enhance stamina."
-      },
-      {
-        "label": "Reproductive Health",
-        "description": "Used traditionally in Ayurvedic wellness formulations."
-      },
-      {
-        "label": "Adaptogen",
-        "description": "Supports immune function and recovery post illness."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why called White Gold?",
-        "answer": "It is nicknamed 'White Gold of Ayurveda' due to its high medicinal and commercial value."
-      }
-    ],
     "synonyms": [
       "Safed Musli",
       "White Musli",
@@ -2088,7 +1646,10 @@
       {
         "title": "General Vitality & Stamina",
         "icon": "",
-        "points": ["Rejuvenative tonic", "Improves stamina & reduces fatigue"]
+        "points": [
+          "Rejuvenative tonic",
+          "Improves stamina & reduces fatigue"
+        ]
       },
       {
         "title": "Immune & Adaptogenic",
@@ -2119,7 +1680,9 @@
       "Generally safe in recommended doses.",
       "Monitor blood glucose if taking antidiabetic drugs."
     ],
-    "preparationSteps": ["Root powder (Churna): Taken with warm milk."],
+    "preparationSteps": [
+      "Root powder (Churna): Taken with warm milk."
+    ],
     "cultivationInfo": [
       {
         "label": "Propagation: Tuber divisions",
@@ -2140,11 +1703,22 @@
         "imageUrl": "images/safed-musli/split/9_seeds.webp"
       }
     ],
-    "traditionalUses": ["Rasayana", "Stamina tonic", "Debility recovery"],
+    "traditionalUses": [
+      "Rasayana",
+      "Stamina tonic",
+      "Debility recovery"
+    ],
     "ayurvedicProperties": {
-      "rasa": ["Sweet (Madhura)"],
-      "guna": ["Heavy (Guru)", "Oily (Snigdha)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Sweet (Madhura)"
+      ],
+      "guna": [
+        "Heavy (Guru)",
+        "Oily (Snigdha)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Balances Vata and Pitta"
     },
     "interestingFacts": [
@@ -2169,7 +1743,12 @@
   {
     "id": "justicia-adhatoda",
     "botanicalName": "Justicia adhatoda L.",
-    "commonNames": ["Malabar Nut", "Vasaka", "Adusa", "Adulsa"],
+    "commonNames": [
+      "Malabar Nut",
+      "Vasaka",
+      "Adusa",
+      "Adulsa"
+    ],
     "family": "Acanthaceae",
     "pronunciation": "jus-TISH-ee-uh ad-huh-TOH-duh",
     "images": {
@@ -2181,74 +1760,16 @@
         "images/vasaka/split/4_flower_closeup.webp",
         "images/vasaka/split/6_fruit_capsule.webp"
       ],
-      "leaf": "images/vasaka/split/2_leaves_opposite.webp",
-      "flower": "images/vasaka/split/4_flower_closeup.webp",
-      "fruit": "images/vasaka/split/6_fruit_capsule.webp",
       "habitatMap": "images/habitat_maps/vasaka_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Indian Subcontinent",
-      "flowering": "Dec – Apr",
-      "lifespan": "Perennial",
-      "plantType": "Dense Evergreen Shrub",
-      "matureHeight": "1 – 3 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Uterine Caution",
-      "chips": [
-        "Avoid high medicinal doses during pregnancy",
-        "May stimulate uterine contractions"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun to partial shade",
-        "meterFilled": 3
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "15° – 38°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Justicia adhatoda is a dense evergreen medicinal shrub growing 1–3 m tall. It is one of the most important medicinal plants in Ayurveda, particularly valued for treating respiratory disorders due to its potent bronchodilator alkaloids.",
-    "uses": [
-      {
-        "label": "Respiratory Relief",
-        "description": "Premier herb for productive cough, bronchitis, cold, and asthma."
-      },
-      {
-        "label": "Mucolytic Action",
-        "description": "Helps thin and clear bronchial mucus."
-      },
-      {
-        "label": "Fever & Inflammation",
-        "description": "Traditionally used to reduce fever and respiratory airway inflammation."
-      }
+    "synonyms": [
+      "Vasaka",
+      "Adhatoda",
+      "Malabar Nut",
+      "Adulsa",
+      "Arusa"
     ],
-    "funFacts": [
-      {
-        "question": "How did Vasaka shape modern medicine?",
-        "answer": "Its alkaloid vasicine inspired the modern mucolytic drugs Bromhexine and Ambroxol."
-      }
-    ],
-    "synonyms": ["Vasaka", "Adhatoda", "Malabar Nut", "Adulsa", "Arusa"],
     "commonNameTable": [
       {
         "language": "English",
@@ -2323,7 +1844,10 @@
       {
         "title": "Fever & Immunity",
         "icon": "",
-        "points": ["Helps reduce fever", "Supportive respiratory care"]
+        "points": [
+          "Helps reduce fever",
+          "Supportive respiratory care"
+        ]
       }
     ],
     "pharmacologicalActivities": [
@@ -2383,9 +1907,17 @@
       "Hoarseness"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)", "Astringent (Kashaya)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Bitter (Tikta)",
+        "Astringent (Kashaya)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Balances Kapha and Pitta"
     },
     "interestingFacts": [
@@ -2410,7 +1942,11 @@
   {
     "id": "ocimum-tenuiflorum",
     "botanicalName": "Ocimum tenuiflorum L.",
-    "commonNames": ["Tulsi", "Holy Basil", "Sacred Basil"],
+    "commonNames": [
+      "Tulsi",
+      "Holy Basil",
+      "Sacred Basil"
+    ],
     "family": "Lamiaceae (Mint Family)",
     "pronunciation": "OH-sih-mum ten-yoo-ih-FLOR-um",
     "images": {
@@ -2422,73 +1958,9 @@
         "images/tulsi/split/4_flower_closeup.webp",
         "images/tulsi/split/5_flowers_in_cluster.webp"
       ],
-      "leaf": "images/tulsi/split/2_leaves_opposite.webp",
-      "flower": "images/tulsi/split/4_flower_closeup.webp",
-      "fruit": "images/tulsi/split/6_fruit_schizocarp.webp",
       "habitatMap": "images/habitat_maps/tulsi_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Indian Subcontinent",
-      "flowering": "Year-round",
-      "lifespan": "Short-lived Perennial",
-      "plantType": "Aromatic Shrub",
-      "matureHeight": "30 – 100 cm",
-      "growthRate": "Fast"
-    },
-    "warnings": {
-      "headline": "Blood Thinning Caution",
-      "chips": [
-        "May enhance blood-thinning medication",
-        "Monitor blood glucose if taking diabetes drugs"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained fertile soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "18° – 38°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Ocimum tenuiflorum is an aromatic perennial shrub that grows 30–100 cm tall. Revered in India and considered sacred in Hindu tradition. Tulsi is regarded in Ayurveda as an adaptogen, supporting physical resilience, immunity, and respiratory health.",
-    "uses": [
-      {
-        "label": "Respiratory & Cold",
-        "description": "Classic remedy for cold, cough, sore throat, and bronchitis."
-      },
-      {
-        "label": "Adaptogenic Stress Relief",
-        "description": "Enhances resilience to physical and emotional stress."
-      },
-      {
-        "label": "Immunity & Immunity Tea",
-        "description": "Widely consumed as Tulsi tea for daily wellness."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why is it called Queen of Herbs?",
-        "answer": "Its rich eugenol content provides widespread antimicrobial, adaptogenic, and immune benefits."
-      }
-    ],
     "synonyms": [
       "Holy Basil",
       "Sacred Basil",
@@ -2561,7 +2033,10 @@
       {
         "title": "Stress & Immunity",
         "icon": "",
-        "points": ["Adaptogenic stress resilience", "Immune system enhancement"]
+        "points": [
+          "Adaptogenic stress resilience",
+          "Immune system enhancement"
+        ]
       },
       {
         "title": "Oral & Skin",
@@ -2632,9 +2107,17 @@
       "Rasayana"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Pungent (Katu)", "Bitter (Tikta)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Heating (Ushna)"],
+      "rasa": [
+        "Pungent (Katu)",
+        "Bitter (Tikta)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Heating (Ushna)"
+      ],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -2659,7 +2142,11 @@
   {
     "id": "elettaria-cardamomum",
     "botanicalName": "Elettaria cardamomum (L.) Maton",
-    "commonNames": ["Small Cardamom", "Green Cardamom", "Elaichi"],
+    "commonNames": [
+      "Small Cardamom",
+      "Green Cardamom",
+      "Elaichi"
+    ],
     "family": "Zingiberaceae (Ginger Family)",
     "pronunciation": "el-eh-TAR-ee-uh kar-duh-MOH-mum",
     "images": {
@@ -2674,72 +2161,9 @@
         "images/cardamom/split/10_harvested_fruits.webp",
         "images/cardamom/split/12_dried_seeds.webp"
       ],
-      "leaf": "images/cardamom/split/2_leaves.webp",
-      "flower": "images/cardamom/split/4_flower.webp",
-      "fruit": "images/cardamom/split/10_harvested_fruits.webp",
       "habitatMap": "images/habitat_maps/cardamom_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Western Ghats of India",
-      "flowering": "Apr – Jun",
-      "lifespan": "Perennial",
-      "plantType": "Aromatic Herbaceous Perennial",
-      "matureHeight": "2 – 5 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Gallstone Caution",
-      "chips": [
-        "Consult doctor if you have gallstones before taking high medicinal doses"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Partial shade",
-        "meterFilled": 2
-      },
-      "water": {
-        "label": "Water",
-        "value": "High (Regular moisture)",
-        "meterFilled": 4
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Rich well-drained loamy soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "15° – 35°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "High",
-        "meterFilled": 4
-      }
-    },
     "about": "Elettaria cardamomum is a perennial evergreen aromatic herb growing 2–5 m tall from a thick underground rhizome. Known as the 'Queen of Spices', cardamom produces pale green capsules containing aromatic black seeds used worldwide for culinary and medicinal benefits.",
-    "uses": [
-      {
-        "label": "Digestive Carminative",
-        "description": "Relieves indigestion, gas, bloating, and nausea."
-      },
-      {
-        "label": "Oral Freshener",
-        "description": "Chewing seeds neutralizes bad breath and supports oral hygiene."
-      },
-      {
-        "label": "Respiratory Comfort",
-        "description": "Soothes coughs, cold symptoms, and throat irritation."
-      }
-    ],
-    "funFacts": [
-      {
-        "question": "Why is it so expensive?",
-        "answer": "Cardamom requires labor-intensive hand harvesting, making it one of the world's most valuable spices."
-      }
-    ],
     "synonyms": [
       "Green Cardamom",
       "True Cardamom",
@@ -2872,9 +2296,17 @@
       "Elaichadi formulations"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Sweet (Madhura)", "Pungent (Katu)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Sweet (Madhura)",
+        "Pungent (Katu)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -2891,12 +2323,19 @@
         "description": "Ranks right after saffron and vanilla in world spice value."
       }
     ],
-    "references": ["Spices Board of India", "Phytochemistry Journal"]
+    "references": [
+      "Spices Board of India",
+      "Phytochemistry Journal"
+    ]
   },
   {
     "id": "gymnema-sylvestre",
     "botanicalName": "Gymnema sylvestre (Retz.) R.Br. ex Sm.",
-    "commonNames": ["Gurmar", "Sugar Destroyer", "Madhunashini"],
+    "commonNames": [
+      "Gurmar",
+      "Sugar Destroyer",
+      "Madhunashini"
+    ],
     "family": "Apocynaceae",
     "pronunciation": "JIM-nee-muh sil-VES-tree",
     "images": {
@@ -2908,74 +2347,15 @@
         "images/gurmar/split/5_fruits_follicles.webp",
         "images/gurmar/split/6_seeds_silky_hair.webp"
       ],
-      "leaf": "images/gurmar/split/2_leaves.webp",
-      "flower": "images/gurmar/split/4_flower_closeup.webp",
-      "fruit": "images/gurmar/split/5_fruits_follicles.webp",
       "habitatMap": "images/habitat_maps/gurmar_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Tropical Forests of India & Africa",
-      "flowering": "Jun – Aug",
-      "lifespan": "Perennial",
-      "plantType": "Woody Climbing Vine",
-      "matureHeight": "3 – 10 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Monitor Blood Sugar",
-      "chips": [
-        "May significantly lower blood glucose",
-        "Monitor closely if taking insulin or diabetes meds"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Partial shade to full sun",
-        "meterFilled": 3
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Well-drained loamy soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "20° – 38°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Gymnema sylvestre is a woody perennial climbing vine native to tropical forests of India. Renowned in Ayurveda as 'Madhunashini' (Sugar Destroyer), chewing its leaves temporarily suppresses the ability to taste sweet food.",
-    "uses": [
-      {
-        "label": "Diabetes Management",
-        "description": "Helps regulate blood sugar and reduces intestinal glucose absorption."
-      },
-      {
-        "label": "Sugar Craving Control",
-        "description": "Temporarily blocks sweet taste receptors on the tongue, curbing sugar cravings."
-      },
-      {
-        "label": "Weight Support",
-        "description": "Supportive herb in obesity and metabolic wellness programs."
-      }
+    "synonyms": [
+      "Gurmar",
+      "Sugar Destroyer",
+      "Meshashringi",
+      "Madhunashini"
     ],
-    "funFacts": [
-      {
-        "question": "Why does sugar taste bland after chewing it?",
-        "answer": "Gymnemic acids temporarily bind to sweet receptors on taste buds, blocking sweetness perception for 30–120 mins."
-      }
-    ],
-    "synonyms": ["Gurmar", "Sugar Destroyer", "Meshashringi", "Madhunashini"],
     "commonNameTable": [
       {
         "language": "English",
@@ -3042,7 +2422,10 @@
       {
         "title": "Weight Management",
         "icon": "",
-        "points": ["Blocks sweet cravings", "Supports lipid metabolism"]
+        "points": [
+          "Blocks sweet cravings",
+          "Supports lipid metabolism"
+        ]
       }
     ],
     "pharmacologicalActivities": [
@@ -3089,11 +2472,23 @@
         "imageUrl": "images/gurmar/split/8_milky_latex.webp"
       }
     ],
-    "traditionalUses": ["Madhumeha (Diabetes)", "Obesity", "Excessive thirst"],
+    "traditionalUses": [
+      "Madhumeha (Diabetes)",
+      "Obesity",
+      "Excessive thirst"
+    ],
     "ayurvedicProperties": {
-      "rasa": ["Bitter (Tikta)", "Astringent (Kashaya)"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Heating (Ushna)"],
+      "rasa": [
+        "Bitter (Tikta)",
+        "Astringent (Kashaya)"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Heating (Ushna)"
+      ],
       "doshaAction": "Balances Kapha and Vata"
     },
     "interestingFacts": [
@@ -3118,7 +2513,12 @@
   {
     "id": "syzygium-cumini",
     "botanicalName": "Syzygium cumini (L.) Skeels",
-    "commonNames": ["Jamun", "Java Plum", "Black Plum", "Indian Blackberry"],
+    "commonNames": [
+      "Jamun",
+      "Java Plum",
+      "Black Plum",
+      "Indian Blackberry"
+    ],
     "family": "Myrtaceae",
     "pronunciation": "sih-ZIJ-ee-um kyoo-MY-nee",
     "images": {
@@ -3131,74 +2531,15 @@
         "images/jamun/split/5_ripe_fruits.webp",
         "images/jamun/split/6_fruit_cross_section.webp"
       ],
-      "leaf": "images/jamun/split/2_leaves_opposite.webp",
-      "flower": "images/jamun/split/3_flowers_clusters.webp",
-      "fruit": "images/jamun/split/5_ripe_fruits.webp",
       "habitatMap": "images/habitat_maps/jamun_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Indian Subcontinent & SE Asia",
-      "flowering": "Mar – May",
-      "lifespan": "100+ years",
-      "plantType": "Large Evergreen Tree",
-      "matureHeight": "10 – 25 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Glucose Monitoring",
-      "chips": [
-        "Concentrated seed powder may lower blood sugar",
-        "Do not replace prescribed diabetes therapy"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate to High",
-        "meterFilled": 3
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Rich well-drained loamy soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "12° – 45°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Syzygium cumini, known as Jamun or Java Plum, is a large evergreen tree native to India. Celebrated for its deep purple-black edible fruit and its seeds, which are traditionally used in Ayurvedic care for blood glucose management.",
-    "uses": [
-      {
-        "label": "Blood Sugar Support",
-        "description": "Dried seed powder is a classic traditional preparation for diabetes support."
-      },
-      {
-        "label": "Digestive Health",
-        "description": "Bark and fruit preparations relieve diarrhea and dysentery."
-      },
-      {
-        "label": "Antioxidant Fruit",
-        "description": "Ripe berries are packed with dark anthocyanin polyphenols."
-      }
+    "synonyms": [
+      "Java Plum",
+      "Indian Blackberry",
+      "Black Plum",
+      "Jambu"
     ],
-    "funFacts": [
-      {
-        "question": "Why does Jamun stain your tongue purple?",
-        "answer": "The deep purple color comes from high concentrations of natural anthocyanin antioxidants."
-      }
-    ],
-    "synonyms": ["Java Plum", "Indian Blackberry", "Black Plum", "Jambu"],
     "commonNameTable": [
       {
         "language": "English",
@@ -3324,11 +2665,24 @@
         "imageUrl": "images/jamun/split/2_leaves_opposite.webp"
       }
     ],
-    "traditionalUses": ["Jambu", "Madhumeha", "Diarrhea", "Excessive thirst"],
+    "traditionalUses": [
+      "Jambu",
+      "Madhumeha",
+      "Diarrhea",
+      "Excessive thirst"
+    ],
     "ayurvedicProperties": {
-      "rasa": ["Astringent (Kashaya)", "Sour (Amla)", "Sweet (Madhura)"],
-      "guna": ["Light (Laghu)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Astringent (Kashaya)",
+        "Sour (Amla)",
+        "Sweet (Madhura)"
+      ],
+      "guna": [
+        "Light (Laghu)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Balances Kapha and Pitta"
     },
     "interestingFacts": [
@@ -3353,7 +2707,11 @@
   {
     "id": "phyllanthus-emblica",
     "botanicalName": "Phyllanthus emblica L.",
-    "commonNames": ["Amla", "Indian Gooseberry", "Amalaki"],
+    "commonNames": [
+      "Amla",
+      "Indian Gooseberry",
+      "Amalaki"
+    ],
     "family": "Phyllanthaceae (formerly Euphorbiaceae)",
     "pronunciation": "fil-AN-thus em-BLIH-kuh",
     "images": {
@@ -3366,73 +2724,16 @@
         "images/amla/split/23_ref_flowers.webp",
         "images/amla/split/9_bark.webp"
       ],
-      "leaf": "images/amla/split/3_close_up_leaves.webp",
-      "flower": "images/amla/split/4_flowers.webp",
-      "fruit": "images/amla/split/6_mature_fruits.webp",
       "habitatMap": "images/habitat_maps/amla_habitat_map.webp"
     },
-    "badges": {
-      "conservation": "Least Concern",
-      "nativeRegion": "Indian Subcontinent & SE Asia",
-      "flowering": "Mar – May",
-      "lifespan": "50+ years",
-      "plantType": "Small-Medium Deciduous Tree",
-      "matureHeight": "8 – 18 m",
-      "growthRate": "Moderate"
-    },
-    "warnings": {
-      "headline": "Acidic Fruit",
-      "chips": [
-        "Large quantities on empty stomach may cause hyperacidity in sensitive individuals"
-      ]
-    },
-    "care": {
-      "sunlight": {
-        "label": "Sunlight",
-        "value": "Full sun",
-        "meterFilled": 4
-      },
-      "water": {
-        "label": "Water",
-        "value": "Moderate",
-        "meterFilled": 2
-      },
-      "soil": {
-        "label": "Soil",
-        "value": "Adaptable, dry to loamy soil"
-      },
-      "temperature": {
-        "label": "Temperature",
-        "value": "10° – 45°C"
-      },
-      "humidity": {
-        "label": "Humidity preference",
-        "value": "Moderate",
-        "meterFilled": 2
-      }
-    },
     "about": "Phyllanthus emblica, known as Amla or Amalaki, is one of the most revered Rasayana (rejuvenative) trees in Ayurveda. The smooth, pale green round fruit is famous for its powerful antioxidant profile, high polyphenols, hydrolysable tannins, and vitamin C.",
-    "uses": [
-      {
-        "label": "Rasayana Rejuvenation",
-        "description": "Premier Ayurvedic rejuvenative tonic for immunity, vitality, and longevity."
-      },
-      {
-        "label": "Digestive & Acidity",
-        "description": "Improves digestion, relieves constipation, and balances stomach acid."
-      },
-      {
-        "label": "Hair & Skin Wellness",
-        "description": "Extensively used in herbal hair oils, tonics, and skin care."
-      }
+    "synonyms": [
+      "Indian Gooseberry",
+      "Amla",
+      "Amalaki",
+      "Dhatri",
+      "Emblica"
     ],
-    "funFacts": [
-      {
-        "question": "Why does water taste sweet after eating Amla?",
-        "answer": "Amla's unique combination of tannins and sour/astringent tastes alters taste receptor sensitivity so plain water tastes sweet right after."
-      }
-    ],
-    "synonyms": ["Indian Gooseberry", "Amla", "Amalaki", "Dhatri", "Emblica"],
     "commonNameTable": [
       {
         "language": "English",
@@ -3572,9 +2873,20 @@
       "Hair care"
     ],
     "ayurvedicProperties": {
-      "rasa": ["Sour (dominant)", "Sweet", "Bitter", "Pungent", "Astringent"],
-      "guna": ["Light (Laghu)", "Dry (Ruksha)"],
-      "virya": ["Cooling (Shita)"],
+      "rasa": [
+        "Sour (dominant)",
+        "Sweet",
+        "Bitter",
+        "Pungent",
+        "Astringent"
+      ],
+      "guna": [
+        "Light (Laghu)",
+        "Dry (Ruksha)"
+      ],
+      "virya": [
+        "Cooling (Shita)"
+      ],
       "doshaAction": "Tridoshahara — Balances Vata, Pitta, and Kapha"
     },
     "interestingFacts": [
@@ -3591,6 +2903,9 @@
         "description": "Plain water tastes delightfully sweet right after chewing an Amla fruit."
       }
     ],
-    "references": ["Ayurvedic Pharmacopoeia of India", "Food Chemistry Journal"]
+    "references": [
+      "Ayurvedic Pharmacopoeia of India",
+      "Food Chemistry Journal"
+    ]
   }
 ]
