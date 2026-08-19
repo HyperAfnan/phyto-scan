@@ -5,7 +5,9 @@
     <application
         android:allowBackup="true"
         android:enableOnBackInvokedCallback="true"
-        android:label="Botany Garden"
+        android:icon="@drawable/logo"
+        android:label="Phyto Scan"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.BotanyGarden">
         <activity
